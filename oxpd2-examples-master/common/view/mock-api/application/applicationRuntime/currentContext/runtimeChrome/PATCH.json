@@ -1,0 +1,26 @@
+{
+  "applicationChrome": {
+    "webApplicationRuntimeChrome": {
+      "dateTimeAvailable": true,
+      "footerBackgroundColor": "#FF00FF",
+      "footerVisible": true,
+      "headerBackgroundColor": "#FF00FF",
+      "headerForegroundColor": "#FF00FF",
+      "headerIcon": {
+        "localImage": {
+          "fileType": "image/png",
+          "path": "/images/updated-icon.png"
+        }
+      },
+      "headerTitle": "Mock Title PATCH",
+      "helpButtonAvailable": true,
+      "homeButtonAvailable": true,
+      "infoButtonEnabled": true,
+      "resetButtonEnabled": true,
+      "signInAvailable": true,
+      "softKeyboardIsAvailable": true,
+      "startButtonEnabled": true,
+      "startButtonVisible": true
+    }
+  }
+}

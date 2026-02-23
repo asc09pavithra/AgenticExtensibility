@@ -1,0 +1,25 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "agentId": "b2b2da87-96d3-493d-9ef6-839f8e8e926b",
+    "links": [
+        {
+            "href": "/ext/printJob/v1/printJobAgents/b2b2da87-96d3-493d-9ef6-839f8e8e926b",
+            "rel": "self"
+        }
+    ],
+    "localizedDescription": {
+        "i18nAssetId": "f2ff58cc-f024-49ec-8115-da662efd0509",
+        "stringId": "cPrintRecordDescription"
+    },
+    "localizedName": {
+        "i18nAssetId": "f2ff58cc-f024-49ec-8115-da662efd0509",
+        "stringId": "cPrintRecordName"
+    },
+    "name": "Another Print Job Agent",
+    "resourceId": "b2b2da87-96d3-493d-9ef6-839f8e8e926b",
+    "solutionId": "3f4fcffc-c9cf-4525-83c3-3411f1f3702f"
+}

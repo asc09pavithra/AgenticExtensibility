@@ -1,0 +1,21 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a/hid/",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a/hid/open",
+      "rel": "open"
+    },
+    {
+      "hrefTemplate": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a/hid/{openHIDAccessoryID}",
+      "rel": "openHIDAccessory"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "apiVersion": "1.0",
+  "description": "The scan job service, providing the ability to manage scan jobs.",
+  "implInfo": [
+    {
+      "typeGUN": "com.hp.ext.service.scanJob.version.1.types.capabilities",
+      "value": {
+        "apiMajorVersion": 1,
+        "apiMinorVersion": 0,
+        "releaseLevel": "Alpha",
+        "releaseSequence": 16,
+        "toolVersions": [
+          "dsl 2.7.12.202101211527",
+          "umsgen 0.2.1"
+        ]
+      }
+    }
+  ],
+  "implVersion": "1.0",
+  "links": [
+    {
+      "href": "/ext/scanJob/v1/capabilities",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/scanJob/v1/capabilities",
+      "rel": "capabilities"
+    },
+    {
+      "href": "/ext/scanJob/v1/defaultOptions",
+      "rel": "defaultOptions"
+    },
+    {
+      "href": "/ext/scanJob/v1/profile",
+      "rel": "profile"
+    },
+    {
+      "href": "/ext/scanJob/v1/scanJobAgents",
+      "rel": "scanJobAgents"
+    }
+  ],
+  "serviceGun": "com.hp.ext.service.scan.version.1"
+}

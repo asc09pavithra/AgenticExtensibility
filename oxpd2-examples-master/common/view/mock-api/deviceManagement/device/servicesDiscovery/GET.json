@@ -1,0 +1,2597 @@
+{
+    "version": "1.4.0-alpha.6",
+    "services": [
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.oauth2.version.1",
+            "description": "CDM microservice network services",
+            "links": [
+                {
+                    "rel": "authorize",
+                    "hrefTemplate": "/cdm/oauth2/v1/authorize?response_type={response_type}&client_id={client_id}&redirect_uri={redirect_uri}&appData={appData}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "token",
+                    "href": "/cdm/oauth2/v1/token",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "revoketoken",
+                    "href": "/cdm/oauth2/v1/token/revoke",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "2.0.0",
+            "serviceGun": "com.hp.cdm.service.pubsub.version.2",
+            "description": "Resource pubsub microservice",
+            "links": [
+                {
+                    "rel": "subscriptions",
+                    "hrefTemplate": "/cdm/pubsub/v2/subscriptions?clientId={clientId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscription",
+                    "hrefTemplate": "/cdm/pubsub/v2/subscriptions/{subscriptionId}?clientId={clientId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/pubsub/v2/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.integrationTest.version.1",
+            "description": "Integration Test microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/IntegrationTest/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscriptionList",
+                    "href": "/cdm/IntegrationTest/v1/subscriptions",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscription",
+                    "hrefTemplate": "/cdm/IntegrationTest/v1/subscriptions/{subscriptionId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "customData",
+                    "hrefTemplate": "/cdm/IntegrationTest/v1/customData?type={type}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/IntegrationTest/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "collection2",
+                    "hrefTemplate": "/cdm/IntegrationTest/v1/collection2",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "collection2Item",
+                    "hrefTemplate": "/cdm/IntegrationTest/v1/collection2/{id}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.storageDevices.version.1",
+            "description": "Storage device microservice",
+            "links": [
+                {
+                    "rel": "storageDevice",
+                    "href": "/cdm/storageDevice/v1/devices",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "storageDeviceInfo",
+                    "hrefTemplate": "/cdm/storageDevice/v1/devices/{drive}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "directory",
+                    "hrefTemplate": "/cdm/storageDevice/v1/devices/{driveId}/content/{directory}?offset={offset}&limit={limit}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "formatStorage",
+                    "hrefTemplate": "/cdm/storageDevice/v1/devices/{driveId}/format",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.localization.version.1",
+            "description": "localization microservice",
+            "links": [
+                {
+                    "rel": "countryRegionByLanguage",
+                    "href": "/cdm/localization/v1/countryRegionByLanguage",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.report.version.1",
+            "description": "Report microservice",
+            "links": [
+                {
+                    "rel": "reports",
+                    "href": "/cdm/report/v1/reports",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "report",
+                    "hrefTemplate": "/cdm/report/v1/reports/{reportId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "print",
+                    "hrefTemplate": "/cdm/report/v1/reports/{reportId}/print",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "operation",
+                    "hrefTemplate": "/cdm/report/v1/reports/{reportId}/print/{operationId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.jobTicket.version.1",
+            "description": "JobTicket microservice",
+            "links": [
+                {
+                    "rel": "tickets",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ticketCreation",
+                    "href": "/cdm/jobTicket/v1/tickets",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "userDefaultsList",
+                    "href": "/cdm/jobTicket/v1/user/defaults",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "userDefaults",
+                    "hrefTemplate": "/cdm/jobTicket/v1/user/defaults/{ticketType}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configurationDefaultsList",
+                    "href": "/cdm/jobTicket/v1/configuration/defaults",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configurationDefaults",
+                    "hrefTemplate": "/cdm/jobTicket/v1/configuration/defaults/{ticketType}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "toList",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/toList",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ccList",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/ccList",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "bccList",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/bccList",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "toListContact",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/toList/{contactId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ccListContact",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/ccList/{contactId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "bccListContact",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/bccList/{contactId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "faxDestinationContacts",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/faxDestinationContacts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "faxDestinationsContact",
+                    "hrefTemplate": "/cdm/jobTicket/v1/tickets/{ticketId}/faxDestinationContacts/{faxContactId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.jobManagement.version.1",
+            "description": "JobManagement microservice",
+            "links": [
+                {
+                    "rel": "jobs",
+                    "hrefTemplate": "/cdm/jobManagement/v1/jobs/{jobId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "jobCreation",
+                    "href": "/cdm/jobManagement/v1/jobs",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "jobQueue",
+                    "href": "/cdm/jobManagement/v1/queue",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "jobHistory",
+                    "href": "/cdm/jobManagement/v1/history",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/jobManagement/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.fwUpdateSvc.version.1",
+            "description": "CDM microservice for fwUpdateSvc resource system event alert and log",
+            "links": [
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/fwUpdateSvc/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.constraintsExample.version.1",
+            "description": "Constraints Example Microservice",
+            "links": [
+                {
+                    "rel": "data",
+                    "href": "/cdm/constraintsExample/v1/data",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.firmwareUpdate.version.1",
+            "description": "CDM microservice firmware updates services",
+            "links": [
+                {
+                    "rel": "downloadUpdate",
+                    "href": "/cdm/firmwareUpdate/v1/downloadUpdate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/firmwareUpdate/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "directedUpdate",
+                    "href": "/cdm/firmwareUpdate/v1/directedUpdate",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.storeJobManagement.version.1",
+            "description": "StoreJobManagement microservice",
+            "links": [
+                {
+                    "rel": "job",
+                    "hrefTemplate": "/cdm/storeJobManagement/v1/folders/{folderId}/jobs/{jobId}?passwordList={passwordList}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "jobs",
+                    "hrefTemplate": "/cdm/storeJobManagement/v1/folders/{folderId}/jobs?passwordList={passwordList}&filter={filterApplied}&sortCriteria={sortCriteria}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "folder",
+                    "hrefTemplate": "/cdm/storeJobManagement/v1/folders/{folderId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "folderList",
+                    "hrefTemplate": "/cdm/storeJobManagement/v1/folders",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "settings",
+                    "href": "/cdm/storeJobManagement/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "status",
+                    "href": "/cdm/storeJobManagement/v1/status",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/storeJobManagement/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "2.0.0",
+            "serviceGun": "com.hp.cdm.service.firmwareUpdate.version.2",
+            "description": "CDM microservice firmware updates services",
+            "links": [
+                {
+                    "rel": "updateStatus",
+                    "href": "/cdm/firmwareUpdate/v2/updateStatus",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/firmwareUpdate/v2/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/firmwareUpdate/v2/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "updateCheck",
+                    "href": "/cdm/firmwareUpdate/v2/updateCheck",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "updateHistory",
+                    "href": "/cdm/firmwareUpdate/v2/updateHistory",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.certificate.version.1",
+            "description": "CDM microservice certificate services",
+            "links": [
+                {
+                    "rel": "certificates",
+                    "href": "/cdm/certificate/v1/certificates",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/certificate/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "selfSignedCertificate",
+                    "href": "/cdm/certificate/v1/certificates/selfSignedCertificate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "selfSignedCertificateResp",
+                    "hrefTemplate": "/cdm/certificate/v1/certificates/selfSignedCertificate/{certificateId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "certificateSigningRequest",
+                    "href": "/cdm/certificate/v1/certificates/certificateSigningRequest",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "certificateSigningResp",
+                    "hrefTemplate": "/cdm/certificate/v1/certificates/certificateSigningRequest/{certificateId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "installIdCertificate",
+                    "href": "/cdm/certificate/v1/certificates/installId",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "importIdCertificate",
+                    "href": "/cdm/certificate/v1/certificates/importId",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "exportIdCertificate",
+                    "hrefTemplate": "/cdm/certificate/v1/certificates/{certificateId}/exportId",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "importCaCertificate",
+                    "href": "/cdm/certificate/v1/certificates/importCa",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "exportCaCertificate",
+                    "hrefTemplate": "/cdm/certificate/v1/certificates/{certificateId}/exportCa",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.security.version.1",
+            "description": "CDM microservice security services",
+            "links": [
+                {
+                    "rel": "authenticationAgents",
+                    "href": "/cdm/security/v1/authenticationAgents",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "authenticate",
+                    "href": "/cdm/security/v1/authenticate",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "deviceAdminConfig",
+                    "href": "/cdm/security/v1/deviceAdminConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "accountPolicy",
+                    "href": "/cdm/security/v1/accountPolicy",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "claimScopeData",
+                    "href": "/cdm/security/v1/claimScopeData",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ldapConfig",
+                    "hrefTemplate": "/cdm/security/v1/authenticationAgents/{agentId}/ldapConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ldapTest",
+                    "hrefTemplate": "/cdm/security/v1/authenticationAgents/{agentId}/ldapTest",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "windowsConfig",
+                    "hrefTemplate": "/cdm/security/v1/authenticationAgents/{agentId}/windowsConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "windowsTest",
+                    "hrefTemplate": "/cdm/security/v1/authenticationAgents/{agentId}/windowsTest",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.remoteAuthentication.version.1",
+            "description": "CDM microservice remote authentication services",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/remoteAuthentication/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "config",
+                    "href": "/cdm/remoteAuthentication/v1/config",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/remoteAuthentication/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "pushbuttons",
+                    "href": "/cdm/remoteAuthentication/v1/pushbuttons",
+                    "hints": [
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "pushbutton_status",
+                    "hrefTemplate": "/cdm/remoteAuthentication/v1/pushbuttons/{sessionId}?client_id={client_id}&response_type={code}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "2.0.0-beta.1",
+            "serviceGun": "com.hp.cdm.service.tlsConfig.version.2",
+            "description": "CDM microservice tlsConfig services",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/tlsConfig/v2/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/tlsConfig/v2/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.deviceStatus.version.1",
+            "description": "Device Status microservice",
+            "links": [
+                {
+                    "rel": "basicStatus",
+                    "href": "/cdm/deviceStatus/v1/basicStatus",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.clock.version.1",
+            "description": "CDM microservice for the clock",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/clock/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "supportedTimeZones",
+                    "href": "/cdm/clock/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.power.version.1",
+            "description": "CDM microservice for power settings",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/power/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.reset.version.1",
+            "description": "CDM microservice for reset",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/reset/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.diagnostic.version.1",
+            "description": "CDM microservice for diagnostic resource system event alert and log",
+            "links": [
+                {
+                    "rel": "eventLog",
+                    "href": "/cdm/diagnostic/v1/systemEventLog",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/diagnostic/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.hardware.version.1",
+            "description": "Hardware microservice",
+            "links": [
+                {
+                    "rel": "hwComponents",
+                    "href": "/cdm/hardware/v1/hwComponents",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.system.version.1",
+            "description": "System microservice",
+            "links": [
+                {
+                    "rel": "identity",
+                    "href": "/cdm/system/v1/identity",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/system/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "status",
+                    "href": "/cdm/system/v1/status",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "images",
+                    "href": "/cdm/system/v1/images",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.alert.version.1",
+            "description": "Device alert microservice",
+            "links": [
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/alert/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "errorAlerts",
+                    "href": "/cdm/alert/v1/errorAlerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "criticalAlerts",
+                    "href": "/cdm/alert/v1/criticalAlerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alertsPrivate",
+                    "href": "/cdm/alert/v1/alertsPrivate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "errorAlertsPrivate",
+                    "href": "/cdm/alert/v1/errorAlertsPrivate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "criticalAlertsPrivate",
+                    "href": "/cdm/alert/v1/criticalAlertsPrivate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/alert/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.shortcut.version.1",
+            "description": "Shortcut microservice",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/shortcut/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "shortcuts",
+                    "hrefTemplate": "/cdm/shortcut/v1/shortcuts?offset={offset}&limit={limit}&type={type}&origin={origin}&source={source}&destination={destination}&default={default}&readOnly={readOnly}&factory={factory}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "shortcut",
+                    "hrefTemplate": "/cdm/shortcut/v1/shortcuts/{id}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.deviceSetup.version.1",
+            "description": "DeviceSetup microservice",
+            "links": [
+                {
+                    "rel": "status",
+                    "href": "/cdm/deviceSetup/v1/status",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.mediaHandling.version.1",
+            "description": "Media Handling microservice",
+            "links": [
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/mediaHandling/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.awc.version.1",
+            "description": "Auto Wireless Connect microservice",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/awc/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "signedPublicKey",
+                    "href": "/cdm/awc/v1/signedPublicKey",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "printerDiscovery",
+                    "href": "/cdm/awc/v1/printerDiscovery",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "state",
+                    "href": "/cdm/awc/v1/state",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "wirelessConfiguration",
+                    "href": "/cdm/awc/v1/wirelessConfiguration",
+                    "hints": [
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.controlPanel.version.1",
+            "description": "CDM microservice for the controlPanel microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/controlPanel/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.firewall.version.1",
+            "description": "Firewall microservice",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/firewall/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/firewall/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "2.0.0",
+            "serviceGun": "com.hp.cdm.service.ioConfig.version.2",
+            "description": "Io Config microservice",
+            "links": [
+                {
+                    "rel": "adapterStats",
+                    "href": "/cdm/ioConfig/v2/adapterStats",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "adapterConfigs",
+                    "href": "/cdm/ioConfig/v2/adapterConfigs",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/ioConfig/v2/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "wifiDirectConfig",
+                    "href": "/cdm/ioConfig/v2/wifiDirectConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "wifiDirectClients",
+                    "href": "/cdm/ioConfig/v2/wifiDirectClients",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "reset",
+                    "href": "/cdm/ioConfig/v2/reset",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "serviceGun": "com.hp.standard.feature.pwgIpp",
+            "links": [
+                {
+                    "rel": "homeUrl",
+                    "href": "/ipp/print"
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.media.version.1",
+            "description": "Media microservice",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/media/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/media/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "operations",
+                    "href": "/cdm/media/v1/operations",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/media/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "2.0.0-alpha.3",
+            "serviceGun": "com.hp.cdm.service.print.version.2",
+            "description": "Print microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/print/v2/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "status",
+                    "href": "/cdm/print/v2/status",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/print/v2/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0-alpha.1",
+            "serviceGun": "com.hp.cdm.service.sensors.version.1",
+            "description": "Sensors microservice",
+            "links": [
+                {
+                    "rel": "sensors",
+                    "href": "/cdm/sensors/v1/sensors",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/sensors/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0-alpha.1",
+            "serviceGun": "com.hp.cdm.service.calibration.version.1",
+            "description": "Calibration microservice",
+            "links": [
+                {
+                    "rel": "calibrations",
+                    "href": "/cdm/calibration/v1/printCalibrations",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "calibration",
+                    "hrefTemplate": "/cdm/calibration/v1/printCalibrations/{calibrationId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/calibration/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.supply.version.1",
+            "description": "Supply microservice",
+            "links": [
+                {
+                    "rel": "suppliesPublic",
+                    "href": "/cdm/supply/v1/suppliesPublic",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "suppliesPrivate",
+                    "href": "/cdm/supply/v1/suppliesPrivate",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "suppliesPrivateOld",
+                    "href": "/cdm/supply/v1/suppliesPrivateOld",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "operations",
+                    "href": "/cdm/supply/v1/operations",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "supplies",
+                    "href": "/cdm/supply/v1/supplies",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/supply/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.1.0",
+            "serviceGun": "com.hp.cdm.service.cloudServices.version.1",
+            "description": "CDM microservice Cloud services",
+            "links": [
+                {
+                    "rel": "avatarRegistration",
+                    "href": "/cdm/cloudServices/v1/avatarRegistration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "registration",
+                    "href": "/cdm/cloudServices/v1/avatarRegistration/registration",
+                    "hints": [
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "claimPostcard",
+                    "href": "/cdm/cloudServices/v1/claim/postcard",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.eventing.version.1",
+            "description": "Eventing microservice - telemetry",
+            "links": [
+                {
+                    "rel": "eventCapabilities",
+                    "href": "/cdm/eventing/v1/eventCapabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscription",
+                    "hrefTemplate": "/cdm/eventing/v1/subscriptions/{subscriptionId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscriptions",
+                    "href": "/cdm/eventing/v1/subscriptions",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "pendingEvents",
+                    "hrefTemplate": "/cdm/eventing/v1/subscriptions/{subscriptionId}/events",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.email.version.1",
+            "description": "CDM microservice for email settings",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/email/v1/smtpServers/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "smtpServers",
+                    "href": "/cdm/email/v1/smtpServers",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "smtpServer",
+                    "hrefTemplate": "/cdm/email/v1/smtpServers/{smtpServerId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "verifyAccess",
+                    "href": "/cdm/email/v1/smtpServers/verifyAccess",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.networkFolder.version.1",
+            "description": "CDM microservice for networkFolder settings",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/networkFolder/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "verifyAccess",
+                    "href": "/cdm/networkFolder/v1/verifyAccess",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.network.version.1",
+            "description": "CDM microservice network services",
+            "links": [
+                {
+                    "rel": "discoveryServices",
+                    "href": "/cdm/network/v1/discoveryServices",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "printServices",
+                    "href": "/cdm/network/v1/printServices",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "snmpConfig",
+                    "href": "/cdm/network/v1/snmpConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "snmpTrapConfig",
+                    "href": "/cdm/network/v1/snmpTrapConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                },
+                {
+                    "rel": "proxyConfig",
+                    "href": "/cdm/network/v1/proxyConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "nameResolverServices",
+                    "href": "/cdm/network/v1/nameResolverServices",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "internetDiagnostics",
+                    "href": "/cdm/network/v1/internetDiagnostics",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "networkScanServices",
+                    "href": "/cdm/network/v1/networkScanServices",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.geoLocation.version.1",
+            "description": "CDM microservice geolocation",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/geoLocation/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.escl.version.1",
+            "description": "eSCL microservice",
+            "links": [
+                {
+                    "rel": "subscription",
+                    "href": "/cdm/escl/v1/subscriptions/{subscriptionId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "subscriptions",
+                    "href": "/cdm/escl/v1/subscriptions",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0_alpha1",
+            "serviceGun": "com.hp.cdm.service.contacts.version.1",
+            "description": "CDM microservice for contacts settings",
+            "links": [
+                {
+                    "rel": "addressBooks",
+                    "href": "/cdm/contacts/v1/addressBooks",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "addressBook",
+                    "hrefTemplate": "/cdm/contacts/v1/addressBooks/{addressBookId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "records",
+                    "hrefTemplate": "/cdm/contacts/v1/addressBooks/{addressBookId}/records?offset={offset}&limit={limit}&searchScope={searchScope}&appName={appName}&criteria={criteria}&recordType={recordType}&clearAll={clearAll}&sortType={sortType}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "post"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "record",
+                    "hrefTemplate": "/cdm/contacts/v1/addressBooks/{addressBookId}/records/{recordId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "members",
+                    "hrefTemplate": "/cdm/contacts/v1/addressBooks/{addressBookId}/records/{recordId}/members?offset={offset}&limit={limit}&searchScope={searchScope}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "post"
+                        }
+                    ]
+                },
+                {
+                    "rel": "member",
+                    "hrefTemplate": "/cdm/contacts/v1/addressBooks/{addressBookId}/records/{recordId}/members/{memberId}",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "delete"
+                        }
+                    ]
+                },
+                {
+                    "rel": "networkContactsConfig",
+                    "hrefTemplate": "/cdm/contacts/v1/networkContactsConfig",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "ldapServer",
+                    "href": "/cdm/contacts/v1/networkContactsConfig/ldapServer",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "verifyExchangeServer",
+                    "href": "/cdm/contacts/v1/networkContactsConfig/verifyExchangeServer",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/contacts/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "serviceGun": "com.hp.standard.feature.eScl.version.2",
+            "links": [
+                {
+                    "rel": "homeUrl",
+                    "href": "/eSCL"
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.fax.version.1",
+            "description": "Fax Configuration microservice",
+            "links": [
+                {
+                    "rel": "faxForwardConfiguration",
+                    "href": "/cdm/fax/v1/faxForwardConfiguration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "sendConfiguration",
+                    "href": "/cdm/fax/v1/sendConfiguration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "clearActivityLog",
+                    "href": "/cdm/fax/v1/clearActivityLog",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/fax/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.faxModem.version.1",
+            "description": "Fax Modem Configuration microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/faxModem/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.ews.version.1",
+            "description": "Ews Configuration microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/ews/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/cdm/ews/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.faxArchive.version.1",
+            "description": "Fax Archive Configuration microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/faxArchive/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "serviceGun": "com.hp.cdm.service.faxReceive.version.1",
+            "description": "Fax Receive Configuration microservice",
+            "links": [
+                {
+                    "rel": "configuration",
+                    "href": "/cdm/faxReceive/v1/configuration",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "put"
+                        },
+                        {
+                            "method": "patch"
+                        }
+                    ]
+                },
+                {
+                    "rel": "alerts",
+                    "href": "/cdm/faxReceive/v1/alerts",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0",
+            "serviceGun": "com.hp.ext.service.authentication.version.1",
+            "links": [
+                {
+                    "rel": "session",
+                    "href": "/ext/authentication/v1/session"
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/ext/authentication/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "agents",
+                    "href": "/ext/authentication/v1/agents",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0",
+            "serviceGun": "com.hp.ext.service.solutionManager.version.1",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/ext/solutionManager/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "installer",
+                    "href": "/ext/solutionManager/v1/installer",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "solutions",
+                    "href": "/ext/solutionManager/v1/solutions",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0",
+            "serviceGun": "com.hp.ext-control.service.sdkSupport.version.1",
+            "links": [
+                {
+                    "rel": "echo",
+                    "href": "/ext/sdkSupport/v1/echo",
+                    "hints": [
+                        {
+                            "method": "get"
+                        },
+                        {
+                            "method": "patch"
+                        },
+                        {
+                            "method": "put"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0",
+            "serviceGun": "com.hp.ext.service.application.version.1",
+            "links": [
+                {
+                    "rel": "applicationRuntime",
+                    "href": "/ext/application/v1/applicationRuntime",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "i18nAssets",
+                    "href": "/ext/application/v1/i18nAssets",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "applications",
+                    "href": "/ext/application/v1/applications",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "capabilities",
+                    "href": "/ext/application/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "homescreen",
+                    "href": "/ext/application/v1/homescreen",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "messageCenterAgents",
+                    "href": "/ext/application/v1/messageCenterAgents",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "version": "1.0",
+            "serviceGun": "com.hp.ext.service.printJob.version.1",
+            "links": [
+                {
+                    "rel": "capabilities",
+                    "href": "/ext/printJob/v1/capabilities",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                },
+                {
+                    "rel": "agents",
+                    "href": "/ext/printJob/v1/agents",
+                    "hints": [
+                        {
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

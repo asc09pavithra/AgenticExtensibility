@@ -1,0 +1,143 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/f65a968c-4256-46ca-b2a9-02a7844e8994/suppliesUsage",
+            "rel": "self"
+        }
+    ],
+    "supplyUsageBySlotId": [
+        {
+            "colors": [
+                "sccB",
+                "sccOC"
+            ],
+            "compositeCounts": {
+                "cyan": {
+                    "maintenanceServicingLdwMarkingAgent": {
+                        "count": 18,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceServicingMarkingAgent": {
+                        "count": 118,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceWvlMarkingAgent": {
+                        "count": 10,
+                        "unit": "cuMilliliters"
+                    },
+                    "printLdwMarkingAgent": {
+                        "count": 109,
+                        "unit": "cuMilliliters"
+                    },
+                    "printMarkingAgent": {
+                        "count": 245,
+                        "unit": "cuMilliliters"
+                    },
+                    "suppliesYield": {
+                        "count": 1032,
+                        "unit": "cuMilliliters"
+                    }
+                },
+                "magenta": {
+                    "maintenanceServicingLdwMarkingAgent": {
+                        "count": 15,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceServicingMarkingAgent": {
+                        "count": 104,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceWvlMarkingAgent": {
+                        "count": 8,
+                        "unit": "cuMilliliters"
+                    },
+                    "printLdwMarkingAgent": {
+                        "count": 85,
+                        "unit": "cuMilliliters"
+                    },
+                    "printMarkingAgent": {
+                        "count": 264,
+                        "unit": "cuMilliliters"
+                    },
+                    "suppliesYield": {
+                        "count": 904,
+                        "unit": "cuMilliliters"
+                    }
+                },
+                "yellow": {
+                    "maintenanceServicingLdwMarkingAgent": {
+                        "count": 19,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceServicingMarkingAgent": {
+                        "count": 113,
+                        "unit": "cuMilliliters"
+                    },
+                    "maintenanceWvlMarkingAgent": {
+                        "count": 12,
+                        "unit": "cuMilliliters"
+                    },
+                    "printLdwMarkingAgent": {
+                        "count": 45,
+                        "unit": "cuMilliliters"
+                    },
+                    "printMarkingAgent": {
+                        "count": 234,
+                        "unit": "cuMilliliters"
+                    },
+                    "suppliesYield": {
+                        "count": 807,
+                        "unit": "cuMilliliters"
+                    }
+                }
+            },
+            "maintenancePrimeMarkingAgent": {
+                "count": 102,
+                "unit": "cuMilliliters"
+            },
+            "maintenanceServicingLdwMarkingAgent": {
+                "count": 52,
+                "unit": "cuMilliliters"
+            },
+            "maintenanceServicingMarkingAgent": {
+                "count": 335,
+                "unit": "cuMilliliters"
+            },
+            "maintenanceWvlMarkingAgent": {
+                "count": 30,
+                "unit": "cuMilliliters"
+            },
+            "nonHpOverride": "false",
+            "nonHpPrintMarkingAgent": {
+                "count": 0,
+                "unit": "cuMilliliters"
+            },
+            "numberOfSupplies": 103,
+            "printLdwMarkingAgent": {
+                "count": 239,
+                "unit": "cuMilliliters"
+            },
+            "printMarkingAgent": {
+                "count": 743,
+                "unit": "cuMilliliters"
+            },
+            "refillOccured": "true",
+            "slotId": 13,
+            "suppliesPageYield": {
+                "count": 1122,
+                "unit": "cuImpressions"
+            },
+            "suppliesYield": {
+                "count": 10923,
+                "unit": "cuMilliliters"
+            },
+            "supplyColorCode": "sccB",
+            "supplyType": "stAdfPickupRoller"
+        }
+    ]
+}

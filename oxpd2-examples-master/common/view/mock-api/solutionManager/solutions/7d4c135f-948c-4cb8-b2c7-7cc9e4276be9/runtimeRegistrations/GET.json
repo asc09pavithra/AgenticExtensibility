@@ -1,0 +1,22 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ]
+    },
+    "memberIds": [
+        "e3736199-5163-4c47-88d3-572e4e06dd6a"
+    ],
+    "members": [
+        {}
+    ],
+    "offset": 0,
+    "selectedCount": 0,
+    "totalCount": 0,
+    "links": [
+      {
+        "rel": "self",
+        "href": "/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/runtimeRegistrations"
+      }
+    ]
+}

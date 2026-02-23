@@ -1,0 +1,51 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+* text eol=lf
+
+# Language specific line endings
+*.c text eol=lf
+*.cs text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.java text eol=lf
+*.msbuild text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.lock text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.bat text eol=lf
+*.lock text eol=lf
+*.pem text eol=lf
+*.key text eol=lf
+*.conf text eol=lf
+*.build text eol=lf
+*.settings text eol=lf
+*.py text eol=lf
+*.env text eol=lf
+*.ext text eol=lf
+*.dat text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.config text eol=lf
+*.swp text eol=lf
+*.desktop eol=lf
+
+# Project and solution files line endings
+*.sln text eol=lf
+*.csproj text eol=lf
+*.proj text eol=lf
+
+# Treat the following files types as binary and don't change the line endings
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.bundle binary
+*.zip binary
+*.ibak binary
+*.psafe4 binary
+*.bdl binary
+*.pug binary
+*.woff2 binary
+*.dat binary
+*.ttf binary

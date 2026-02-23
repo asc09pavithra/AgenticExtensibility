@@ -1,0 +1,232 @@
+{
+  "$opMeta": {},
+  "links": [
+      {
+          "href": "/ext/copy/v1/copyAgents/d56990d9-7652-43a7-867f-0781258aba47/copyJobs/33894bdc-9d97-4a37-838e-81bfbac5c89d",
+          "rel": "self"
+      },
+      {
+          "href": "/ext/copy/v1/copyAgents/d56990d9-7652-43a7-867f-0781258aba47/copyJobs/33894bdc-9d97-4a37-838e-81bfbac5c89d/cancel",
+          "rel": "cancel"
+      }
+  ],
+  "resourceId": "33894bdc-9d97-4a37-838e-81bfbac5c89d",
+  "copyJobId": "33894bdc-9d97-4a37-838e-81bfbac5c89d",
+  "copyJobStatus": {
+    "cancelingActivity": [
+      {
+        "activity": "jasNotStarted",
+        "timestamp": "2018-04-25T16:20:42.044Z"
+      }
+    ],
+    "isCancelable": true,
+    "jobActivity": [
+      {
+        "activity": "jasNotStarted",
+        "timestamp": "2018-04-25T16:20:42.044Z"
+      }
+    ],
+    "jobDoneStatus": "jdsActive",
+    "jobDoneStatusDetail": "string",
+    "printingActivity": [
+      {
+        "activity": "jasNotStarted",
+        "timestamp": "2018-04-25T16:20:42.044Z"
+      }
+    ],
+    "scanningActivity": [
+      {
+        "activity": "jasNotStarted",
+        "timestamp": "2018-04-25T16:20:42.044Z"
+      }
+    ],
+    "totalImagesScanned": 0,
+    "totalSheetsPrinted": 0
+  },
+  "ticket": {
+    "copyOptions": {
+      "autoColorDetect": "acdmDetectOnly",
+      "autoCropMode": "acmtOff",
+      "autoDeskew": true,
+      "autoExposure": true,
+      "autoPaperColorRemoval": true,
+      "autoPaperColorRemovalLevel": 0,
+      "autoTone": true,
+      "autoToneLevel": 0,
+      "backgroundCleanup": 0,
+      "backgroundColorRemoval": true,
+      "backgroundColorRemovalLevel": 0,
+      "backgroundNoiseRemoval": true,
+      "binaryRendering": "brHalftone",
+      "blackBackground": true,
+      "blackEnhancementLevel": 0,
+      "blankPageSuppression": "bpdDisable",
+      "bookletMakerOption": "bmoNone",
+      "ccdChannel": "cctNtsc",
+      "collationType": "sctCollated",
+      "colorMode": "cmAutoDetect",
+      "colorRange": 0,
+      "colorSensitivity": 0,
+      "contentOrientation": "coAutoDetect",
+      "contentType": "dctAutoDetect",
+      "contrast": 0,
+      "copies": 0,
+      "customMediaXFeedDimension": 0,
+      "customMediaYFeedDimension": 0,
+      "descreen": true,
+      "edgeToEdgePrint": true,
+      "edgeToEdgeScan": true,
+      "eraseBackBottom": 0,
+      "eraseBackLeft": 0,
+      "eraseBackRight": 0,
+      "eraseBackTop": 0,
+      "eraseEdgesEnabled": true,
+      "eraseFrontBottom": 0,
+      "eraseFrontLeft": 0,
+      "eraseFrontRight": 0,
+      "eraseFrontTop": 0,
+      "exposureLevel": 0,
+      "foldOption": "foNone",
+      "foldSetSheetsCFold": 0,
+      "foldSetSheetsFoldAndStitch": 0,
+      "foldSetSheetsFoldAndStitchAutomatic": true,
+      "foldSetSheetsVFold": 0,
+      "gamma": 0,
+      "highlightLevel": 0,
+      "imagePreviewMode": "ipmNone",
+      "invertColors": true,
+      "jobOffset": true,
+      "longPlotScan": true,
+      "mediaBindingFormat": "bfFlipLeft",
+      "misfeedDetection": true,
+      "misfeedDetectionAutoRetry": true,
+      "originalMediaSize": "msANSI_A_8point5x11in",
+      "originalMediaSource": "miAdf",
+      "originalMediaType": "mtBond",
+      "originalPlexMode": "pmAutoDetect",
+      "outputCanvasAnchor": "ocaTopLeft",
+      "outputCanvasMediaSize": "msANSI_A_8point5x11in",
+      "outputCanvasMediaSource": "miAdf",
+      "outputCanvasOrientation": "coAutoDetect",
+      "outputCanvasXExtent": 0,
+      "outputCanvasYExtent": 0,
+      "outputDuplexBinding": "dbfOneSided",
+      "outputMediaDestination": "moAccessory",
+      "outputMediaSize": "msANSI_A_8point5x11in",
+      "outputMediaSource": "miAdf",
+      "outputMediaType": "mtBond",
+      "outputPlexMode": "pmAutoDetect",
+      "outputQuality": "qmNormal",
+      "pagesPerSheet": "ppsOneUp",
+      "punchOption": "poNone",
+      "resolution": "dpi75",
+      "scaleSelection": "sstNone",
+      "scaleToFitEnabled": true,
+      "scaleToOutput": "miAdf",
+      "scaleToSize": "msANSI_A_8point5x11in",
+      "scanCaptureMode": "scmStandard",
+      "scanProgressMode": "spmNone",
+      "scanningSpeed": "ssAuto",
+      "shadowLevel": 0,
+      "sharpness": 0,
+      "stampBottomCenter": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Bottom Center Stamp",
+        "whiteBackground": true
+      },
+      "stampBottomLeft": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Bottom Left Stamp",
+        "whiteBackground": true
+      },
+      "stampBottomRight": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Bottom Right Stamp",
+        "whiteBackground": true
+      },
+      "stampTopCenter": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Top Center Stamp",
+        "whiteBackground": true
+      },
+      "stampTopLeft": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Top Left Stamp",
+        "whiteBackground": true
+      },
+      "stampTopRight": {
+        "content": "stNone",
+        "numberOfDigits": 0,
+        "pageNumberingStyle": "spnstNumber",
+        "policy": "sptNone",
+        "startingNumber": 0,
+        "startingPage": 1,
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "userText": "Top Right Stamp",
+        "whiteBackground": true
+      },
+      "stapleOption": "soNone",
+      "threshold": 0,
+      "watermark": {
+        "darkness": 0,
+        "firstPageOnly": true,
+        "rotate45": true,
+        "secureBackgroundColor": "wbctGray",
+        "secureBackgroundPattern": "wbptFlat",
+        "style": "wtNone",
+        "textColor": "swtctBlack",
+        "textFont": "swtftAntiqueOlive",
+        "textSize": "swtstEightPoint",
+        "textType": "wttNone",
+        "userText": "Watermark"
+      },
+      "xOffset": 0,
+      "xScalePercent": 0,
+      "yOffset": 0,
+      "yScalePercent": 0
+    }
+  },
+  "solutionContext": {}
+}

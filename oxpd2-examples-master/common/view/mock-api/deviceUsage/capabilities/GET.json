@@ -1,0 +1,44 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "apiVersion": "1.0",
+  "availableUsageContent": [
+    "ucgPrint",
+    "ucgJob"
+  ],
+  "description": "The device usage service, providing the ability to view device usage data",
+  "implInfo": [
+    {
+      "typeGUN": "com.hp.ext.service.deviceUsage.version.1.types.capabilities",
+      "value": {
+        "apiMajorVersion": 1,
+        "apiMinorVersion": 0,
+        "releaseLevel": "Alpha",
+        "releaseSequence": 16,
+        "toolVersions": [
+          "dsl 2.7.12.202101211527",
+          "umsgen 0.2.1"
+        ]
+      }
+    }
+  ],
+  "implVersion": "1.0",
+  "links": [
+    {
+      "href": "/ext/deviceUsage/v1/capabilities",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/deviceUsage/v1/capabilities",
+      "rel": "capabilities"
+    },
+    {
+      "href": "/ext/deviceUsage/v1/deviceUsageAgents",
+      "rel": "deviceUsageAgents"
+    }
+  ],
+  "serviceGun": "com.hp.ext.service.deviceUsage.version.1"
+}

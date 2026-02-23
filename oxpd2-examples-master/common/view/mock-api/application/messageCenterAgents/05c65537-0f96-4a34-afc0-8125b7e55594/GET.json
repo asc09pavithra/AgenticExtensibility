@@ -1,0 +1,28 @@
+{
+    "$opMeta": {
+        "contentFilter": [],
+        "warnings": []
+    },
+    "links": [
+        {
+          "href": "/ext/application/v1/messageCenterAgents/05c65537-0f96-4a34-afc0-8125b7e55594",
+          "rel": "self"
+        },
+        {
+          "href": "/ext/application/v1/messageCenterAgents/05c65537-0f96-4a34-afc0-8125b7e55594/messages",
+          "rel": "messages"
+        }
+    ],
+    "resourceId": "05c65537-0f96-4a34-afc0-8125b7e55594",
+    "agentId": "05c65537-0f96-4a34-afc0-8125b7e55594",
+    "localizedDescription": {
+        "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+        "stringId": "description"
+    },
+    "localizedName": {
+        "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+        "stringId": "name"
+    },
+    "name": "Acme Agent",
+    "solutionId": "e3736199-5163-4c47-88d3-572e4e06dd6a"
+}

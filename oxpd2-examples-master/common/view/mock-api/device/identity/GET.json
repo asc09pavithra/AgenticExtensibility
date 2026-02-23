@@ -1,0 +1,23 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "deviceUuid": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "firmwareVersion": "6.1.0.354+336ff0fd-202103260745",
+  "formatterSerialNumber": "testFormatterSerialNumber",
+  "links": [
+    {
+      "href": "/ext/device/v1/identity",
+      "rel": "self"
+    }
+  ],
+  "makeAndModelInfo": {
+    "base": "testBase",
+    "family": "testFamily",
+    "model": "testName"
+  },
+  "productNumber": "testProductNumber",
+  "serialNumber": "testSerialNumber"
+}

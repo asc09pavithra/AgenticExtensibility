@@ -1,0 +1,84 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/accessories",
+      "rel": "self"
+    }
+  ],
+  "memberIds": [
+    "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "57ea40b6-aee4-432a-8fd8-e18e11ad7239"
+  ],
+  "members": [
+    {
+      "$opMeta": {
+        "contentFilter": [
+          "*"
+        ]
+      },
+      "accessoryID": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+      "activeConfiguration": 111,
+      "deviceClass": 222,
+      "deviceProtocol": 333,
+      "deviceSubclass": 444,
+      "deviceVersion": 555,
+      "languagesSupported": [
+        5569,
+        54681
+      ],
+      "links": [
+        {
+          "href": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a",
+          "rel": "self"
+        }
+      ],
+      "manufacturerName": "HP Inc",
+      "productId": 456,
+      "productName": "Speedy USB",
+      "registration": "rkOwned",
+      "resourceId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+      "serialNumber": "7Jkds9",
+      "usbVersion": 1,
+      "vendorId": 123
+    },
+    {
+      "$opMeta": {
+        "contentFilter": [
+          "*"
+        ]
+      },
+      "accessoryID": "57ea40b6-aee4-432a-8fd8-e18e11ad7239",
+      "activeConfiguration": 123,
+      "deviceClass": 456,
+      "deviceProtocol": 789,
+      "deviceSubclass": 123,
+      "deviceVersion": 456,
+      "languagesSupported": [
+        6540,
+        651832
+      ],
+      "links": [
+        {
+          "href": "/ext/usbAccessories/v1/accessories/57ea40b6-aee4-432a-8fd8-e18e11ad7239",
+          "rel": "self"
+        }
+      ],
+      "manufacturerName": "HP Inc",
+      "productId": 456,
+      "productName": "Card Reader",
+      "registration": "rkShared",
+      "resourceId": "57ea40b6-aee4-432a-8fd8-e18e11ad7239",
+      "serialNumber": "7Jkd5198s9",
+      "usbVersion": 1,
+      "vendorId": 123
+    }
+  ],
+  "offset": 0,
+  "selectedCount": 2,
+  "totalCount": 2
+}

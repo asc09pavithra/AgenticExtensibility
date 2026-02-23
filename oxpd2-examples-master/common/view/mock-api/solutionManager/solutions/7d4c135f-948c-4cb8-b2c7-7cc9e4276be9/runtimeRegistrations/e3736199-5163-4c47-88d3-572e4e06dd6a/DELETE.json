@@ -1,0 +1,13 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/self",
+            "rel": "self"
+        }
+    ]
+}

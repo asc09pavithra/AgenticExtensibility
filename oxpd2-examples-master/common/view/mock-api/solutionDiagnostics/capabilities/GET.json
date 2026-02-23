@@ -1,0 +1,31 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "apiVersion": "1.1",
+  "description": "The solution diagnostics service, providing the ability to access solution diagnostics agents",
+  "implInfo": [
+    {
+      "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+      "value": {}
+    }
+  ],
+  "implVersion": "4.3.2.v20200105.33",
+  "links": [
+    {
+      "href": "/ext/solutionDiagnostics/v1/capabilities",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/solutionDiagnostics/v1/capabilities",
+      "rel": "capabilities"
+    },
+    {
+      "href": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents",
+      "rel": "solutionDiagnosticsAgents"
+    }
+  ],
+  "serviceGun": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents"
+}

@@ -1,0 +1,17 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/application/v1/homescreen",
+            "rel": "self"
+        }
+    ],
+    "defaultApplicationId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "homescreenCustomMessage": {
+        "emptyMessage": {}
+    }
+}

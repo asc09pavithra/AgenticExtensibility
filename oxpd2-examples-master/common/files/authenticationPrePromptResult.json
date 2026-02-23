@@ -1,0 +1,30 @@
+{
+    "result": {
+        "succeeded": {
+            "details": {
+                "authenticationKind": "akPIN",
+                "autoLaunchAccessPoint": "00000000-0000-0000-0000-000000000000",
+                "displayName": "John Doe",
+                "emailAddress": "john.doe@hp.com",
+                "emailBCCAddresses": null,
+                "emailCCAddresses": null,
+                "emailFromAddress": null,
+                "emailMessage": null,
+                "emailSubject": null,
+                "emailToAddresses": null,
+                "exchangeMailboxURI": null,
+                "failureMessage": null,
+                "faxBillingCode": null,
+                "faxCompanyName": null,
+                "fullyQualifiedUserName": null,
+                "homeFolderPath": null,
+                "ldapBindUser": null,
+                "password": null,
+                "preferredLanguage": "en-US",
+                "userDomain": null,
+                "userName": "jDoe",
+                "userPrincipalName": null
+            }
+        }
+    }
+}

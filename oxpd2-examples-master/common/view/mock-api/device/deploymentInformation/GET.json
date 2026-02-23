@@ -1,0 +1,41 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/device/v1/deploymentInformation",
+      "rel": "self"
+    }
+  ],
+  "networkInfo": [
+    {
+      "adapterName": "Acme Network Adapter 1",
+      "hostName": "hostNameValue",
+      "ipV4": "123.123.123.123",
+      "ipV6": [
+        "3202:80e3:8ef9:cfa7:973c:4898:9565:5611"
+      ],
+      "macAddress": "0A:1B:2C:3D:4E:5F"
+    },
+    {
+      "adapterName": "Acme Network Adapter 2",
+      "hostName": "hostNameValue",
+      "ipV4": "123.123.123.123",
+      "ipV6": [
+        "3202:80e3:8ef9:cfa7:973c:4898:9565:5611",
+        "1234:1234:1234:1234:1234:1234:1234:1234"
+      ],
+      "macAddress": "0A:1B:2C:3D:4E:5F"
+    }
+  ],
+  "ownerInfo": {
+    "assetNumber": "Example Asset Number",
+    "companyName": "Example Company Name",
+    "contactName": "Example Contact Name",
+    "deviceLocation": "Example Device Location",
+    "deviceName": "Example Device Name"
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "installerOperation": {
+        "archiveType": "atSolutionArchive",
+        "completedTimestamp": "",
+        "createdTimestamp": "2021-05-05T23:57:40Z",
+        "links": [
+            {
+                "href": "/ext/solutionManager/v1/installer/installerOperations/ef9e163c-4329-4d3c-aea9-96f3e5239b81",
+                "rel": "self"
+            }
+        ],
+        "modificationId": "00000000-0000-0000-0000-000000000000",
+        "operationId": "ef9e163c-4329-4d3c-aea9-96f3e5239b81",
+        "operationState": "iosInProgress",
+        "operationType": "iotUninstall",
+        "packageName": "",
+        "resourceId": "ef9e163c-4329-4d3c-aea9-96f3e5239b81",
+        "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+    },
+    "links": [
+        {
+            "href": "/ext/solutionManager/v1/installer/installerOperations/ef9e163c-4329-4d3c-aea9-96f3e5239b81",
+            "rel": "installerOperation"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/uninstall",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer",
+            "rel": "resource"
+        }
+    ]
+}

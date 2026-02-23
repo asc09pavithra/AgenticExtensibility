@@ -1,0 +1,29 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/scanJob/v1/scanJobAgents/86a9c471-c2e5-42a2-81c3-08e7f54e6412",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/scanJob/v1/scanJobAgents/86a9c471-c2e5-42a2-81c3-08e7f54e6412/scanJobs",
+      "rel": "scanJobs"
+    }
+  ],
+  "resourceId": "86a9c471-c2e5-42a2-81c3-08e7f54e6412",
+  "solutionId": "b71ddeac-c457-4ac2-b247-7f92016593f3",
+  "agentId": "86a9c471-c2e5-42a2-81c3-08e7f54e6412",
+  "localizedDescription": {
+    "i18nAssetId": "98c371df-5c76-41ae-8bdd-36fef28cdc4e",
+    "stringId": "cScanAgentDesc"
+  },
+  "localizedName": {
+    "i18nAssetId": "98c371df-5c76-41ae-8bdd-36fef28cdc4e",
+    "stringId": "cScanAgentName"
+  },
+  "name": "Acme Scan Agent"
+}

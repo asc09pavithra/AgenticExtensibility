@@ -1,0 +1,16 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "data": "IlRoZXJlIGFyZSBvbmx5IHR3byB0aGluZ3Mgd3Jvbmcgd2l0aCBDKys6ICBUaGUgaW5pdGlhbCBjb25jZXB0IGFuZCB0aGUgaW1wbGVtZW50YXRpb24uIiDigJQgQmVydHJhbmQgTWV5ZXI=",
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/accessories/57ea40b6-aee4-432a-8fd8-e18e11ad7239/hid/27a291fd-3e6b-499e-99a8-5ef1561d71af/readReport",
+      "rel": "self"
+    }
+  ],
+  "operationId": "teststring",
+  "usbTransferStatus": "utsOk"
+}

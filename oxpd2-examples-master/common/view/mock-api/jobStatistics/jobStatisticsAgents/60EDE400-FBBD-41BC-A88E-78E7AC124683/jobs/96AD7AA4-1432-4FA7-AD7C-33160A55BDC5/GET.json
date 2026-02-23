@@ -1,0 +1,386 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "aFaxInInfo": {
+    "callerId": {
+      "name": "Alan Caller",
+      "number": "+4402380435436"
+    },
+    "stationId": "Acme Accounting 302 453 5642",
+    "totalImagesReceived": 0
+  },
+  "aFaxOutInfo": {
+    "faxCalls": [
+      {
+        "billingCode": "1234",
+        "duration": 0,
+        "faxNumber": "+4402380435436",
+        "faxResult": "frFailed"
+      }
+    ]
+  },
+  "driverInfo": {
+    "applicationName": "ACME Application",
+    "clientHostName": "ACME",
+    "fileName": "testfile.pdf",
+    "jobAcct13": "jobAcct13",
+    "jobAcct14": "jobAcct14",
+    "jobAcct15": "jobAcct15",
+    "jobAcct16": "jobAcct16",
+    "jobId": "96AD7AA4-1432-4FA7-AD7C-33160A55BDC5",
+    "userDomain": "domain",
+    "userName": "ACME User"
+  },
+  "emailInfo": {
+    "bccAddresses": [
+      "sally.smith@hp.com"
+    ],
+    "ccAddresses": [
+      "sally.smith@hp.com"
+    ],
+    "digitalFaxCalls": [
+      {
+        "billingCode": "1234",
+        "faxNumber": "+4402380435436"
+      }
+    ],
+    "digitalSendInfo": {
+      "deliveredFiles": {
+        "files": [
+          {
+            "dataSize": 0,
+            "fileName": "file.jpeg"
+          }
+        ],
+        "metdataFile": {
+          "dataSize": 0,
+          "fileName": "file.json"
+        }
+      },
+      "result": "dsrFailed",
+      "totalDataSize": 0
+    },
+    "emailSubject": "Email Subject Line",
+    "failedRecipientsList": [
+      "sally.smith@hp.com"
+    ],
+    "fromAddress": "sally.smith@hp.com",
+    "hostName": "host",
+    "ipAddress": "123.123.123.123",
+    "port": 0,
+    "toAddresses": [
+      "sally.smith@hp.com"
+    ]
+  },
+  "folderInfo": [
+    {
+      "digitalFaxCalls": [
+        {
+          "billingCode": "string",
+          "faxNumber": "+4402380435436"
+        }
+      ],
+      "digitalSendInfo": {
+        "deliveredFiles": {
+          "files": [
+            {
+              "dataSize": 0,
+              "fileName": "file.jpeg"
+            }
+          ],
+          "metdataFile": {
+            "dataSize": 0,
+            "fileName": "file.json"
+          }
+        },
+        "result": "dsrFailed",
+        "totalDataSize": 0
+      },
+      "uncPath": "/path/unc",
+      "userName": "SallySmith"
+    }
+  ],
+  "ftpInfo": [
+    {
+      "digitalSendInfo": {
+        "deliveredFiles": {
+          "files": [
+            {
+              "dataSize": 0,
+              "fileName": "file.jpeg"
+            }
+          ],
+          "metdataFile": {
+            "dataSize": 0,
+            "fileName": "file.json"
+          }
+        },
+        "result": "dsrFailed",
+        "totalDataSize": 0
+      },
+      "directoryPath": "/path/to/resource",
+      "hostName": "hostName",
+      "ipAddress": "123.123.123.123",
+      "port": 0,
+      "userName": "SallySmith"
+    }
+  ],
+  "httpInfo": [
+    {
+      "digitalSendInfo": {
+        "deliveredFiles": {
+          "files": [
+            {
+              "dataSize": 0,
+              "fileName": "file.png"
+            }
+          ],
+          "metdataFile": {
+            "dataSize": 0,
+            "fileName": "file.json"
+          }
+        },
+        "result": "dsrFailed",
+        "totalDataSize": 0
+      },
+      "uri": "uri.hp.com",
+      "userName": "SallySmith"
+    }
+  ],
+  "ipFaxInInfo": {
+    "callerId": {
+      "name": "Alan Caller",
+      "number": "+4402380435436"
+    },
+    "stationId": "Acme Accounting 302 453 5642",
+    "totalImagesReceived": 0
+  },
+  "ipFaxOutInfo": {
+    "ipFaxCalls": [
+      {
+        "faxCall": {
+          "billingCode": "1234",
+          "duration": 0,
+          "faxNumber": "+4402380435436",
+          "faxResult": "frFailed"
+        },
+        "ipFaxConfiguration": {
+          "sipServer": {
+            "portNumber": 0,
+            "proxyPortNumber": 0,
+            "proxyServer": "proxyServerName",
+            "server": "hostName"
+          },
+          "sipTransport": "stTCP",
+          "t38Transport": "t38tTCP"
+        }
+      }
+    ]
+  },
+  "jobId": "96AD7AA4-1432-4FA7-AD7C-33160A55BDC5",
+  "jobInfo": {
+    "applicationName": "ACME Application",
+    "deviceJobName": "Job Name",
+    "jobCategory": "jcPrint",
+    "jobDataSource": "jdsNetworkIO",
+    "jobDestinations": [
+      "jdInternalStorage",
+      "jdOther"
+    ],
+    "jobDoneStatus": "jdsActive",
+    "jobDoneTimestamp": {
+      "offset": 0,
+      "time": "2018-04-25T16:20:42.044Z"
+    },
+    "jobPaused": "none",
+    "jobStartedTimestamp": {
+      "offset": 0,
+      "time": "2018-04-25T16:20:42.044Z"
+    },
+    "parentJobId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "processedBy": "pbDevice"
+  },
+  "links": [
+    {
+      "href": "/ext/jobStatistics/v1/jobStatisticsAgents/60EDE400-FBBD-41BC-A88E-78E7AC124683/jobs/96AD7AA4-1432-4FA7-AD7C-33160A55BDC5",
+      "rel": "self"
+    }
+  ],
+  "printInfo": {
+    "a4EquivalentBlankDeciSides": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentColorDeciImpressions": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentDuplexDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentMonoChromeDeciImpressions": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentSimplexDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentTotalDeciImpressions": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentTotalDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "agents": [
+      {
+        "agentUsed": {
+          "count": 0,
+          "unit": "cuCentimeters"
+        },
+        "approximatePagesRemaining": 0,
+        "approximatePagesRemainingSymbol": "ardsUnknown",
+        "batchId": "batchIdentifier",
+        "brand": "HP",
+        "capacity": {
+          "count": 0,
+          "unit": "cuCentimeters"
+        },
+        "cartridgeApplication": "Cartridge Usage/Qualifier",
+        "colors": [
+          "sccB",
+          "sccOC"
+        ],
+        "firstInstallDate": "2018-04-25T16:20:42.044Z",
+        "group": 1,
+        "healthGaugeLevel": 0,
+        "installDate": "2018-04-25T16:20:42.044Z",
+        "lastErrorCode": "E143A159",
+        "lastErrorTimestamp": "2018-04-25T16:20:42.044Z",
+        "lastRecoveryDate": "2018-04-25T16:20:42.044Z",
+        "lastUsedDate": "2018-04-25T16:20:42.044Z",
+        "levelState": "slsUnknown",
+        "manufactureDate": "2018-04-25T16:20:42.044Z",
+        "percentLifeRemaining": 0,
+        "percentLifeRemainingSymbol": "ardsUnknown",
+        "productNumber": "1234",
+        "serialNumber": "12341234",
+        "slotId": 1,
+        "slotRole": "ssRoleMain",
+        "slotsInGroup": [
+          1,
+          256
+        ],
+        "state": "ssOk",
+        "stateReasons": [
+          "ssrAlmostEndOfLifeWarning",
+          "ssrWornOutError"
+        ],
+        "supplyAgentType": "satMarking",
+        "supplyColor": "sccB",
+        "supplyDescription": "string",
+        "supplyType": "stAdfPickupRoller",
+        "supplyUniqueId": "a1b2c3ff",
+        "usageTimeHours": 0
+      }
+    ],
+    "blankSides": 0,
+    "colorImpressions": 0,
+    "duplexSheets": 0,
+    "monochromeImpressions": 0,
+    "printSettings": {
+      "econoMode": true
+    },
+    "printedSheetInfo": {
+      "otherPrintedSheets": 0,
+      "printedSheetSets": [
+        {
+          "backImpressionClassification": "icBlank",
+          "count": 0,
+          "frontImpressionClassification": "icBlank",
+          "logicalMediaOutputId": "moAccessory",
+          "mediaInputId": "miAdf",
+          "mediaSizeId": "msANSI_A_8point5x11in",
+          "mediaTypeId": "mtBond",
+          "physicalMediaOutputId": "moAccessory",
+          "plex": "pmAutoDetect"
+        }
+      ]
+    },
+    "simplexSheets": 0,
+    "totalImpressions": 0,
+    "totalSheets": 0
+  },
+  "resourceId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "scanInfo": {
+    "a4EquivalentAdfDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentDuplexDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentFlatbedlDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentSimplexDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "a4EquivalentTotalDeciSheets": {
+      "exponent": 0,
+      "significand": 0
+    },
+    "adfSheets": 0,
+    "duplexSheets": 0,
+    "flatbedSheets": 0,
+    "scannedSheetInfo": {
+      "otherScannedSheets": 0,
+      "scannedSheetSets": [
+        {
+          "count": 0,
+          "mediaInputId": "miAdf",
+          "mediaSizeId": "msANSI_A_8point5x11in",
+          "plex": "pmAutoDetect"
+        }
+      ]
+    },
+    "simplexSheets": 0,
+    "totalSheets": 0
+  },
+  "sequenceNumber": 2,
+  "userInfo": {
+    "authenticationAgentId": "ECC38A7E-F8B1-459C-9228-D2AB2A9B33B8",
+    "authenticationAgentName": "Acme Agent",
+    "authenticationKind": "akOther",
+    "displayName": "Sally Smith",
+    "emailAddress": "sally.smith@hp.com",
+    "exchangeMailboxUri": "uri.hp.com",
+    "fullyQualifiedUserName": "SERVER\\username",
+    "homeFolderPath": "home/path/",
+    "keyValuePairs": [
+      {
+        "key": "Department",
+        "valueString": "Extensibility Development"
+      }
+    ],
+    "ldapBindUser": "bindUser",
+    "permissionSets": [
+      "f3251477-5371-48d3-a003-453b565e7e79"
+    ],
+    "sAMAccountName": "sAMAccount",
+    "sidString": "sidString",
+    "userDomain": "domainName",
+    "userName": "SallySmith",
+    "userPolicyAgents": [],
+    "userPrincipalName": "SallySmithPrincipal"
+  }
+}

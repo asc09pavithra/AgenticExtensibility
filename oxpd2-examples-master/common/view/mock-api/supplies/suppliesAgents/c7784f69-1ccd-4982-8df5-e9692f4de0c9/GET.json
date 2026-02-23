@@ -1,0 +1,37 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9/suppliesConfiguration",
+            "rel": "suppliesConfiguration"
+        },
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9/suppliesInfo",
+            "rel": "suppliesInfo"
+        },
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9/suppliesUsage",
+            "rel": "suppliesUsage"
+        }
+    ],
+    "resourceId": "c7784f69-1ccd-4982-8df5-e9692f4de0c9",
+    "solutionId": "86dd4dd1-ae11-4572-9800-a9d301f55d17",
+    "agentId": "c7784f69-1ccd-4982-8df5-e9692f4de0c9",
+    "localizedDescription": {
+        "i18nAssetId": "de58124b-9bef-46cb-bb15-a9ecf1ea757b",
+        "stringId": "cSuppliesAgentDesc"
+    },
+    "localizedName": {
+        "i18nAssetId": "de58124b-9bef-46cb-bb15-a9ecf1ea757b",
+        "stringId": "cSuppliesAgentName"
+    },
+    "name": "Acme Supplies Agent"
+}

@@ -1,0 +1,19 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/configuration",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/configuration/data",
+            "rel": "data"
+        }
+    ],
+    "description": "Configuration Description",
+    "mimeType": "text/plain"
+}

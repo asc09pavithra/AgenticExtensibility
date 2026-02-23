@@ -1,0 +1,48 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "apiVersion": "1.4",
+  "description": "The device service, providing the ability to ping the device.",
+  "implInfo": [
+    {
+      "typeGUN": "com.hp.ext.service.device.version.1.types.capabilities",
+      "value": {
+                "apiMajorVersion": 1,
+                "apiMinorVersion": 0,
+                "releaseLevel": "Alpha",
+                "releaseSequence": 16,
+                "toolVersions": [
+                    "dsl 2.7.12.202101211527",
+                    "umsgen 0.2.1"
+                ]
+            }
+    }
+  ],
+  "implVersion": "4.3.2.v20200105.33",
+  "links": [
+    {
+      "href": "/ext/device/v1/capabilities",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/device/v1/identity",
+      "rel": "identity"
+    },
+    {
+      "href": "/ext/device/v1/status",
+      "rel": "status"
+    },
+    {
+      "href": "/ext/device/v1/scanner",
+      "rel": "scanner"
+    },
+    {
+      "href": "/ext/device/v1/email",
+      "rel": "email"
+    }
+  ],
+  "serviceGun": "com.hp.ext.service.device.version.1"
+}

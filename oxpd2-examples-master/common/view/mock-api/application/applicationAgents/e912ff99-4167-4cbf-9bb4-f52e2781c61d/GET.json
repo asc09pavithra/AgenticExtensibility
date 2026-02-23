@@ -1,0 +1,30 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ],
+        "warnings": null
+    },
+    "links": [
+        {
+            "href": "/ext/application/v1/applicationAgents/e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/application/v1/applicationAgents/e912ff99-4167-4cbf-9bb4-f52e2781c61d/refresh",
+            "rel": "refresh"
+        }
+    ],
+    "resourceId": "e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+    "agentId": "e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+    "localizedDescription": {
+        "i18nAssetId": "7d651bde-fe2f-4ac5-9e66-104e6d73227f",
+        "stringId": "cAppDesc2"
+    },
+    "localizedName": {
+        "i18nAssetId": "7d651bde-fe2f-4ac5-9e66-104e6d73227f",
+        "stringId": "cAppName2"
+    },
+    "name": "Test Application 2",
+    "solutionId": "f0505554-a905-42f6-a6e0-c15366a9d360"
+}

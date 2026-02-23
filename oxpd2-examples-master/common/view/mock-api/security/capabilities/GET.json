@@ -1,0 +1,36 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "apiVersion": "1.4",
+  "description": "This service provides access to a limited set of device security related features and data.",
+  "implInfo": [
+    {
+      "typeGUN": "com.hp.cdm.service.extensibility.version.1.impl.futuresmart.type.apiInformation",
+      "value": {
+        "apiMajorVersion": 1,
+        "apiMinorVersion": 4,
+        "releaseLevel": "Alpha",
+        "releaseSequence": 1,
+        "toolVersions": [
+          "dsl 2.10.0.202103191320",
+          "umsgen 0.3.1"
+        ]
+      }
+    }
+  ],
+  "implVersion": "4.3.2.v20200105.33",
+  "links": [
+    {
+      "href": "/ext/security/v1/capabilities",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/security/v1/capabilities",
+      "rel": "capabilities"
+    }
+  ],
+  "serviceGun": "com.hp.ext.service.security.version.1"
+}

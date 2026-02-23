@@ -1,0 +1,24 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/printJob/v1/printJobAgents",
+            "rel": "self"
+        },
+        {
+            "hrefTemplate": "/ext/printJob/v1/printJobAgents/{agentId}",
+            "rel": "printJobAgent"
+        }
+    ],
+    "memberIds": [
+        "927c3c3f-f781-4dde-b915-f0e69827dae0",
+        "b2b2da87-96d3-493d-9ef6-839f8e8e926b"
+    ],
+    "offset": 0,
+    "selectedCount": 2,
+    "totalCount": 2
+}

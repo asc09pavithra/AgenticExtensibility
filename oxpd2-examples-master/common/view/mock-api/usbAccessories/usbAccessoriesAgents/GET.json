@@ -1,0 +1,19 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/usbAccessoriesAgents",
+      "rel": "self"
+    }
+  ],
+  "memberIds": [
+    "e3736199-5163-4c47-88d3-572e4e06dd6a"
+  ],
+  "offset": 0,
+  "selectedCount": 1,
+  "totalCount": 1
+}

@@ -1,0 +1,48 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "apiVersion": "1.0",
+    "description": "The authentication service, containing APIs for implementing a custom authentication agent.",
+    "implInfo": [
+        {
+            "typeGUN": "com.hp.ext.service.extensibility.version.1.impl.futuresmart.type.apiInformation",
+            "value": {
+                "apiMajorVersion": 1,
+                "apiMinorVersion": 0,
+                "releaseLevel": "Alpha",
+                "releaseSequence": 1,
+                "toolVersions": [
+                    "dsl 2.10.0.202103191320",
+                    "umsgen 0.3.1"
+                ]
+            }
+        }
+    ],
+    "implVersion": "some implVersion information",
+    "links": [
+        {
+            "href": "/ext/authentication/v1/capabilities",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/authentication/v1/authenticationAccessPoints",
+            "rel": "authenticationAccessPoints"
+        },
+        {
+            "href": "/ext/authentication/v1/authenticationAgents",
+            "rel": "authenticationAgents"
+        },
+        {
+            "href": "/ext/authentication/v1/capabilities",
+            "rel": "capabilities"
+        },
+        {
+            "href": "/ext/authentication/v1/session",
+            "rel": "session"
+        }
+    ],
+    "serviceGun": "com.hp.ext.service.authentication.version.1"
+}

@@ -1,0 +1,23 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/application/v1/homescreen",
+            "rel": "self"
+        }
+    ],
+    "defaultApplicationId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "homescreenCustomMessage": {
+        "message": {
+            "message": {
+                "i18nAssetId": "12345678-1234-1234-1234-123456789012",
+                "stringId": "cString"
+            },
+            "solutionId": "43125678-1234-1234-1234-123456789012"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "agentId": "927c3c3f-f781-4dde-b915-f0e69827dae0",
+    "links": [
+        {
+            "href": "/ext/printJob/v1/printJobAgents/927c3c3f-f781-4dde-b915-f0e69827dae0",
+            "rel": "self"
+        }
+    ],
+    "localizedDescription": {
+        "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+        "stringId": "cPrintRecordDescription"
+    },
+    "localizedName": {
+        "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+        "stringId": "cPrintRecordName"
+    },
+    "name": "ACME Print Job Agent",
+    "resourceId": "927c3c3f-f781-4dde-b915-f0e69827dae0",
+    "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+}

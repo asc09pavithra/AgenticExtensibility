@@ -1,0 +1,29 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "declaredExpressionOperators": [
+    "EMAIL_ADDRESS",
+    "USER_NAME"
+  ],
+  "links": [
+    {
+      "href": "/ext/security/v1/securityAgents/ad431139-6b64-4851-8c66-099766ae3fa1",
+      "rel": "self"
+    }
+  ],
+  "resourceId": "ad431139-6b64-4851-8c66-099766ae3fa1",
+  "solutionId": "9b1930cd-001a-4c47-b194-112c3ea59f67",
+  "agentId": "ad431139-6b64-4851-8c66-099766ae3fa1",
+  "localizedDescription": {
+    "i18nAssetId": "a5ca1752-e811-458f-9a33-693b0bac8703",
+    "stringId": "cSecurityAgentDescription"
+  },
+  "localizedName": {
+    "i18nAssetId": "a5ca1752-e811-458f-9a33-693b0bac8703",
+    "stringId": "cSecurityAgentName"
+  },
+  "name": "Acme Security Agent"
+}

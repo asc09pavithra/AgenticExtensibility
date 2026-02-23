@@ -1,0 +1,6 @@
+{
+    "scope": "com.hp.cdm.auth.alias.deviceAlias.deviceMgmt",
+    "token_type": "Bearer",
+    "access_token": "eyJhbGciOiAiZGlyIiwgImVuYyI6ICJBMTI4R0NNIn0..D6Rr-cEUSlZ8gTyG.QVGJEAnoMsW3VbyRIGLQN8C7BbK3gO7Y_39mP9Ua3za0GLqn_sXFhvoy4Uhno_CPWvtHSOcPSsk358brzbAsxmo33Cwkp0eNIh35nj1Ai-2dIjtrnNr4UU66tjB_A5X2EGaCsXPJTFp3Hur3OpvHj48old-tUDCfPhLknWMOm3-uq_8iZvb6JnO-1MImxF14ZMQzi5cJZ2qb-gHiRfihVlUCrSWzkaXH1XJSWgwSilgDWc0duTDfCxb4QAIZJOSfL1Tw9yGMBl4hv5IunQ72WC14R7YUBxadOsJSp0L-30VT6cjxlVQS1wuL5fjrVi9lNKG9WL0.kqE-JKlNkm267MEyLmMSwg",
+    "expires_in": 3600
+}

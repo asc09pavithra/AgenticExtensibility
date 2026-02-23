@@ -1,0 +1,20 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "config/*"
+        ],
+        "warnings": [
+        {
+            "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+            "value": { }
+        }
+        ]
+    },
+    "links": [
+        {
+            "href": "/path/to/resource",
+            "hrefTemplate": "/path/to/{resource}",
+            "rel": "self"
+        }
+    ]
+}

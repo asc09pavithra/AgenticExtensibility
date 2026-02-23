@@ -1,0 +1,23 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents",
+      "rel": "self"
+    },
+    {
+      "hrefTemplate": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents/{agentId}",
+      "rel": "solutionDiagnosticsAgent"
+    }
+  ],
+  "memberIds": [
+    "b7f74d8a-f36d-4165-ab4f-914345785e79"
+  ],
+  "offset": 0,
+  "selectedCount": 1,
+  "totalCount": 1
+}

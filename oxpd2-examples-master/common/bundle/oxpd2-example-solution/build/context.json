@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "key": "APP_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "APP_TARGET_PATH",
+      "value": "/oxpd2-examples/api/applicationagent/index.html"
+    },
+    {
+      "key": "NOTIFICATION_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "NOTIFICATION_TARGET_PATH",
+      "value": "/oxpd2-examples/api/solutionnotifications"
+    },
+    {
+      "key": "HEADER_FOREGROUND_COLOR",
+      "value": "#FFFFFF"
+    },
+    {
+      "key": "HEADER_BACKGROUND_COLOR",
+      "value": "#1F405F"
+    },
+    {
+      "key": "FOOTER_VISIBLE",
+      "value": "false"
+    },
+    {
+      "key": "AUTH_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "AUTH_TARGET_PATH",
+      "value": "/oxpd2-examples/api/authenticationagent"
+    },
+    {
+      "key": "TRUSTED_SITES",
+      "value": "*"
+    },
+    {
+      "key": "USB_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "SCANJOB_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "SCANJOB_TARGET_REGISTRATION_PATH",
+      "value": "/oxpd2-examples/api/scanjobagent/scanJobNotification"
+    },
+    {
+      "key": "HTTP_APP_ENABLED",
+      "value": "true"
+    },
+    {
+      "key": "COPY_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "COPY_TARGET_PATH",
+      "value": "/oxpd2-examples/api/copyAgent/copyJobNotification"
+    },
+    {
+      "key": "JOB_STATISTICS_TARGET_AUTHORITY",
+      "value": "localhost:5000"
+    },
+    {
+      "key": "JOB_STATISTICS_TARGET_REGISTRATION_PATH",
+      "value": "/oxpd2-examples/api/jobstatisticsagent"
+    },
+    {
+      "key": "USB_TARGET_PATH",
+      "value": "/oxpd2-examples/api/usbaccessoriesagent"
+    }
+  ],
+  "sensitiveData": []
+}

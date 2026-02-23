@@ -1,0 +1,22 @@
+{
+    "$opMeta": {
+        "contentFilter": [],
+        "warnings": []
+    },
+    "links": [
+        {
+          "href": "/ext/application/v1/messageCenterAgents",
+          "rel": "self"
+        },
+        {
+          "hrefTemplate": "/ext/application/v1/messageCenterAgents/{agentId}",
+          "rel": "messageCenterAgent"
+        }
+    ],
+    "memberIds": [
+        "05c65537-0f96-4a34-afc0-8125b7e55594"
+    ],
+    "offset": 0,
+    "selectedCount": 0,
+    "totalCount": 1
+}

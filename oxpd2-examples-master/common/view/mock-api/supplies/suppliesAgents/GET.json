@@ -1,0 +1,24 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/supplies/v1/suppliesAgents",
+            "rel": "self"
+        },
+        {
+            "hrefTemplate": "/ext/supplies/v1/suppliesAgents/{agentId}",
+            "rel": "suppliesAgent"
+        }
+    ],
+    "memberIds": [
+        "c7784f69-1ccd-4982-8df5-e9692f4de0c9",
+        "f65a968c-4256-46ca-b2a9-02a7844e8994"
+    ],
+    "offset": 0,
+    "selectedCount": 2,
+    "totalCount": 2
+}

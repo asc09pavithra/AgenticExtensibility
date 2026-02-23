@@ -1,0 +1,25 @@
+{
+  "$opMeta": {
+      "contentFilter": [
+          "*"
+      ]
+  },
+  "antiTheftEnabled": "false",
+  "antiTheftFleetId": -1342,
+  "antiTheftMode": "atmFleet",
+  "blackVeryLowAction": "vlaStop",
+  "colorVeryLowAction": "vlaStop",
+  "links": [
+      {
+          "href": "/ext/supplies/v1/suppliesAgents/f65a968c-4256-46ca-b2a9-02a7844e8994/suppliesConfiguration",
+          "rel": "self"
+      }
+  ],
+  "lowMessagingEnabled": "lmetDisabledByHp",
+  "supplyLowThresholds": [
+      {
+          "slotId": 13,
+          "threshold": 15
+      }
+  ]
+}

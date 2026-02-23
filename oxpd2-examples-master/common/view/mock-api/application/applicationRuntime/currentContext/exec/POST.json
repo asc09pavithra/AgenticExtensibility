@@ -1,0 +1,15 @@
+{
+    "$opMeta": {
+        "contentFilter": [ "*" ]
+    },
+    "links": [
+        {
+            "href": "/ext/application/v1/applicationRuntime/currentContext/exec",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/application/v1/applicationRuntime/currentContext",
+            "rel": "resource"
+        }
+    ]
+}

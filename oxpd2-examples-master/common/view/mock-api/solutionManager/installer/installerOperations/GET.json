@@ -1,0 +1,31 @@
+{
+    "$opMeta": null,
+    "links": null,
+    "memberIds": [
+        "e981eaa7-9825-4900-9f96-ee15ad72f199",
+        "f8ab3694-9f90-4085-a013-ca5db86de2f5",
+        "e4c7af25-d898-4630-96fc-5d8efd646c49"
+    ],
+    "members": [
+        {
+            "$opMeta": null,
+            "links": null,
+            "resourceId": "e981eaa7-9825-4900-9f96-ee15ad72f199",
+            "archiveType": "atSolutionArchive",
+            "completedTimestamp": null,
+            "createdTimestamp": null,
+            "installEventDetails": null,
+            "modificationDescription": null,
+            "modificationId": "00000000-0000-0000-0000-000000000000",
+            "operationId": "e981eaa7-9825-4900-9f96-ee15ad72f199",
+            "operationState": "iosSucceeded",
+            "operationType": "iotInstall",
+            "packageName": null,
+            "solutionDescription": null,
+            "solutionId": null
+        }
+    ],
+    "offset": 0,
+    "selectedCount": 0,
+    "totalCount": 0
+}

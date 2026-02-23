@@ -1,0 +1,42 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/solutionManager/v1/installer",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/installerOperations",
+            "rel": "installerOperations"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/install",
+            "rel": "install"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/installSolution",
+            "rel": "installSolution"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/installRemote",
+            "rel": "installRemote"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/uninstall",
+            "rel": "uninstall"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/uninstallSolution",
+            "rel": "uninstallSolution"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/uninstallRemote",
+            "rel": "uninstallRemote"
+        }
+    ],
+    "status": "isIdle"
+}

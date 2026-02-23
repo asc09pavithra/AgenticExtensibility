@@ -1,0 +1,29 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/jobStatistics/v1/jobStatisticsAgents/F4EDCB0B-A324-4719-BD34-0A8477D93004",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/jobStatistics/v1/jobStatisticsAgents/F4EDCB0B-A324-4719-BD34-0A8477D93004/jobs",
+      "rel": "jobs"
+    }
+  ],
+  "resourceId": "F4EDCB0B-A324-4719-BD34-0A8477D93004",
+  "solutionId": "b71ddeac-c457-4ac2-b247-7f92016593f3",
+  "agentId": "F4EDCB0B-A324-4719-BD34-0A8477D93004",
+  "localizedDescription": {
+    "i18nAssetId": "98c371df-5c76-41ae-8bdd-36fef28cdc4e",
+    "stringId": "cJobStatisticsAgentDesc"
+  },
+  "localizedName": {
+    "i18nAssetId": "98c371df-5c76-41ae-8bdd-36fef28cdc4e",
+    "stringId": "cJobStatisticsAgentName"
+  },
+  "name": "Acme Job Statistics Agent"
+}

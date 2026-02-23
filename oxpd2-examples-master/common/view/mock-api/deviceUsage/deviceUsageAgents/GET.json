@@ -1,0 +1,24 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/deviceUsage/v1/deviceUsageAgents",
+            "rel": "self"
+        },
+        {
+            "hrefTemplate": "/ext/deviceUsage/v1/deviceUsageAgents/{agentId}",
+            "rel": "deviceUsageAgent"
+        }
+    ],
+    "memberIds": [
+        "fa4fa912-2389-4881-a304-e9e41c5c0f49",
+        "064687af-7120-4d53-a887-042d9708d73b"
+    ],
+    "offset": 0,
+    "selectedCount": 2,
+    "totalCount": 2
+}

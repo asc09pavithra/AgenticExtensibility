@@ -1,0 +1,23 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "config/*"
+      ],
+      "warnings": [
+        {
+          "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+          "value": {}
+        }
+      ]
+    },
+    "links": [
+      {
+        "href": "/ext/application/v1/applicationRuntime/currentContext/exit",
+        "rel": "self"
+      },
+      {
+        "href": "/ext/application/v1/applicationRuntime/currentContext",
+        "rel": "resource"
+      }
+    ]
+  }

@@ -1,0 +1,41 @@
+{
+  "definitions": [
+    {
+      "optionName": "transmissionMode",
+      "isAvailable": true,
+      "rules": [
+        {
+          "possibleValues": {
+            "optionValues": [ "tmJob", "tmImage" ]
+          }
+        },
+        {
+          "validValues": {
+            "optionValues": [ "tmJob" ],
+            "condition": {
+              "typeGUN": "com.hp.ext.types.optionProfile.version.1.type.andOperator",
+              "value": {
+                "operators": [
+                  {
+                    "typeGUN": "com.hp.ext.types.optionProfile.version.1.type.notEqualsOperator",
+                    "value": {
+                      "optionName": "outputFileFormat",
+                      "optionValue": "ffJpeg"
+                    }
+                  },
+                  {
+                    "typeGUN": "com.hp.ext.types.optionProfile.version.1.type.notEqualsOperator",
+                    "value": {
+                      "optionName": "outputFileFormat",
+                      "optionValue": "ffTiff"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

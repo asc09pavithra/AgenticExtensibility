@@ -1,0 +1,293 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "faxUsage": {
+    "archivedAnalogRecievedImages": 134,
+    "receivedAnalogImages": 245,
+    "receivedFromPcImages": 42,
+    "sentAnalogImages": 18
+  },
+  "jobUsage": {
+    "copyJobCount": 10324,
+    "emailJobCount": 84,
+    "internalStorageJobCount": 15309,
+    "lastJobSequenceId": 12839,
+    "networkFolderJobCount": 93,
+    "printJobCount": 22089,
+    "receiveFaxJobCount": 122,
+    "removableStorageJobCount": 17104,
+    "sendFaxJobCount": 166
+  },
+  "links": [
+    {
+      "href": "/ext/deviceUsage/v1/deviceUsageAgents/064687af-7120-4d53-a887-042d9708d73b/lifetimeCounters",
+      "rel": "self"
+    }
+  ],
+  "printUsage": {
+    "a4EquivalentCopyImpressions": {
+      "blank": {
+        "exponent": 4,
+        "significand": 10
+      },
+      "color": {
+        "exponent": 6,
+        "significand": 8
+      },
+      "monochrome": {
+        "exponent": -4,
+        "significand": 20000
+      },
+      "total": {
+        "exponent": 1,
+        "significand": 272146
+      }
+    },
+    "a4EquivalentFaxInImpressions": {
+      "blank": {
+        "exponent": 2,
+        "significand": 5
+      },
+      "color": {
+        "exponent": 4,
+        "significand": 7
+      },
+      "monochrome": {
+        "exponent": 4,
+        "significand": 5
+      },
+      "total": {
+        "exponent": 1,
+        "significand": 3051
+      }
+    },
+    "a4EquivalentPrintImpressions": {
+      "blank": {
+        "exponent": 3,
+        "significand": 6
+      },
+      "color": {
+        "exponent": 2,
+        "significand": 187
+      },
+      "monochrome": {
+        "exponent": 4,
+        "significand": 2
+      },
+      "total": {
+        "exponent": 0,
+        "significand": 0
+      }
+    },
+    "a4EquivalentPrintOtherImpressions": {
+      "blank": {
+        "exponent": 0,
+        "significand": 0
+      },
+      "color": {
+        "exponent": 0,
+        "significand": 0
+      },
+      "monochrome": {
+        "exponent": 0,
+        "significand": 0
+      },
+      "total": {
+        "exponent": 0,
+        "significand": 0
+      }
+    },
+    "copyImpressions": {
+      "blank": 1873,
+      "color": 10742,
+      "monochrome": 6542,
+      "total": 19157
+    },
+    "dimensionalUsage": {
+      "imagedArea": {
+        "count": 10938,
+        "unit": "cuSqcm"
+      },
+      "printedArea": {
+        "count": 154782,
+        "unit": "cuSqcm"
+      },
+      "usedArea": {
+        "count": 187503,
+        "unit": "cuSqcm"
+      },
+      "usedLength": {
+        "count": 3192039,
+        "unit": "cuMillimeters"
+      }
+    },
+    "dimensionalUsageByMediaKey": [
+      {
+        "imagedArea": {
+          "count": 12309,
+          "unit": "cuSqcm"
+        },
+        "mediaCategoryClass": "mcGeneral",
+        "mediaFamily": "mfPlain",
+        "mediaKeyId": "AE1200021A4",
+        "mediaName": "Standard A4 Paper",
+        "mediaType": "mtBond",
+        "parentMediaFamily": "mfPlain",
+        "parentMediaId": "AE14900012A4",
+        "parentMediaName": "Standard A3 Paper",
+        "printedArea": {
+          "count": 24508,
+          "unit": "cuSqcm"
+        },
+        "thickness": {
+          "count": 112,
+          "unit": "cuMicrons"
+        },
+        "usedArea": {
+          "count": 26719,
+          "unit": "cuSqcm"
+        },
+        "usedLength": {
+          "count": 123049,
+          "unit": "cuMillimeters"
+        }
+      }
+    ],
+    "faxInImpressions": {
+      "blank": 82,
+      "color": 72,
+      "monochrome": 119,
+      "total": 273
+    },
+    "impressionsByMediaSize": [
+      {
+        "copyImpressions": {
+          "blank": 1903,
+          "color": 6782,
+          "monochrome": 4095,
+          "total": 12780
+        },
+        "faxInImpressions": {
+          "blank": 45,
+          "color": 56,
+          "monochrome": 104,
+          "total": 205
+        },
+        "mediaSize": "msANSI_A_8point5x11in",
+        "printImpressions": {
+          "blank": 82,
+          "color": 782,
+          "monochrome": 105,
+          "total": 969
+        },
+        "printOtherImpressions": {
+          "blank": 15,
+          "color": 62,
+          "monochrome": 23,
+          "total": 100
+        }
+      }
+    ],
+    "printImpressions": {
+      "blank": 82,
+      "color": 782,
+      "monochrome": 105,
+      "total": 969
+    },
+    "printOtherImpressions": {
+      "blank": 15,
+      "color": 62,
+      "monochrome": 23,
+      "total": 100
+    },
+    "printSheets": {
+      "duplex": 407,
+      "simplex": 255,
+      "total": 1069
+    },
+    "sheetsByMediaInput": [
+      {
+        "mediaInput": "miAdf",
+        "total": 145
+      }
+    ],
+    "sheetsByMediaOutput": [
+      {
+        "faceDown": 45,
+        "faceUp": 178,
+        "mediaOutput": "moAccessory",
+        "total": 223
+      }
+    ],
+    "sheetsByMediaSize": [
+      {
+        "mediaSize": "msANSI_A_8point5x11in",
+        "sheets": {
+          "duplex": 407,
+          "simplex": 255,
+          "total": 1069
+        }
+      }
+    ],
+    "sheetsByMediaType": [
+      {
+        "mediaType": "mtBond",
+        "total": 1069
+      }
+    ],
+    "usageByPrintCategory": [
+      {
+        "imagedArea": {
+          "count": 1045,
+          "unit": "cuSqcm"
+        },
+        "inkUsage": {
+          "count": 103,
+          "unit": "cuMilliliters"
+        },
+        "pageCount": 384,
+        "printCategory": "pcBlueprint",
+        "printedArea": {
+          "count": 10983,
+          "unit": "cuSqcm"
+        },
+        "usedArea": {
+          "count": 103,
+          "unit": "cuSqcm"
+        },
+        "usedLength": {
+          "count": 12030,
+          "unit": "cuMillimeters"
+        }
+      }
+    ]
+  },
+  "scanUsage": {
+    "adfDuplexImages": 413,
+    "adfDuplexSheets": 10342,
+    "adfImages": 1458,
+    "adfSheets": 17684,
+    "adfSimplexImages": 1045,
+    "adfSimplexSheets": 7342,
+    "copyImages": 1954,
+    "dimensionalUsage": {
+      "totalScanArea": {
+        "count": 12039,
+        "unit": "cuSqcm"
+      },
+      "totalScanLength": {
+        "count": 120398,
+        "unit": "cuMillimeters"
+      }
+    },
+    "faxImages": 102,
+    "flatbedImages": 192,
+    "flatbedSheets": 1032,
+    "imagesByMediaSize": [],
+    "sendImages": 15,
+    "totalImages": 3721
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ],
+      "warnings": null
+    },
+    "links": [
+      {
+          "href": "/ext/authentication/v1/authenticationAgents/ab116a51-681b-4cd1-9c43-a717f85f1d60/login",
+          "rel": "self"
+      },
+      {
+          "href": "/ext/authentication/v1/authenticationAgents/ab116a51-681b-4cd1-9c43-a717f85f1d60",
+          "rel": "resource"
+      }
+  ],
+    "accessToken": "someAccessToken",
+    "sessionId": "NTgyZDVmNTgtZWFhZS00YzVmLWI1ZGQtMWM2MmMyZDk1NjI5NTgyZDVmNTgtZWFhZS00YzVmLWI1ZGQtMWM2MmMyZDk1NjI5"
+}

@@ -1,0 +1,37 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "config/*"
+        ],
+        "warnings": [
+        {
+            "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+            "value": { }
+        }
+        ]
+    },
+    "links": [
+        {
+            "href": "/path/to/resource",
+            "hrefTemplate": "/path/to/{resource}",
+            "rel": "self"
+        }
+    ],
+
+    "certificateId": "92e2fb3a-49cd-46c5-bfeb-98119d3316df",
+    "resourceId": "92e2fb3a-49cd-46c5-bfeb-98119d3316df",
+    "issuer": [
+    "issuer"
+    ],
+    "serialNumber": "123456",
+    "subject": [
+    "subject"
+    ],
+    "thumbPrint": "thumbPrint",
+    "usage": [
+    "usage"
+    ],
+    "validFrom": "1/1/2022",
+    "validTo": "12/31/2022",
+    "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/jobStatistics/v1/jobStatisticsAgents",
+      "rel": "self"
+    },
+    {
+      "hrefTemplate": "/ext/jobStatistics/v1/jobStatisticsAgents/{agentId}",
+      "rel": "jobStatisticsAgent"
+    }
+  ],
+  "memberIds": [
+    "60EDE400-FBBD-41BC-A88E-78E7AC124683",
+    "F4EDCB0B-A324-4719-BD34-0A8477D93004"
+  ],
+  "offset": 0,
+  "selectedCount": 2,
+  "totalCount": 2
+}

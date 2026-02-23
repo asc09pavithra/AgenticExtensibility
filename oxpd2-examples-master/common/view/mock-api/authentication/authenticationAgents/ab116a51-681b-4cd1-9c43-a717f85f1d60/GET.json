@@ -1,0 +1,30 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ],
+      "warnings": null
+    },
+    "links": [
+      {
+          "href": "/ext/authentication/v1/authenticationAgents/ab116a51-681b-4cd1-9c43-a717f85f1d60",
+          "rel": "self"
+      },
+      {
+          "href": "/ext/authentication/v1/authenticationAgents/ab116a51-681b-4cd1-9c43-a717f85f1d60/login",
+          "rel": "login"
+      }
+  ],
+  "localizedDescription": {
+      "i18nAssetId": "e873480e-e521-446c-99f2-45334856e849",
+      "stringId": "cAuthAgentDescription"
+  },
+  "localizedName": {
+      "i18nAssetId": "e873480e-e521-446c-99f2-45334856e849",
+      "stringId": "cAuthAgentName"
+  },
+  "name": "Test Authentication 1",
+  "resourceId": "ab116a51-681b-4cd1-9c43-a717f85f1d60",
+  "agentId": "ab116a51-681b-4cd1-9c43-a717f85f1d60",
+  "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+}

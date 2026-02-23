@@ -1,0 +1,3472 @@
+{
+  "base": {
+    "definitions": [
+      {
+        "optionName": "autoColorDetect",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "acdmDetectOnly", "acdmTreatNonColorAsMonochrome", "acdmTreatNonColorAsGrayscale" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoCropMode",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "acmtOff", "acmtPageCrop", "acmtContentCrop" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "autoDeskew",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "optionName": "autoExposure",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoPaperColorRemoval",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoPaperColorRemovalLevel",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoTone",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoToneLevel",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "backgroundCleanup",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "backgroundColorRemoval",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "backgroundColorRemovalLevel",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "backgroundNoiseRemoval",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "optionName": "binaryRendering",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "brHalftone", "brThreshold", "brErrorDiffusion" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "blackBackground",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "blackEnhancementLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 255,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "blankPageSuppression",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bpdDisable", "bdpDetectAndSuppress" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "bookletMakerOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bmoNone", "bmoDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "ccdChannel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "cctNtsc", "cctGray", "cctGrayEmulated", "cctRed", "cctGreen", "cctBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "collationType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sctCollated", "sctUncollated" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorMode",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "cmColor", "cmGrayscale" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorRange",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorSensitivity",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contentOrientation",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "coPortrait", "coLandscape" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contentType",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dctText", "dctPhoto", "dctMixed", "dctImage"]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contrast",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 8,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "copies",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "customMediaXFeedDimension",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "customMediaYFeedDimension",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "descreen",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "edgeToEdgePrint",
+        "rules": []
+      },
+      {
+        "optionName": "edgeToEdgeScan",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackBottom",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackLeft",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackRight",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackTop",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseEdgesEnabled",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontBottom",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontLeft",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontRight",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontTop",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "exposureLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "foNone", "foDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsCFold",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsFoldAndStitch",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsFoldAndStitchAutomatic",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsVFold",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "gamma",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "highlightLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 10,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "imagePreviewMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ipmNone", "ipmStandard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "invertColors",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "jobOffset",
+        "rules": []
+      },
+      {
+        "optionName": "longPlotScan",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "mediaBindingFormat",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bfFlipLeft", "bfFlipUp" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "misfeedDetection",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "misfeedDetectionAutoRetry",
+        "rules": []
+      },
+      {
+        "optionName": "originalMediaSize",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msAny", "msANSI_A_8point5x11in", "msLegal_8point5x14in", "msExecutive_7point25x10point5in", "msInvoice_5point5x8point5in", "msANSI_B_11x17in", "msGeneral_5x7in", "msGeneral_5x8in", "msFoolscap_8point5x13in", "msOficio_216x340mm", "msISO_A3_297x420mm", "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A6_105x148mm", "msJIS_B5_182x257mm", "msJIS_B6_128x182mm", "msK16_195x270mm", "msK16_184x260mm", "msK16_197x273mm", "msJDoublePostcard_148x200mm" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalMediaSource",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAdf", "miFlatbed" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalMediaType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "mtPlain", "mtPhoto" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalPlexMode",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "pmSimplex", "pmDuplex" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputCanvasAnchor",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasMediaSize",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasMediaSource",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasOrientation",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasXExtent",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasYExtent",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputDuplexBinding",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dbfOneSided", "dbfDuplexLongEdge", "dbfDuplexShortEdge" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaSize",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msANSI_A_Rotated_8point5x11in", "msANSI_A_8point5x11in", "msLegal_8point5x14in", "msExecutive_7point25x10point5in", "msInvoice_5point5x8point5in", "msFoolscap_8point5x13in", "msISO_A3_297x420mm", "msISO_A4_Rotated_210x297mm", "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A5_Rotated_148x210mm", "msISO_A6_105x148mm", "msRA3_305x430mm", "msSRA3_320x450mm", "msRA4_215x305mm", "msSRA4_225x320mm", "msJIS_B4_257x364mm", "msJIS_B5_182x257mm", "msJIS_B5_Rotated_182x257mm", "msJIS_B6_128x182mm", "msK8_270x390mm", "msK16_195x270mm", "msK8_260x368mm", "msK16_184x260mm", "msJDoublePostcard_148x200mm", "msEnvelope_Monarch_3point875x7point5in", "msISO_B5_176x250mm", "msISO_C5_162x229mm", "msISO_C6_114x162mm", "msCustom" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaSource",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAuto", "miTray1", "miTray2", "miTray3" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "mtAny", "mtHPMatte_90g", "mtRecycled", "mtHPMatte_105g", "mtHPMatte_120g", "mtHPGloss_130g", "mtHPMatte_160g", "mtHPGloss_160g", "mtHPMatte_200g", "mtHPGloss_220g", "mtTransparency", "mtLabels", "mtEnvelope" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputQuality",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "qmBest", "qmDraft", "qmNormal" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "pagesPerSheet",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ppsOneUp", "ppsTwoUp" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "punchOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "poNone", "poDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "resolution",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dpi75", "dpi150", "dpi200", "dpi300", "dpi400", "dpi600" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleSelection",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sstNone", "sstCustom", "sstFitToPage", "sstFullPage", "sstLegalToLetter", "sstA4ToLetter", "sstLetterToA4" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleToFitEnabled",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "scaleToOutput",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAuto", "miTray1", "miTray2", "miTray3" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleToSize",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A6_105x148mm", "msISO_B5_176x250mm", "msISO_B6_125x176mm", "msISO_C5_162x229mm", "msISO_C6_114x162mm", "msJIS_B5_182x257mm", "msJIS_B6_128x182mm", "msJIS_Chou3_120x235mm", "msJDoublePostcard_148x200mm", "msExecutive_7point25x10point5in", "msFoolscap_8point5x13in", "msGovt_Letter_8x10in", "msLegal_8point5x14in", "msANSI_A_8point5x11in", "msK16_184x260mm", "msK16_195x270mm", "msInvoice_5point5x8point5in" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanCaptureMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "scmStandard", "scmJobBuild", "scmBook", "scmIdCard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanProgressMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spmNone", "spmStandard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanningSpeed",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ssAuto", "ssSlow" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "shadowLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "sharpness",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stapleOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "soDefault", "soTopAnyOnePointAngled", "soBottomLeftOnePointAny" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "threshold",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.darkness",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.firstPageOnly",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.rotate45",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.secureBackgroundColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wbctGray", "wbctCyan", "wbctMagenta" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.secureBackgroundPattern",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wbptFlat", "wbptLeaf", "wbptScroll" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.style",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wtNone", "wtText", "wtSecure" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textType",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wttNone", "wttSecret", "wttUrgent" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "xOffset",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 1000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "xScalePercent",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 25,
+              "upperBoundary": 400,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "yOffset",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 1000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "yScalePercent",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 25,
+              "upperBoundary": 400,
+              "step": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "storedCopy": {
+    "definitions": [
+      {
+        "optionName": "autoColorDetect",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "acdmDetectOnly", "acdmTreatNonColorAsMonochrome", "acdmTreatNonColorAsGrayscale" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoCropMode",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "acmtOff", "acmtPageCrop", "acmtContentCrop" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "autoDeskew",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "optionName": "autoExposure",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoPaperColorRemoval",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoPaperColorRemovalLevel",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoTone",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "autoToneLevel",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "backgroundCleanup",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "backgroundColorRemoval",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "backgroundColorRemovalLevel",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "backgroundNoiseRemoval",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "optionName": "binaryRendering",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "brHalftone", "brThreshold", "brErrorDiffusion" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "blackBackground",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "blackEnhancementLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 255,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "blankPageSuppression",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bpdDisable", "bdpDetectAndSuppress" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "bookletMakerOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bmoNone", "bmoDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "ccdChannel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "cctNtsc", "cctGray", "cctGrayEmulated", "cctRed", "cctGreen", "cctBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "collationType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sctCollated", "sctUncollated" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorMode",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "cmColor", "cmGrayscale" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorRange",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "colorSensitivity",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contentOrientation",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "coPortrait", "coLandscape" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contentType",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dctText", "dctPhoto", "dctMixed", "dctImage"]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "contrast",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 8,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "copies",
+        "isAvailable": true,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "customMediaXFeedDimension",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "customMediaYFeedDimension",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "descreen",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "edgeToEdgePrint",
+        "rules": []
+      },
+      {
+        "optionName": "edgeToEdgeScan",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackBottom",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackLeft",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackRight",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseBackTop",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseEdgesEnabled",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontBottom",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontLeft",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontRight",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "eraseFrontTop",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "exposureLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "foNone", "foDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsCFold",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsFoldAndStitch",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsFoldAndStitchAutomatic",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "foldSetSheetsVFold",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "gamma",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 2000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "highlightLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 10,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "imagePreviewMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ipmNone", "ipmStandard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "invertColors",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "jobOffset",
+        "rules": []
+      },
+      {
+        "optionName": "longPlotScan",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "mediaBindingFormat",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "bfFlipLeft", "bfFlipUp" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "misfeedDetection",
+        "isAvailable": true,
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "misfeedDetectionAutoRetry",
+        "rules": []
+      },
+      {
+        "optionName": "originalMediaSize",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msAny", "msANSI_A_8point5x11in", "msLegal_8point5x14in", "msExecutive_7point25x10point5in", "msInvoice_5point5x8point5in", "msANSI_B_11x17in", "msGeneral_5x7in", "msGeneral_5x8in", "msFoolscap_8point5x13in", "msOficio_216x340mm", "msISO_A3_297x420mm", "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A6_105x148mm", "msJIS_B5_182x257mm", "msJIS_B6_128x182mm", "msK16_195x270mm", "msK16_184x260mm", "msK16_197x273mm", "msJDoublePostcard_148x200mm" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalMediaSource",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAdf", "miFlatbed" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalMediaType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "mtPlain", "mtPhoto" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "originalPlexMode",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "pmSimplex", "pmDuplex" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputCanvasAnchor",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasMediaSize",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasMediaSource",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasOrientation",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasXExtent",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputCanvasYExtent",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "outputDuplexBinding",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dbfOneSided", "dbfDuplexLongEdge", "dbfDuplexShortEdge" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaSize",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msANSI_A_Rotated_8point5x11in", "msANSI_A_8point5x11in", "msLegal_8point5x14in", "msExecutive_7point25x10point5in", "msInvoice_5point5x8point5in", "msFoolscap_8point5x13in", "msISO_A3_297x420mm", "msISO_A4_Rotated_210x297mm", "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A5_Rotated_148x210mm", "msISO_A6_105x148mm", "msRA3_305x430mm", "msSRA3_320x450mm", "msRA4_215x305mm", "msSRA4_225x320mm", "msJIS_B4_257x364mm", "msJIS_B5_182x257mm", "msJIS_B5_Rotated_182x257mm", "msJIS_B6_128x182mm", "msK8_270x390mm", "msK16_195x270mm", "msK8_260x368mm", "msK16_184x260mm", "msJDoublePostcard_148x200mm", "msEnvelope_Monarch_3point875x7point5in", "msISO_B5_176x250mm", "msISO_C5_162x229mm", "msISO_C6_114x162mm", "msCustom" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaSource",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAuto", "miTray1", "miTray2", "miTray3" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputMediaType",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "mtAny", "mtHPMatte_90g", "mtRecycled", "mtHPMatte_105g", "mtHPMatte_120g", "mtHPGloss_130g", "mtHPMatte_160g", "mtHPGloss_160g", "mtHPMatte_200g", "mtHPGloss_220g", "mtTransparency", "mtLabels", "mtEnvelope" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "outputQuality",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "qmBest", "qmDraft", "qmNormal" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "pagesPerSheet",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ppsOneUp", "ppsTwoUp" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "punchOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "poNone", "poDefault" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "resolution",
+        "isAvailable": true,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "dpi75", "dpi150", "dpi200", "dpi300", "dpi400", "dpi600" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleSelection",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sstNone", "sstCustom", "sstFitToPage", "sstFullPage", "sstLegalToLetter", "sstA4ToLetter", "sstLetterToA4" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleToFitEnabled",
+        "isAvailable": false,
+        "rules": []
+      },
+      {
+        "optionName": "scaleToOutput",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "miAuto", "miTray1", "miTray2", "miTray3" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scaleToSize",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "msISO_A4_210x297mm", "msISO_A5_148x210mm", "msISO_A6_105x148mm", "msISO_B5_176x250mm", "msISO_B6_125x176mm", "msISO_C5_162x229mm", "msISO_C6_114x162mm", "msJIS_B5_182x257mm", "msJIS_B6_128x182mm", "msJIS_Chou3_120x235mm", "msJDoublePostcard_148x200mm", "msExecutive_7point25x10point5in", "msFoolscap_8point5x13in", "msGovt_Letter_8x10in", "msLegal_8point5x14in", "msANSI_A_8point5x11in", "msK16_184x260mm", "msK16_195x270mm", "msInvoice_5point5x8point5in" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanCaptureMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "scmStandard", "scmJobBuild", "scmBook", "scmIdCard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanProgressMode",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spmNone", "spmStandard" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "scanningSpeed",
+        "isAvailable": false,
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "ssAuto", "ssSlow" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "shadowLevel",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "sharpness",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomCenter.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomLeft.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampBottomRight.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopCenter.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopLeft.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.content",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "stNone", "stUserName", "stPageNumber" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.numberOfDigits",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 9,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.pageNumberingStyle",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "spnstNumber", "spnstPagePlusNumber", "spnstHyphenNumberHyphen" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.policy",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "sptNone", "sptEnforced", "sptGuided" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.startingNumber",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.startingPage",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 1,
+              "upperBoundary": 999,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stampTopRight.whiteBackground",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "stapleOption",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "soDefault", "soTopAnyOnePointAngled", "soBottomLeftOnePointAny" ]
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "threshold",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.darkness",
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 100,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.firstPageOnly",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.rotate45",
+        "rules": []
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.secureBackgroundColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wbctGray", "wbctCyan", "wbctMagenta" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.secureBackgroundPattern",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wbptFlat", "wbptLeaf", "wbptScroll" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.style",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wtNone", "wtText", "wtSecure" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textColor",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtctBlack", "swtctGreen", "swtctSkyBlue" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textFont",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtftAntiqueOlive", "swtftGaramond", "swtftLetterGothic" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textSize",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "swtstEightPoint", "swtstTwentyPoint", "swtstFortyPoint" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.textType",
+        "rules": [
+          {
+            "possibleValues": {
+              "optionValues": [ "wttNone", "wttSecret", "wttUrgent" ]
+            }
+          }
+        ]
+      },
+      {
+        "isAvailable": true,
+        "optionName": "watermark.userText",
+        "rules": [
+          {
+            "stringLength": {
+              "message": "userText must not be empty.",
+              "maximumLength": "1024",
+              "minimumLength": "1"
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "xOffset",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 1000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "xScalePercent",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 25,
+              "upperBoundary": 400,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "yOffset",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 0,
+              "upperBoundary": 1000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "optionName": "yScalePercent",
+        "isAvailable": false,
+        "rules": [
+          {
+            "range": {
+              "lowerBoundary": 25,
+              "upperBoundary": 400,
+              "step": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

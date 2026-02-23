@@ -1,0 +1,43 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "config/*"
+    ],
+    "warnings": [
+      {
+        "typeGUN": "com.hp.cdm.service.application.version.1.types.runtimeChrome",
+        "value": {}
+      }
+    ]
+  },
+  "applicationChrome": {
+    "webApplicationRuntimeChrome": {
+      "dateTimeAvailable": true,
+      "footerBackgroundColor": "#FF0000",
+      "footerVisible": true,
+      "headerBackgroundColor": "#FF0000",
+      "headerForegroundColor": "#FF0000",
+      "headerIcon": {
+        "inlineImage": {
+          "mimeType": "image/png",
+          "value": "aWNvbiBpbWFnZSBkYXRhLi4u"
+        }
+      },
+      "headerTitle": "Mock Title",
+      "helpButtonAvailable": true,
+      "homeButtonAvailable": true,
+      "infoButtonEnabled": true,
+      "resetButtonEnabled": true,
+      "signInAvailable": true,
+      "softKeyboardIsAvailable": true,
+      "startButtonEnabled": true,
+      "startButtonVisible": true
+    }
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/runtimeChrome",
+      "rel": "self"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/copy/v1/copyAgents/14944470-9edd-430b-b109-c5469f07aa05",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/copy/v1/copyAgents/14944470-9edd-430b-b109-c5469f07aa05/copyJobs",
+      "rel": "copyJobs"
+    },
+    {
+      "href": "/ext/copy/v1/copyAgents/14944470-9edd-430b-b109-c5469f07aa05/storedCopyJobs",
+      "rel": "storedCopyJobs"
+    }
+  ],
+  "resourceId": "14944470-9edd-430b-b109-c5469f07aa05",
+  "solutionId": "b71ddeac-c457-4ac2-b247-7f92016593f3",
+  "agentId": "14944470-9edd-430b-b109-c5469f07aa05",
+  "localizedDescription": {
+    "i18nAssetId": "6f1ca0af-21db-42a7-8109-a2516fba590e",
+    "stringId": "cCopyAgentDesc"
+  },
+  "localizedName": {
+    "i18nAssetId": "6f1ca0af-21db-42a7-8109-a2516fba590e",
+    "stringId": "cCopyAgentName"
+  },
+  "name": "Acme Copy Agent"
+}

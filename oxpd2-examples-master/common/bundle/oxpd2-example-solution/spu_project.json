@@ -1,0 +1,2928 @@
+{
+  "projectName": "OXPd2 Example Solution",
+  "spuVersion": "1.6.0",
+  "spuProjectType": "SPU_OXPD2",
+  "solutionManager": {
+    "typeData": {
+      "name": "SolutionManagerTypes",
+      "versionedGUN": "com.hp.ext.types.solutionManager.1",
+      "revisionDetail": " ( )"
+    },
+    "contextDefinitions": [
+      {
+        "existingIds": [],
+        "contextKey": "APP_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAppTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "APP_TARGET_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAppTargetPathDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/applicationagent/index.html",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "NOTIFICATION_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cNotificationTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "NOTIFICATION_TARGET_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cNotificationTargetPathDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/solutionnotifications",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "HEADER_FOREGROUND_COLOR",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cHeaderForegroundColorDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "#FFFFFF",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "HEADER_BACKGROUND_COLOR",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cHeaderBackgroundColorDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "#1F405F",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "FOOTER_VISIBLE",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cFooterVisibleDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "false",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "AUTH_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAuthenticationTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "AUTH_TARGET_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAuthenticationTargetPathDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/authenticationagent",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "TRUSTED_SITES",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cTrustedSitesDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "*",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "USB_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cUsbTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "SCANJOB_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cScanJobTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "SCANJOB_TARGET_REGISTRATION_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cScanJobRegistrationTargetPath"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/scanjobagent/scanJobNotification",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "HTTP_APP_ENABLED",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cApplicationEnablement"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "true",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [
+          "APP_TARGET_AUTHORITY",
+          "APP_TARGET_PATH",
+          "NOTIFICATION_TARGET_AUTHORITY",
+          "NOTIFICATION_TARGET_PATH",
+          "HEADER_FOREGROUND_COLOR",
+          "HEADER_BACKGROUND_COLOR",
+          "FOOTER_VISIBLE",
+          "AUTH_TARGET_AUTHORITY",
+          "AUTH_TARGET_PATH",
+          "TRUSTED_SITES",
+          "APP_TARGET_AUTHORITY_HTTPS",
+          "USB_TARGET_AUTHORITY",
+          "USB_REGISTRATION_TARGET_PATH",
+          "SCANJOB_TARGET_AUTHORITY",
+          "SCANJOB_TARGET_REGISTRATION_PATH",
+          "HTTP_APP_ENABLED",
+          "HTTPS_APP_ENABLED"
+        ],
+        "contextKey": "COPY_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cCopyTargetAuthority"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "COPY_TARGET_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cCopyTargetPath"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/copyAgent/copyJobNotification",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [
+          "APP_TARGET_AUTHORITY",
+          "APP_TARGET_PATH",
+          "NOTIFICATION_TARGET_AUTHORITY",
+          "NOTIFICATION_TARGET_PATH",
+          "HEADER_FOREGROUND_COLOR",
+          "HEADER_BACKGROUND_COLOR",
+          "FOOTER_VISIBLE",
+          "AUTH_TARGET_AUTHORITY",
+          "AUTH_TARGET_PATH",
+          "TRUSTED_SITES",
+          "USB_TARGET_AUTHORITY",
+          "USB_REGISTRATION_TARGET_PATH",
+          "SCANJOB_TARGET_AUTHORITY",
+          "SCANJOB_TARGET_REGISTRATION_PATH",
+          "HTTP_APP_ENABLED",
+          "COPY_TARGET_AUTHORITY",
+          "COPY_TARGET_PATH"
+        ],
+        "contextKey": "JOB_STATISTICS_TARGET_AUTHORITY",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cJobStatisticsTargetAuthorityDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "localhost:5000",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [
+          "APP_TARGET_AUTHORITY",
+          "APP_TARGET_PATH",
+          "NOTIFICATION_TARGET_AUTHORITY",
+          "NOTIFICATION_TARGET_PATH",
+          "HEADER_FOREGROUND_COLOR",
+          "HEADER_BACKGROUND_COLOR",
+          "FOOTER_VISIBLE",
+          "AUTH_TARGET_AUTHORITY",
+          "AUTH_TARGET_PATH",
+          "TRUSTED_SITES",
+          "USB_TARGET_AUTHORITY",
+          "USB_REGISTRATION_TARGET_PATH",
+          "SCANJOB_TARGET_AUTHORITY",
+          "SCANJOB_TARGET_REGISTRATION_PATH",
+          "HTTP_APP_ENABLED",
+          "COPY_TARGET_AUTHORITY",
+          "COPY_TARGET_PATH",
+          "JOB_STATISTICS_TARGET_AUTHORITY"
+        ],
+        "contextKey": "JOB_STATISTICS_TARGET_REGISTRATION_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cJobStatisticsTargetPathDescription"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/jobstatisticsagent",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      },
+      {
+        "existingIds": [],
+        "contextKey": "USB_TARGET_PATH",
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cUsbTargetPath"
+        },
+        "isSensitive": false,
+        "hasDefaultValue": true,
+        "defaultValue": "/oxpd2-examples/api/usbaccessoriesagent",
+        "hasTypeInformation": false,
+        "typeInformation": ""
+      }
+    ],
+    "solutionDetails": {
+      "solutionId": "287E05BC-6CFD-47B4-8539-4EE3CC17A921",
+      "solutionDescription": {
+        "description": "An example solution used to illustrate OXPd2 features",
+        "name": "OXPd2 Example Solution",
+        "supportEmail": "",
+        "supportPhone": "",
+        "supportUrl": "",
+        "vendor": "HP Inc.",
+        "version": "1.2.0",
+        "versionNumber": "1",
+        "date": ""
+      },
+      "outputFileName": "solution"
+    },
+    "notificationAgents": [
+      {
+        "existingIds": [],
+        "agentId": "6CED722A-D9B0-448E-90FC-2569FDD9AB70",
+        "name": "OXPd2 Example Solution Notification Agent",
+        "title": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cNotificationAgentName"
+        },
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cNotificationAgentDescription"
+        },
+        "notificationsToReceive": {
+          "explicitValues": [
+            "ntAll"
+          ],
+          "isEnabled": true,
+          "bindableType": "Explicit",
+          "explicitValue": "",
+          "expression": "",
+          "explicitValueRegex": "",
+          "explicitValueInvalidMessage": ""
+        },
+        "target": {
+          "endpoint": {
+            "scheme": "http",
+            "authority": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(NOTIFICATION_TARGET_AUTHORITY)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "path": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(NOTIFICATION_TARGET_PATH)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "authorization": {
+            "authorizationType": "None",
+            "username": {
+              "isEnabled": false,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "password": {
+              "isEnabled": false,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "targetHeaders": [
+            {
+              "headerName": "x-oxpd2-solutionId",
+              "headerValue": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$SOLUTION(ID)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            },
+            {
+              "headerName": "x-oxpd2-deviceId",
+              "headerValue": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$DEVICE(ID)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            }
+          ],
+          "retryBehavior": {
+            "retryConnectionTimeout": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 10,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "10",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "retryAttempts": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 0,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "0",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          }
+        }
+      }
+    ],
+    "certificateAuthorities": [
+      {
+        "existingIds": [],
+        "certificateId": "9880CBA4-D810-44F3-8F6D-7B1089F7DE5C",
+        "bundlePathType": "Automatic",
+        "automaticBundlePath": "/assets/certificateAuthorities/9880CBA4-D810-44F3-8F6D-7B1089F7DE5C.pem",
+        "customBundlePath": "",
+        "currentBundlePath": "/assets/certificateAuthorities/9880CBA4-D810-44F3-8F6D-7B1089F7DE5C.pem",
+        "certificateContent": "-----BEGIN CERTIFICATE-----\r\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQG\r\nEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAw\r\nHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBDQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAw\r\nMDAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3\r\ndy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkq\r\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsBCSDMAZOn\r\nTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97nh6Vfe63SKMI2tavegw5\r\nBmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt43C/dxC//AH2hdmoRBBYMql1GNXRor5H\r\n4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7PT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y\r\n7vrTC0LUq7dBMtoM1O/4gdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQAB\r\no2MwYTAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbRTLtm\r\n8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUwDQYJKoZIhvcNAQEF\r\nBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/EsrhMAtudXH/vTBH1jLuG2cenTnmCmr\r\nEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIt\r\ntep3Sp+dWOIrWcBAI+0tKIJFPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886\r\nUAb3LujEV0lsYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\r\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\r\n-----END CERTIFICATE-----"
+      },
+      {
+        "existingIds": [],
+        "certificateId": "D6CB9139-6BE7-4E4F-85AA-A09E84C04040",
+        "bundlePathType": "Automatic",
+        "automaticBundlePath": "/assets/certificateAuthorities/D6CB9139-6BE7-4E4F-85AA-A09E84C04040.pem",
+        "customBundlePath": "",
+        "currentBundlePath": "/assets/certificateAuthorities/D6CB9139-6BE7-4E4F-85AA-A09E84C04040.pem",
+        "certificateContent": "-----BEGIN CERTIFICATE-----\r\nMIIDjjCCAnagAwIBAgIQAzrx5qcRqaC7KGSxHQn65TANBgkqhkiG9w0BAQsFADBhMQswCQYDVQQG\r\nEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAw\r\nHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHMjAeFw0xMzA4MDExMjAwMDBaFw0zODAxMTUx\r\nMjAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3\r\ndy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMIIBIjANBgkq\r\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuzfNNNx7a8myaJCtSnX/RrohCgiN9RlUyfuI2/Ou8jqJ\r\nkTx65qsGGmvPrC3oXgkkRLpimn7Wo6h+4FR1IAWsULecYxpsMNzaHxmx1x7e/dfgy5SDN67sH0NO\r\n3Xss0r0upS/kqbitOtSZpLYl6ZtrAGCSYP9PIUkY92eQq2EGnI/yuum06ZIya7XzV+hdG82MHauV\r\nBJVJ8zUtluNJbd134/tJS7SsVQepj5WztCO7TG1F8PapspUwtP1MVYwnSlcUfIKdzXOS0xZKBgyM\r\nUNGPHgm+F6HmIcr9g+UQvIOlCsRnKPZzFBQ9RnbDhxSJITRNrw9FDKZJobq7nMWxM4MphQIDAQAB\r\no0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUTiJUIBiV5uNu\r\n5g/6+rkS7QYXjzkwDQYJKoZIhvcNAQELBQADggEBAGBnKJRvDkhj6zHd6mcY1Yl9PMWLSn/pvtsr\r\nF9+wX3N3KjITOYFnQoQj8kVnNeyIv/iPsGEMNKSuIEyExtv4NeF22d+mQrvHRAiGfzZ0JFrabA0U\r\nWTW98kndth/Jsw1HKj2ZL7tcu7XUIOGZX1NGFdtom/DzMNU+MeKNhJ7jitralj41E6Vf8PlwUHBH\r\nQRFXGU7Aj64GxJUTFy8bJZ918rGOmaFvE7FBcf6IKshPECBV1/MUReXgRPTqh5Uykw7+U0b6LJ3/\r\niyK5S9kJRaTepLiaWN0bfVKfjllDiIGknibVb63dDcY3fe0Dkhvld1927jyNxF1WW6LZZm6zNTfl\r\nMrY=\r\n-----END CERTIFICATE-----"
+      },
+      {
+        "existingIds": [],
+        "certificateId": "355006CE-816D-4F59-8108-42C56075C87A",
+        "bundlePathType": "Automatic",
+        "automaticBundlePath": "/assets/certificateAuthorities/355006CE-816D-4F59-8108-42C56075C87A.pem",
+        "customBundlePath": "",
+        "currentBundlePath": "/assets/certificateAuthorities/355006CE-816D-4F59-8108-42C56075C87A.pem",
+        "certificateContent": "-----BEGIN CERTIFICATE-----\nMIIGCzCCA/OgAwIBAgIUCmxVbVpR7TVmAVQ4WScICbMyKkQwDQYJKoZIhvcNAQEL\nBQAwgZQxCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVJZGFobzEOMAwGA1UEBwwFQm9p\nc2UxDzANBgNVBAoMBkhQIEluYzEMMAoGA1UECwwDUFBTMSIwIAYDVQQDDBlIUCBF\neHRlbnNpYmlsaXR5IFNvZnR3YXJlMSIwIAYJKoZIhvcNAQkBFhNzd294cGJhbm5p\nbmdAaHAuY29tMB4XDTIyMDIxNTIyNDczOFoXDTM4MDcyMTIyNDczOFowgZQxCzAJ\nBgNVBAYTAlVTMQ4wDAYDVQQIDAVJZGFobzEOMAwGA1UEBwwFQm9pc2UxDzANBgNV\nBAoMBkhQIEluYzEMMAoGA1UECwwDUFBTMSIwIAYDVQQDDBlIUCBFeHRlbnNpYmls\naXR5IFNvZnR3YXJlMSIwIAYJKoZIhvcNAQkBFhNzd294cGJhbm5pbmdAaHAuY29t\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtln7iK86SKItlc2q38QI\naw2SIfppZpQmnK7Y8mo6Thrr6cF0TLtvO1y24ThuP81QnQ3UJQgQLoL+mcc8GzgW\nShxZb4dJMUODMpoYT7Kmn7XVZLVpocsuE9KcO5gyOU5u9t1PXVl+sx9HmQCUtf7T\nxXVYr6TgWRtibgan6PJLlgm0h+1bBsK4qZMoRXG5VZTc7QCrbvOZIHDM7pluZReF\nb+nSM764xCXgo7iX66zjA3jUng4iB3ttQXWQZXgzVvhsslvQDs8jADIjxGiBBUK6\n6O0si1OWvgT9x7wIRc5vIU65x/k0PZIj4R1GPyyHWl11ojePkCuTEkQHI0bC79Ng\nZXjK/RhJNXECTOrNPBvP1dq7bLuACzNjc1FEP5OzlFt2Gb8CaxRftUNKkqq6ahkn\nj8DH76Z+ia1P+7FYo/C7eI2WaINdzAZRj5uIsqcmlobZOhV3W77a5PIRvEYpuca0\nnki7wBLzSr1IixuRWd/hbLj3/2c5K89RulJR2BpHHOM5PqniVABMVT+vyiPoVUBh\n2twLJ165bT+PmYryjpBWuDRqBXJwxtN4CnGsF5b94JNbKTt8mC5qFY9ca8dwGp5C\ncR8zIcp0sNbwXr0ogrxyoK3Bz1u7IXSXZOEmgu+qw6tPYyEmr2G1YDS4+k4naV7w\nSRvlU+6um/bTh2JGRxbQ4BsCAwEAAaNTMFEwHQYDVR0OBBYEFKSo7VIrqBZWsgJa\nyKT7z6fPAFbZMB8GA1UdIwQYMBaAFKSo7VIrqBZWsgJayKT7z6fPAFbZMA8GA1Ud\nEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAIdKraeyYwyj9+swNQy8K1tX\n31npD6pkVYt4oaihxiC78pWrcgBSoE+6EbbgxRj29Y3SYNFDo8xTv1mI+iPy3s5U\n8jMMdADVDYgHyRBSjgeD8FFNyV5SoWDOyPtIxGSnKE7SMOnVjybr86DH84WjpcPR\n65CesULBY7QzLNPRyQ3iJ4WCKP42BavbwFVRPEoKqsjAx7Jad5hAG9kRJ3VX2tGk\nL0HJIK/Kdmp2Pmw3EqlGd4bVDXYqhZbd/Xe5oy7rH+Qlb82FDtjYwTmf4qYWt/zS\nrWfWo7AP3ZP0rckFN9Y3nOBsP0/jmRqk9aqYBeFWhwuLBp6SIR153V2bAb/GYVK5\nxYkB03k+pq2brmCAcT5fO2RF6+YJYGNlmwyxyoy+2ozH5Z4Hlr16VZ6qq7azSHCD\naXR8tRhc7GbT9KtWCh95KrhKP1sEc6ksfBhhj33VyItmWFJcfd91sFSIN7wiYIk1\nPhdgpQgCfbYZzqFUc6mOdeN10zedeM7fQ1uEiQaQiOh6Fd2PGyo6ohzHAgdDsZRF\nOqvrDFrIif2naLewZXQg6kLy8BV+lNN2mvvlPGebc3BnLz6zMNrZpSoew6PnDYTA\nRKA7L/WxRWWA/cN2Ax/fXJbzINh/S14Ukd2N+XergV05upqnaGeN02uD+hvWc/Vb\ncrQsTWHAYaJadyeAb20I\n-----END CERTIFICATE-----"
+      }
+    ],
+    "trustedSites": {
+      "includeTrustedSites": true,
+      "sites": {
+        "explicitValueType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "explicitValueAsType": "",
+        "isEnabled": true,
+        "bindableType": "Expression",
+        "explicitValue": "",
+        "expression": "$SOLUTION_CONTEXT(TRUSTED_SITES)$",
+        "explicitValueRegex": "",
+        "explicitValueInvalidMessage": ""
+      }
+    },
+    "configuration": {
+      "includeConfiguration": false,
+      "archiveDataPath": "/assets/configuration",
+      "description": "",
+      "mimeType": "",
+      "bundlePathType": "Automatic",
+      "automaticBundlePath": "/assets/configuration",
+      "customBundlePath": "",
+      "configurationContent": "",
+      "originalFileExtension": ""
+    },
+    "runtimeRegistrationAgent": {
+      "includeRuntimeRegistrationAgent": true,
+      "agentId": "248C33CD-A761-43A0-9C44-C540CA215EC8",
+      "name": "OXPd2 Example Solution RuntimeRegistration Agent",
+      "title": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cRuntimeRegistrationAgentName"
+      },
+      "description": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cRuntimeRegistrationAgentDescription"
+      },
+      "declaredRuntimeRegistrations": [
+        {
+          "name": "Application",
+          "typeGun": "com.hp.ext.service.application.version.1.type.applicationAgentRegistrationRecord"
+        },
+        {
+          "name": "I18nAsset",
+          "typeGun": "com.hp.ext.service.application.version.1.type.i18nAssetRegistrationRecord"
+        }
+      ]
+    }
+  },
+  "applicationService": {
+    "applications": [
+      {
+        "details": {
+          "existingIds": [],
+          "applicationId": "EEB1BD26-9104-4041-82E8-3987839C065E",
+          "name": "OXPd2 Example Application",
+          "category": "acKiosk",
+          "title": {
+            "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+            "stringId": "cAppAgentTitle"
+          },
+          "description": {
+            "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+            "stringId": "cAppAgentDescription"
+          },
+          "icon": {
+            "iconFormat": "Inline",
+            "inlineIcon": {
+              "mimeType": "image/jpeg",
+              "value": "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zgalWTFAHQ2l6VxzW5ZaoVxzXGQzkd6vQ3pXHNAHoNprBGPmrWt9c6fNXm8OpFcfNV2HVj/eoA9Hj1z/AGqmXXP9qvPF1c/3qeNYP96gD0L+3f8AapP7d/2q4AawT/FR/a5/vUAd8dc/2qY2uf7VcH/bB/vUxtXP96gDu21z/aph1z/arhDq5/vUw6sf71AHd/24f71KNc/2q4H+1j/epRqx/vUAegLrn+1Tv7d/2q8/GrH+9Tv7WP8AeoA71tc/2qik1z/arhzqx/vVE2rH+9QB2cmuH+9VWTWz/erkJNUP96oG1M+tAHYHWzn71PTWjn71cR/aR9acupH+9QB6BDrZ4+arkWuf7VedR6of71WY9WP96gD0VNc/2qkXXP8AarzxdXP96pP7YP8AeoA9B/t3/apf7c/2/wBa8+/tg/3qX+2D/eoA9A/tz/b/AFo/tz/b/WvP/wC2P9qj+2P9qgD0D+3P9v8AWk/tz/argP7XP96k/tc/36AO+Ouf7VRya5/tVwn9sH+9TG1c/wB6gDsp9b6/NWXdawWzzXMy6sf71UptSLZ+agDXvdTLZ+asK8vS2earTXu7vVCW43d6AC4m3d6pSNTpJM1CTQAlFNzRQAA07dTaKAJVkxUyzYqrupQ1AF9bj3qZbs+tZm804SUAaovT6077d71k+bSiY0Aav273o+3e9Zfm0ebQBqfbvek+2n1rK840edQBpteH1pv2w+tZvmUeZQBpfbPej7YfWs3zKPMoA0/th9aUXnvWX5lL5tAGmbz3pv2w+tZvmUeZQBfa696j+0+9UzIaQsaALf2j3pRcY71R3e9ODUAaC3R9akW8I71l7zTvMoA1hen1pft3vWT51KJjQBq/bvel/tA+tZXm0ebQBq/2gfWj+0D61lebR5tAGr9vPrSfbvesvzaPNoA1Pt3vSG9PrWX51J51AGi14T3qJrr3ql5lN3mgCw02e9RNJUZam7qAHM1MJoooAKKKKACiiigAooooAKMmiigAyaMmiigAyaMmiigAyaMmiigAyaMmiigAyaMmiigAyaMmiigAyaMmiigAyaKKKACiiigAoyaKKADJoyaKKADJoyaKKADJoyaKKADJoyaKKADJoyaKKADJooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q=="
+            },
+            "localIcon": {
+              "fileType": "",
+              "fileName": "",
+              "subFolder": "icons",
+              "bundlePathType": "Automatic",
+              "automaticBundlePath": "/assets/icons",
+              "selectedAsset": "",
+              "selectedAssetPath": "/assets/icons",
+              "customBundlePath": "",
+              "currentBundlePath": "/assets/icons"
+            },
+            "referenceIcon": {
+              "fileType": "",
+              "path": ""
+            },
+            "isInIconSet": false,
+            "key": ""
+          },
+          "iconSet": []
+        },
+        "target": {
+          "applicationIntent": {
+            "startDefault": {
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": "",
+              "isEnabled": false
+            }
+          },
+          "applicationAgentTarget": {
+            "endpoint": {
+              "scheme": "http",
+              "authority": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$SOLUTION_CONTEXT(APP_TARGET_AUTHORITY)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              },
+              "path": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$SOLUTION_CONTEXT(APP_TARGET_PATH)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            },
+            "authorization": {
+              "authorizationType": "None",
+              "username": {
+                "isEnabled": false,
+                "bindableType": "Explicit",
+                "explicitValue": "",
+                "expression": "",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              },
+              "password": {
+                "isEnabled": false,
+                "bindableType": "Explicit",
+                "explicitValue": "",
+                "expression": "",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            },
+            "targetHeaders": [
+              {
+                "headerName": "x-oxpd2-uiContext",
+                "headerValue": {
+                  "isEnabled": true,
+                  "bindableType": "Expression",
+                  "explicitValue": "",
+                  "expression": "$SOLUTION_SESSION(UI_CONTEXT_TOKEN)$",
+                  "explicitValueRegex": "",
+                  "explicitValueInvalidMessage": ""
+                }
+              }
+            ],
+            "retryBehavior": {
+              "retryConnectionTimeout": {
+                "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+                "explicitValueAsType": 10,
+                "isEnabled": true,
+                "bindableType": "Explicit",
+                "explicitValue": "10",
+                "expression": "",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              },
+              "retryAttempts": {
+                "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+                "explicitValueAsType": 0,
+                "isEnabled": true,
+                "bindableType": "Explicit",
+                "explicitValue": "0",
+                "expression": "",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            }
+          }
+        },
+        "runtimeConfig": {
+          "provideRuntimeConfig": true,
+          "enabled": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": true,
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "True",
+            "expression": "$SOLUTION_CONTEXT(HTTP_APP_ENABLED)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "webApplicationChrome": {
+          "headerBackgroundColorUseDeviceDefault": false,
+          "headerBackgroundColor": {
+            "explicitValueType": "HP.Extensibility.Types.Common.RgbColor, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "#000000",
+            "expression": "$SOLUTION_CONTEXT(HEADER_BACKGROUND_COLOR)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "headerForegroundColorUseDeviceDefault": false,
+          "headerForegroundColor": {
+            "explicitValueType": "HP.Extensibility.Types.Common.RgbColor, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "#FFFFFF",
+            "expression": "$SOLUTION_CONTEXT(HEADER_FOREGROUND_COLOR)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "headerTitleUseDeviceDefault": true,
+          "headerTitle": {
+            "explicitValueType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": "",
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "footerBackgroundColorUseDeviceDefault": true,
+          "footerBackgroundColor": {
+            "explicitValueType": "HP.Extensibility.Types.Common.RgbColor, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "#000000",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "isFooterVisibleUseDeviceDefault": false,
+          "isFooterVisible": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": false,
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "False",
+            "expression": "$SOLUTION_CONTEXT(FOOTER_VISIBLE)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "isHomeButtonAvailableUseDeviceDefault": true,
+          "isHomeButtonAvailable": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": true,
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "True",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "isStartButtonVisibleUseDeviceDefault": true,
+          "isStartButtonVisible": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": true,
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "True",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "isStartButtonEnabledUseDeviceDefault": true,
+          "isStartButtonEnabled": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": true,
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "True",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "isSoftKeyboardAvailableUseDeviceDefault": true,
+          "isSoftKeyboardAvailable": {
+            "explicitValueType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": true,
+            "isEnabled": false,
+            "bindableType": "Explicit",
+            "explicitValue": "True",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "failureBehavior": {
+          "provideFailureBehavior": true,
+          "titleBackgroundColorUseDeviceDefault": false,
+          "titleBackgroundColor": "#1F405F",
+          "titleForegroundColorUseDeviceDefault": false,
+          "titleForegroundColor": "#FFFFFF",
+          "isDismissable": true,
+          "title": {
+            "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+            "stringId": "cLoadFailureTitle"
+          },
+          "message": {
+            "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+            "stringId": "cLoadFailureMessage"
+          }
+        },
+        "intentProfile": {
+          "resultSchema": {
+            "value": ""
+          },
+          "startIntentSchema": {
+            "value": "{\r\n    \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r\n    \"type\": \"object\",\r\n    \"properties\": {\r\n        \"userName\": {\r\n            \"description\": \"Your Name\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"userEmail\": {\r\n            \"description\": \"Your Email\",\r\n            \"type\": \"string\"\r\n        }\r\n    }\r\n}"
+          },
+          "provideIntentProfile": true
+        }
+      }
+    ],
+    "i18nAssets": [
+      {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "assetFormat": "Inline",
+        "inlineAsset": {
+          "languages": [
+            {
+              "languageTag": "en-US",
+              "strings": [
+                {
+                  "stringId": "cNotificationAgentName",
+                  "value": "OXPd2 Example Notification Agent",
+                  "currentValue": "OXPd2 Example Notification Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Notification Agent"
+                },
+                {
+                  "stringId": "cNotificationAgentDescription",
+                  "value": "Solution Notification Agent example for OXPd2",
+                  "currentValue": "Solution Notification Agent example for OXPd2",
+                  "useDefaultValue": false,
+                  "defaultValue": "Solution Notification Agent example for OXPd2"
+                },
+                {
+                  "stringId": "cAppAgentTitle",
+                  "value": "OXPd2 Example Application",
+                  "currentValue": "OXPd2 Example Application",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Application"
+                },
+                {
+                  "stringId": "cAppAgentDescription",
+                  "value": "An example application for the OXPd2 SDK",
+                  "currentValue": "An example application for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example application for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cPrintJobAgentName",
+                  "value": "OXPd2 Example Print Job Agent",
+                  "currentValue": "OXPd2 Example Print Job Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Print Job Agent"
+                },
+                {
+                  "stringId": "cPrintJobAgentDescription",
+                  "value": "An example Print Job Agent for the OXPd2 SDK",
+                  "currentValue": "An example Print Job Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Print Job Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cAuthAgentTitle",
+                  "value": "OXPd2 Authentication Agent",
+                  "currentValue": "OXPd2 Authentication Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Authentication Agent"
+                },
+                {
+                  "stringId": "cAuthAgentDescription",
+                  "value": "An example Authentication Agent for the OXPd2 SDK",
+                  "currentValue": "An example Authentication Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Authentication Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cLoadFailureTitle",
+                  "value": "Failed to Load OXPd2 Application",
+                  "currentValue": "Failed to Load OXPd2 Application",
+                  "useDefaultValue": false,
+                  "defaultValue": "Failed to Load OXPd2 Application"
+                },
+                {
+                  "stringId": "cLoadFailureMessage",
+                  "value": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                  "currentValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                  "useDefaultValue": false,
+                  "defaultValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again."
+                },
+                {
+                  "stringId": "cMessageCenterAgentTitle",
+                  "value": "OXPd2 Example Message Center Agent",
+                  "currentValue": "OXPd2 Example Message Center Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Message Center Agent"
+                },
+                {
+                  "stringId": "cMessageCenterAgentDescription",
+                  "value": "An example OXPd2 Message Center Agent",
+                  "currentValue": "An example OXPd2 Message Center Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example OXPd2 Message Center Agent"
+                },
+                {
+                  "stringId": "cMessageTitle",
+                  "value": "Example Message",
+                  "currentValue": "Example Message",
+                  "useDefaultValue": false,
+                  "defaultValue": "Example Message"
+                },
+                {
+                  "stringId": "cMessage",
+                  "value": "This is an example message.",
+                  "currentValue": "This is an example message.",
+                  "useDefaultValue": false,
+                  "defaultValue": "This is an example message."
+                },
+                {
+                  "stringId": "cUsbTargetAuthorityDescription",
+                  "value": "The authority for the USB Accessories Target",
+                  "currentValue": "The authority for the USB Accessories Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the USB Accessories Target"
+                },
+                {
+                  "stringId": "cUsbAgentTitle",
+                  "value": "OXPd2 USB Accessories Title",
+                  "currentValue": "OXPd2 USB Accessories Title",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 USB Accessories Title"
+                },
+                {
+                  "stringId": "cUsbAgentDescription",
+                  "value": "An example USB Accessories Agent",
+                  "currentValue": "An example USB Accessories Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example USB Accessories Agent"
+                },
+                {
+                  "stringId": "cSecurityAgentTitle",
+                  "value": "OXPd2 Security Agent",
+                  "currentValue": "OXPd2 Security Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Security Agent"
+                },
+                {
+                  "stringId": "cSecurityAgentDescription",
+                  "value": "An example Security Agent for the OXPd2 SDK",
+                  "currentValue": "An example Security Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Security Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cScanJobAgentTitle",
+                  "value": "OXPd2 Scan Job Agent",
+                  "currentValue": "OXPd2 Scan Job Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Scan Job Agent"
+                },
+                {
+                  "stringId": "cScanJobAgentDescription",
+                  "value": "An example Scan Job Agent for the OXPd2 SDK",
+                  "currentValue": "An example Scan Job Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Scan Job Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cScanJobTargetAuthorityDescription",
+                  "value": "The authority for the Scan Job Target",
+                  "currentValue": "The authority for the Scan Job Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Scan Job Target"
+                },
+                {
+                  "stringId": "cScanJobRegistrationTargetPath",
+                  "value": "The path to the Scan Job Registration Target",
+                  "currentValue": "The path to the Scan Job Registration Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Scan Job Registration Target"
+                },
+                {
+                  "stringId": "cAppTargetAuthorityDescription",
+                  "value": "The authority for the Application Target",
+                  "currentValue": "The authority for the Application Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Application Target"
+                },
+                {
+                  "stringId": "cAppTargetPathDescription",
+                  "value": "The path to the Application Target",
+                  "currentValue": "The path to the Application Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Application Target"
+                },
+                {
+                  "stringId": "cNotificationTargetAuthorityDescription",
+                  "value": "The authority for the Notification Target",
+                  "currentValue": "The authority for the Notification Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Notification Target"
+                },
+                {
+                  "stringId": "cNotificationTargetPathDescription",
+                  "value": "The path to the Notification Target",
+                  "currentValue": "The path to the Notification Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Notification Target"
+                },
+                {
+                  "stringId": "cHeaderForegroundColorDescription",
+                  "value": "The foreground color to use in the header",
+                  "currentValue": "The foreground color to use in the header",
+                  "useDefaultValue": false,
+                  "defaultValue": "The foreground color to use in the header"
+                },
+                {
+                  "stringId": "cHeaderBackgroundColorDescription",
+                  "value": "The background color to use in the header",
+                  "currentValue": "The background color to use in the header",
+                  "useDefaultValue": false,
+                  "defaultValue": "The background color to use in the header"
+                },
+                {
+                  "stringId": "cFooterVisibleDescription",
+                  "value": "Boolean to designate if the footer is visible",
+                  "currentValue": "Boolean to designate if the footer is visible",
+                  "useDefaultValue": false,
+                  "defaultValue": "Boolean to designate if the footer is visible"
+                },
+                {
+                  "stringId": "cAuthenticationTargetAuthorityDescription",
+                  "value": "The authority for the Authentication Target",
+                  "currentValue": "The authority for the Authentication Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Authentication Target"
+                },
+                {
+                  "stringId": "cAuthenticationTargetPathDescription",
+                  "value": "The path to the Authentication Target",
+                  "currentValue": "The path to the Authentication Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Authentication Target"
+                },
+                {
+                  "stringId": "cTrustedSitesDescription",
+                  "value": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                  "currentValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                  "useDefaultValue": false,
+                  "defaultValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted"
+                },
+                {
+                  "stringId": "cSolutionDiagnosticsAgentDescription",
+                  "value": "Solution Diagnostic Agent example for OXPd2",
+                  "currentValue": "Solution Diagnostic Agent example for OXPd2",
+                  "useDefaultValue": false,
+                  "defaultValue": "Solution Diagnostic Agent example for OXPd2"
+                },
+                {
+                  "stringId": "cSolutionDiagnosticsAgentTitle",
+                  "value": "Example Solution Diagnostics Agent",
+                  "currentValue": "Example Solution Diagnostics Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "Example Solution Diagnostics Agent"
+                },
+                {
+                  "stringId": "cApplicationEnablement",
+                  "value": "Set whether the application is enabled",
+                  "currentValue": "Set whether the application is enabled",
+                  "useDefaultValue": false,
+                  "defaultValue": "Set whether the application is enabled"
+                },
+                {
+                  "stringId": "cCopyAgentName",
+                  "value": "OXPd2 Example Copy Agent",
+                  "currentValue": "OXPd2 Example Copy Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Copy Agent"
+                },
+                {
+                  "stringId": "cCopyAgentDescription",
+                  "value": "An Example OXPd2 Copy Agent",
+                  "currentValue": "An Example OXPd2 Copy Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "An Example OXPd2 Copy Agent"
+                },
+                {
+                  "stringId": "cCopyTargetAuthority",
+                  "value": "The authority for the Copy Notification target",
+                  "currentValue": "The authority for the Copy Notification target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Copy Notification target"
+                },
+                {
+                  "stringId": "cCopyTargetPath",
+                  "value": "The path to the copy notification target",
+                  "currentValue": "The path to the copy notification target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the copy notification target"
+                },
+                {
+                  "stringId": "cSuppliesAgentName",
+                  "value": "OXPd2 Example Supplies Agent Name",
+                  "currentValue": "OXPd2 Example Supplies Agent Name",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Supplies Agent Name"
+                },
+                {
+                  "stringId": "cSuppliesAgentDescription",
+                  "value": "An example Supplies Agent for the OXPd2 SDK",
+                  "currentValue": "An example Supplies Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Supplies Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cDeviceUsageAgentName",
+                  "value": "OXPd2 Example Device Usage Agent",
+                  "currentValue": "OXPd2 Example Device Usage Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Device Usage Agent"
+                },
+                {
+                  "stringId": "cDeviceUsageAgentDescription",
+                  "value": "An example Device Usage Agent for the OXPd2 SDK ",
+                  "currentValue": "An example Device Usage Agent for the OXPd2 SDK ",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Device Usage Agent for the OXPd2 SDK "
+                },
+                {
+                  "stringId": "cJobStatisticsTargetAuthorityDescription",
+                  "value": "The path to the JobStatistics Target",
+                  "currentValue": "The path to the JobStatistics Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the JobStatistics Target"
+                },
+                {
+                  "stringId": "cJobStatisticsTargetPathDescription",
+                  "value": "The path to the JobStatistics Registration Target",
+                  "currentValue": "The path to the JobStatistics Registration Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the JobStatistics Registration Target"
+                },
+                {
+                  "stringId": "cJobStatisticsAgentName",
+                  "value": "OXPd2 Example Job Statistics Agent",
+                  "currentValue": "OXPd2 Example Job Statistics Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Job Statistics Agent"
+                },
+                {
+                  "stringId": "cJobStatisticsAgentDescription",
+                  "value": "An example Job Statistics Agent for the OXPd2 SDK",
+                  "currentValue": "An example Job Statistics Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Job Statistics Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cRuntimeRegistrationAgentName",
+                  "value": "OXPd2 Example RuntimeRegistration Agent",
+                  "currentValue": "OXPd2 Example RuntimeRegistration Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example RuntimeRegistration Agent"
+                },
+                {
+                  "stringId": "cRuntimeRegistrationAgentDescription",
+                  "value": "Example RuntimeRegistration Agent for OXPd2 ",
+                  "currentValue": "Example RuntimeRegistration Agent for OXPd2 ",
+                  "useDefaultValue": false,
+                  "defaultValue": "Example RuntimeRegistration Agent for OXPd2 "
+                },
+                {
+                  "stringId": "cUsbTargetPath",
+                  "value": "The path to the USB Registration Target",
+                  "currentValue": "The path to the USB Registration Target",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the USB Registration Target"
+                }
+              ],
+              "isDefaultLanguage": true
+            },
+            {
+              "languageTag": "es-ES",
+              "strings": [
+                {
+                  "stringId": "cNotificationAgentName",
+                  "value": "OXPd2 Example Notification Agent",
+                  "currentValue": "OXPd2 Example Notification Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Notification Agent"
+                },
+                {
+                  "stringId": "cNotificationAgentDescription",
+                  "value": "Ejemplo de agente de notificación de solución para OXPd2",
+                  "currentValue": "Ejemplo de agente de notificación de solución para OXPd2",
+                  "useDefaultValue": false,
+                  "defaultValue": "Solution Notification Agent example for OXPd2"
+                },
+                {
+                  "stringId": "cAppAgentTitle",
+                  "value": "Aplicación de ejemplo de OXPd2",
+                  "currentValue": "Aplicación de ejemplo de OXPd2",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Application"
+                },
+                {
+                  "stringId": "cAppAgentDescription",
+                  "value": "Una aplicación de ejemplo para OXPd2 SDK",
+                  "currentValue": "Una aplicación de ejemplo para OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example application for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cPrintJobAgentName",
+                  "value": "OXPd2 Example Print Job Agent",
+                  "currentValue": "OXPd2 Example Print Job Agent",
+                  "useDefaultValue": false,
+                  "defaultValue": "OXPd2 Example Print Job Agent"
+                },
+                {
+                  "stringId": "cPrintJobAgentDescription",
+                  "value": "An example Print Job Agent for the OXPd2 SDK",
+                  "currentValue": "An example Print Job Agent for the OXPd2 SDK",
+                  "useDefaultValue": false,
+                  "defaultValue": "An example Print Job Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cAppTargetAuthorityDescription",
+                  "value": "La autoridad para el destino de la aplicación",
+                  "currentValue": "La autoridad para el destino de la aplicación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Application Target"
+                },
+                {
+                  "stringId": "cAppTargetPathDescription",
+                  "value": "La ruta al destino de la aplicación",
+                  "currentValue": "La ruta al destino de la aplicación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Application Target"
+                },
+                {
+                  "stringId": "cNotificationTargetAuthorityDescription",
+                  "value": "La autoridad para el destino de la notificación",
+                  "currentValue": "La autoridad para el destino de la notificación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Notification Target"
+                },
+                {
+                  "stringId": "cNotificationTargetPathDescription",
+                  "value": "La ruta al destino de la notificación",
+                  "currentValue": "La ruta al destino de la notificación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Notification Target"
+                },
+                {
+                  "stringId": "cHeaderForegroundColorDescription",
+                  "value": "El color de primer plano que se usará en el encabezado.",
+                  "currentValue": "El color de primer plano que se usará en el encabezado.",
+                  "useDefaultValue": false,
+                  "defaultValue": "The foreground color to use in the header"
+                },
+                {
+                  "stringId": "cHeaderBackgroundColorDescription",
+                  "value": "El color de fondo a usar en el encabezado.",
+                  "currentValue": "El color de fondo a usar en el encabezado.",
+                  "useDefaultValue": false,
+                  "defaultValue": "The background color to use in the header"
+                },
+                {
+                  "stringId": "cFooterVisibleDescription",
+                  "value": "Booleano para designar si el pie de página es visible",
+                  "currentValue": "Booleano para designar si el pie de página es visible",
+                  "useDefaultValue": false,
+                  "defaultValue": "Boolean to designate if the footer is visible"
+                },
+                {
+                  "stringId": "cAuthenticationTargetAuthorityDescription",
+                  "value": "La autoridad para el objetivo de autenticación",
+                  "currentValue": "La autoridad para el objetivo de autenticación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The authority for the Authentication Target"
+                },
+                {
+                  "stringId": "cAuthenticationTargetPathDescription",
+                  "value": "La ruta al destino de autenticación",
+                  "currentValue": "La ruta al destino de autenticación",
+                  "useDefaultValue": false,
+                  "defaultValue": "The path to the Authentication Target"
+                },
+                {
+                  "stringId": "cTrustedSitesDescription",
+                  "value": "Declara las direcciones IP externas que, cuando accede el dispositivo en nombre de la solución, son de confianza",
+                  "currentValue": "Declara las direcciones IP externas que, cuando accede el dispositivo en nombre de la solución, son de confianza",
+                  "useDefaultValue": false,
+                  "defaultValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted"
+                },
+                {
+                  "stringId": "cAuthAgentTitle",
+                  "value": "OXPd2 Authentication Agent",
+                  "currentValue": "OXPd2 Authentication Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Authentication Agent"
+                },
+                {
+                  "stringId": "cAuthAgentDescription",
+                  "value": "An example Authentication Agent for the OXPd2 SDK",
+                  "currentValue": "An example Authentication Agent for the OXPd2 SDK",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Authentication Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cLoadFailureTitle",
+                  "value": "Failed to Load OXPd2 Application",
+                  "currentValue": "Failed to Load OXPd2 Application",
+                  "useDefaultValue": true,
+                  "defaultValue": "Failed to Load OXPd2 Application"
+                },
+                {
+                  "stringId": "cLoadFailureMessage",
+                  "value": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                  "currentValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                  "useDefaultValue": true,
+                  "defaultValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again."
+                },
+                {
+                  "stringId": "cMessageCenterAgentTitle",
+                  "value": "OXPd2 Example Message Center Agent",
+                  "currentValue": "OXPd2 Example Message Center Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example Message Center Agent"
+                },
+                {
+                  "stringId": "cMessageCenterAgentDescription",
+                  "value": "An example OXPd2 Message Center Agent",
+                  "currentValue": "An example OXPd2 Message Center Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example OXPd2 Message Center Agent"
+                },
+                {
+                  "stringId": "cMessageTitle",
+                  "value": "Example Message",
+                  "currentValue": "Example Message",
+                  "useDefaultValue": true,
+                  "defaultValue": "Example Message"
+                },
+                {
+                  "stringId": "cMessage",
+                  "value": "This is an example message.",
+                  "currentValue": "This is an example message.",
+                  "useDefaultValue": true,
+                  "defaultValue": "This is an example message."
+                },
+                {
+                  "stringId": "cUsbTargetAuthorityDescription",
+                  "value": "The authority for the USB Accessories Target",
+                  "currentValue": "The authority for the USB Accessories Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The authority for the USB Accessories Target"
+                },
+                {
+                  "stringId": "cUsbAgentTitle",
+                  "value": "OXPd2 USB Accessories Title",
+                  "currentValue": "OXPd2 USB Accessories Title",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 USB Accessories Title"
+                },
+                {
+                  "stringId": "cUsbAgentDescription",
+                  "value": "An example USB Accessories Agent",
+                  "currentValue": "An example USB Accessories Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example USB Accessories Agent"
+                },
+                {
+                  "stringId": "cSecurityAgentTitle",
+                  "value": "OXPd2 Security Agent",
+                  "currentValue": "OXPd2 Security Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Security Agent"
+                },
+                {
+                  "stringId": "cSecurityAgentDescription",
+                  "value": "An example Security Agent for the OXPd2 SDK",
+                  "currentValue": "An example Security Agent for the OXPd2 SDK",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Security Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cScanJobAgentTitle",
+                  "value": "OXPd2 Scan Job Agent",
+                  "currentValue": "OXPd2 Scan Job Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Scan Job Agent"
+                },
+                {
+                  "stringId": "cScanJobAgentDescription",
+                  "value": "An example Scan Job Agent for the OXPd2 SDK",
+                  "currentValue": "An example Scan Job Agent for the OXPd2 SDK",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Scan Job Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cScanJobTargetAuthorityDescription",
+                  "value": "The authority for the Scan Job Target",
+                  "currentValue": "The authority for the Scan Job Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The authority for the Scan Job Target"
+                },
+                {
+                  "stringId": "cScanJobRegistrationTargetPath",
+                  "value": "The path to the Scan Job Registration Target",
+                  "currentValue": "The path to the Scan Job Registration Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The path to the Scan Job Registration Target"
+                },
+                {
+                  "stringId": "cSolutionDiagnosticsAgentDescription",
+                  "value": "Solution Diagnostic Agent example for OXPd2",
+                  "currentValue": "Solution Diagnostic Agent example for OXPd2",
+                  "useDefaultValue": true,
+                  "defaultValue": "Solution Diagnostic Agent example for OXPd2"
+                },
+                {
+                  "stringId": "cSolutionDiagnosticsAgentTitle",
+                  "value": "Example Solution Diagnostics Agent",
+                  "currentValue": "Example Solution Diagnostics Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "Example Solution Diagnostics Agent"
+                },
+                {
+                  "stringId": "cApplicationEnablement",
+                  "value": "Set whether the application is enabled",
+                  "currentValue": "Set whether the application is enabled",
+                  "useDefaultValue": true,
+                  "defaultValue": "Set whether the application is enabled"
+                },
+                {
+                  "stringId": "cCopyAgentName",
+                  "value": "OXPd2 Example Copy Agent",
+                  "currentValue": "OXPd2 Example Copy Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example Copy Agent"
+                },
+                {
+                  "stringId": "cCopyAgentDescription",
+                  "value": "An Example OXPd2 Copy Agent",
+                  "currentValue": "An Example OXPd2 Copy Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "An Example OXPd2 Copy Agent"
+                },
+                {
+                  "stringId": "cCopyTargetAuthority",
+                  "value": "The authority for the Copy Notification target",
+                  "currentValue": "The authority for the Copy Notification target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The authority for the Copy Notification target"
+                },
+                {
+                  "stringId": "cCopyTargetPath",
+                  "value": "The path to the copy notification target",
+                  "currentValue": "The path to the copy notification target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The path to the copy notification target"
+                },
+                {
+                  "stringId": "cSuppliesAgentName",
+                  "value": "OXPd2 Example Supplies Agent Name",
+                  "currentValue": "OXPd2 Example Supplies Agent Name",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example Supplies Agent Name"
+                },
+                {
+                  "stringId": "cSuppliesAgentDescription",
+                  "value": "An example Supplies Agent for the OXPd2 SDK",
+                  "currentValue": "An example Supplies Agent for the OXPd2 SDK",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Supplies Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cDeviceUsageAgentName",
+                  "value": "OXPd2 Example Device Usage Agent",
+                  "currentValue": "OXPd2 Example Device Usage Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example Device Usage Agent"
+                },
+                {
+                  "stringId": "cDeviceUsageAgentDescription",
+                  "value": "An example Device Usage Agent for the OXPd2 SDK ",
+                  "currentValue": "An example Device Usage Agent for the OXPd2 SDK ",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Device Usage Agent for the OXPd2 SDK "
+                },
+                {
+                  "stringId": "cJobStatisticsTargetAuthorityDescription",
+                  "value": "The path to the JobStatistics Target",
+                  "currentValue": "The path to the JobStatistics Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The path to the JobStatistics Target"
+                },
+                {
+                  "stringId": "cJobStatisticsTargetPathDescription",
+                  "value": "The path to the JobStatistics Registration Target",
+                  "currentValue": "The path to the JobStatistics Registration Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The path to the JobStatistics Registration Target"
+                },
+                {
+                  "stringId": "cJobStatisticsAgentName",
+                  "value": "OXPd2 Example Job Statistics Agent",
+                  "currentValue": "OXPd2 Example Job Statistics Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example Job Statistics Agent"
+                },
+                {
+                  "stringId": "cJobStatisticsAgentDescription",
+                  "value": "An example Job Statistics Agent for the OXPd2 SDK",
+                  "currentValue": "An example Job Statistics Agent for the OXPd2 SDK",
+                  "useDefaultValue": true,
+                  "defaultValue": "An example Job Statistics Agent for the OXPd2 SDK"
+                },
+                {
+                  "stringId": "cRuntimeRegistrationAgentName",
+                  "value": "OXPd2 Example RuntimeRegistration Agent",
+                  "currentValue": "OXPd2 Example RuntimeRegistration Agent",
+                  "useDefaultValue": true,
+                  "defaultValue": "OXPd2 Example RuntimeRegistration Agent"
+                },
+                {
+                  "stringId": "cRuntimeRegistrationAgentDescription",
+                  "value": "Example RuntimeRegistration Agent for OXPd2 ",
+                  "currentValue": "Example RuntimeRegistration Agent for OXPd2 ",
+                  "useDefaultValue": true,
+                  "defaultValue": "Example RuntimeRegistration Agent for OXPd2 "
+                },
+                {
+                  "stringId": "cUsbTargetPath",
+                  "value": "The path to the USB Registration Target",
+                  "currentValue": "The path to the USB Registration Target",
+                  "useDefaultValue": true,
+                  "defaultValue": "The path to the USB Registration Target"
+                }
+              ],
+              "selectedString": {
+                "stringId": "",
+                "value": "",
+                "currentValue": "",
+                "useDefaultValue": false,
+                "defaultValue": "None"
+              },
+              "isDefaultLanguage": false
+            }
+          ],
+          "selectedLanguage": {
+            "languageTag": "en-US",
+            "strings": [
+              {
+                "stringId": "cNotificationAgentName",
+                "value": "OXPd2 Example Notification Agent",
+                "currentValue": "OXPd2 Example Notification Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Notification Agent"
+              },
+              {
+                "stringId": "cNotificationAgentDescription",
+                "value": "Solution Notification Agent example for OXPd2",
+                "currentValue": "Solution Notification Agent example for OXPd2",
+                "useDefaultValue": false,
+                "defaultValue": "Solution Notification Agent example for OXPd2"
+              },
+              {
+                "stringId": "cAppAgentTitle",
+                "value": "OXPd2 Example Application",
+                "currentValue": "OXPd2 Example Application",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Application"
+              },
+              {
+                "stringId": "cAppAgentDescription",
+                "value": "An example application for the OXPd2 SDK",
+                "currentValue": "An example application for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example application for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cPrintJobAgentName",
+                "value": "OXPd2 Example Print Job Agent",
+                "currentValue": "OXPd2 Example Print Job Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Print Job Agent"
+              },
+              {
+                "stringId": "cPrintJobAgentDescription",
+                "value": "An example Print Job Agent for the OXPd2 SDK",
+                "currentValue": "An example Print Job Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Print Job Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cAuthAgentTitle",
+                "value": "OXPd2 Authentication Agent",
+                "currentValue": "OXPd2 Authentication Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Authentication Agent"
+              },
+              {
+                "stringId": "cAuthAgentDescription",
+                "value": "An example Authentication Agent for the OXPd2 SDK",
+                "currentValue": "An example Authentication Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Authentication Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cLoadFailureTitle",
+                "value": "Failed to Load OXPd2 Application",
+                "currentValue": "Failed to Load OXPd2 Application",
+                "useDefaultValue": false,
+                "defaultValue": "Failed to Load OXPd2 Application"
+              },
+              {
+                "stringId": "cLoadFailureMessage",
+                "value": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                "currentValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                "useDefaultValue": false,
+                "defaultValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again."
+              },
+              {
+                "stringId": "cMessageCenterAgentTitle",
+                "value": "OXPd2 Example Message Center Agent",
+                "currentValue": "OXPd2 Example Message Center Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Message Center Agent"
+              },
+              {
+                "stringId": "cMessageCenterAgentDescription",
+                "value": "An example OXPd2 Message Center Agent",
+                "currentValue": "An example OXPd2 Message Center Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An example OXPd2 Message Center Agent"
+              },
+              {
+                "stringId": "cMessageTitle",
+                "value": "Example Message",
+                "currentValue": "Example Message",
+                "useDefaultValue": false,
+                "defaultValue": "Example Message"
+              },
+              {
+                "stringId": "cMessage",
+                "value": "This is an example message.",
+                "currentValue": "This is an example message.",
+                "useDefaultValue": false,
+                "defaultValue": "This is an example message."
+              },
+              {
+                "stringId": "cUsbTargetAuthorityDescription",
+                "value": "The authority for the USB Accessories Target",
+                "currentValue": "The authority for the USB Accessories Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the USB Accessories Target"
+              },
+              {
+                "stringId": "cUsbAgentTitle",
+                "value": "OXPd2 USB Accessories Title",
+                "currentValue": "OXPd2 USB Accessories Title",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 USB Accessories Title"
+              },
+              {
+                "stringId": "cUsbAgentDescription",
+                "value": "An example USB Accessories Agent",
+                "currentValue": "An example USB Accessories Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An example USB Accessories Agent"
+              },
+              {
+                "stringId": "cSecurityAgentTitle",
+                "value": "OXPd2 Security Agent",
+                "currentValue": "OXPd2 Security Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Security Agent"
+              },
+              {
+                "stringId": "cSecurityAgentDescription",
+                "value": "An example Security Agent for the OXPd2 SDK",
+                "currentValue": "An example Security Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Security Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cScanJobAgentTitle",
+                "value": "OXPd2 Scan Job Agent",
+                "currentValue": "OXPd2 Scan Job Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Scan Job Agent"
+              },
+              {
+                "stringId": "cScanJobAgentDescription",
+                "value": "An example Scan Job Agent for the OXPd2 SDK",
+                "currentValue": "An example Scan Job Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Scan Job Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cScanJobTargetAuthorityDescription",
+                "value": "The authority for the Scan Job Target",
+                "currentValue": "The authority for the Scan Job Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Scan Job Target"
+              },
+              {
+                "stringId": "cScanJobRegistrationTargetPath",
+                "value": "The path to the Scan Job Registration Target",
+                "currentValue": "The path to the Scan Job Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Scan Job Registration Target"
+              },
+              {
+                "stringId": "cAppTargetAuthorityDescription",
+                "value": "The authority for the Application Target",
+                "currentValue": "The authority for the Application Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Application Target"
+              },
+              {
+                "stringId": "cAppTargetPathDescription",
+                "value": "The path to the Application Target",
+                "currentValue": "The path to the Application Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Application Target"
+              },
+              {
+                "stringId": "cNotificationTargetAuthorityDescription",
+                "value": "The authority for the Notification Target",
+                "currentValue": "The authority for the Notification Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Notification Target"
+              },
+              {
+                "stringId": "cNotificationTargetPathDescription",
+                "value": "The path to the Notification Target",
+                "currentValue": "The path to the Notification Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Notification Target"
+              },
+              {
+                "stringId": "cHeaderForegroundColorDescription",
+                "value": "The foreground color to use in the header",
+                "currentValue": "The foreground color to use in the header",
+                "useDefaultValue": false,
+                "defaultValue": "The foreground color to use in the header"
+              },
+              {
+                "stringId": "cHeaderBackgroundColorDescription",
+                "value": "The background color to use in the header",
+                "currentValue": "The background color to use in the header",
+                "useDefaultValue": false,
+                "defaultValue": "The background color to use in the header"
+              },
+              {
+                "stringId": "cFooterVisibleDescription",
+                "value": "Boolean to designate if the footer is visible",
+                "currentValue": "Boolean to designate if the footer is visible",
+                "useDefaultValue": false,
+                "defaultValue": "Boolean to designate if the footer is visible"
+              },
+              {
+                "stringId": "cAuthenticationTargetAuthorityDescription",
+                "value": "The authority for the Authentication Target",
+                "currentValue": "The authority for the Authentication Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Authentication Target"
+              },
+              {
+                "stringId": "cAuthenticationTargetPathDescription",
+                "value": "The path to the Authentication Target",
+                "currentValue": "The path to the Authentication Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Authentication Target"
+              },
+              {
+                "stringId": "cTrustedSitesDescription",
+                "value": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                "currentValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                "useDefaultValue": false,
+                "defaultValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted"
+              },
+              {
+                "stringId": "cSolutionDiagnosticsAgentDescription",
+                "value": "Solution Diagnostic Agent example for OXPd2",
+                "currentValue": "Solution Diagnostic Agent example for OXPd2",
+                "useDefaultValue": false,
+                "defaultValue": "Solution Diagnostic Agent example for OXPd2"
+              },
+              {
+                "stringId": "cSolutionDiagnosticsAgentTitle",
+                "value": "Example Solution Diagnostics Agent",
+                "currentValue": "Example Solution Diagnostics Agent",
+                "useDefaultValue": false,
+                "defaultValue": "Example Solution Diagnostics Agent"
+              },
+              {
+                "stringId": "cApplicationEnablement",
+                "value": "Set whether the application is enabled",
+                "currentValue": "Set whether the application is enabled",
+                "useDefaultValue": false,
+                "defaultValue": "Set whether the application is enabled"
+              },
+              {
+                "stringId": "cCopyAgentName",
+                "value": "OXPd2 Example Copy Agent",
+                "currentValue": "OXPd2 Example Copy Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Copy Agent"
+              },
+              {
+                "stringId": "cCopyAgentDescription",
+                "value": "An Example OXPd2 Copy Agent",
+                "currentValue": "An Example OXPd2 Copy Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An Example OXPd2 Copy Agent"
+              },
+              {
+                "stringId": "cCopyTargetAuthority",
+                "value": "The authority for the Copy Notification target",
+                "currentValue": "The authority for the Copy Notification target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Copy Notification target"
+              },
+              {
+                "stringId": "cCopyTargetPath",
+                "value": "The path to the copy notification target",
+                "currentValue": "The path to the copy notification target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the copy notification target"
+              },
+              {
+                "stringId": "cSuppliesAgentName",
+                "value": "OXPd2 Example Supplies Agent Name",
+                "currentValue": "OXPd2 Example Supplies Agent Name",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Supplies Agent Name"
+              },
+              {
+                "stringId": "cSuppliesAgentDescription",
+                "value": "An example Supplies Agent for the OXPd2 SDK",
+                "currentValue": "An example Supplies Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Supplies Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cDeviceUsageAgentName",
+                "value": "OXPd2 Example Device Usage Agent",
+                "currentValue": "OXPd2 Example Device Usage Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Device Usage Agent"
+              },
+              {
+                "stringId": "cDeviceUsageAgentDescription",
+                "value": "An example Device Usage Agent for the OXPd2 SDK ",
+                "currentValue": "An example Device Usage Agent for the OXPd2 SDK ",
+                "useDefaultValue": false,
+                "defaultValue": "An example Device Usage Agent for the OXPd2 SDK "
+              },
+              {
+                "stringId": "cJobStatisticsTargetAuthorityDescription",
+                "value": "The path to the JobStatistics Target",
+                "currentValue": "The path to the JobStatistics Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the JobStatistics Target"
+              },
+              {
+                "stringId": "cJobStatisticsTargetPathDescription",
+                "value": "The path to the JobStatistics Registration Target",
+                "currentValue": "The path to the JobStatistics Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the JobStatistics Registration Target"
+              },
+              {
+                "stringId": "cJobStatisticsAgentName",
+                "value": "OXPd2 Example Job Statistics Agent",
+                "currentValue": "OXPd2 Example Job Statistics Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Job Statistics Agent"
+              },
+              {
+                "stringId": "cJobStatisticsAgentDescription",
+                "value": "An example Job Statistics Agent for the OXPd2 SDK",
+                "currentValue": "An example Job Statistics Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Job Statistics Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cRuntimeRegistrationAgentName",
+                "value": "OXPd2 Example RuntimeRegistration Agent",
+                "currentValue": "OXPd2 Example RuntimeRegistration Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example RuntimeRegistration Agent"
+              },
+              {
+                "stringId": "cRuntimeRegistrationAgentDescription",
+                "value": "Example RuntimeRegistration Agent for OXPd2 ",
+                "currentValue": "Example RuntimeRegistration Agent for OXPd2 ",
+                "useDefaultValue": false,
+                "defaultValue": "Example RuntimeRegistration Agent for OXPd2 "
+              },
+              {
+                "stringId": "cUsbTargetPath",
+                "value": "The path to the USB Registration Target",
+                "currentValue": "The path to the USB Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the USB Registration Target"
+              }
+            ],
+            "isDefaultLanguage": true
+          },
+          "defaultLanguage": {
+            "languageTag": "en-US",
+            "strings": [
+              {
+                "stringId": "cNotificationAgentName",
+                "value": "OXPd2 Example Notification Agent",
+                "currentValue": "OXPd2 Example Notification Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Notification Agent"
+              },
+              {
+                "stringId": "cNotificationAgentDescription",
+                "value": "Solution Notification Agent example for OXPd2",
+                "currentValue": "Solution Notification Agent example for OXPd2",
+                "useDefaultValue": false,
+                "defaultValue": "Solution Notification Agent example for OXPd2"
+              },
+              {
+                "stringId": "cAppAgentTitle",
+                "value": "OXPd2 Example Application",
+                "currentValue": "OXPd2 Example Application",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Application"
+              },
+              {
+                "stringId": "cAppAgentDescription",
+                "value": "An example application for the OXPd2 SDK",
+                "currentValue": "An example application for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example application for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cPrintJobAgentName",
+                "value": "OXPd2 Example Print Job Agent",
+                "currentValue": "OXPd2 Example Print Job Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Print Job Agent"
+              },
+              {
+                "stringId": "cPrintJobAgentDescription",
+                "value": "An example Print Job Agent for the OXPd2 SDK",
+                "currentValue": "An example Print Job Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Print Job Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cAuthAgentTitle",
+                "value": "OXPd2 Authentication Agent",
+                "currentValue": "OXPd2 Authentication Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Authentication Agent"
+              },
+              {
+                "stringId": "cAuthAgentDescription",
+                "value": "An example Authentication Agent for the OXPd2 SDK",
+                "currentValue": "An example Authentication Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Authentication Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cLoadFailureTitle",
+                "value": "Failed to Load OXPd2 Application",
+                "currentValue": "Failed to Load OXPd2 Application",
+                "useDefaultValue": false,
+                "defaultValue": "Failed to Load OXPd2 Application"
+              },
+              {
+                "stringId": "cLoadFailureMessage",
+                "value": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                "currentValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again.",
+                "useDefaultValue": false,
+                "defaultValue": "There was a problem loading the OXPd2 example application. Check your connection and/or context settings and try again."
+              },
+              {
+                "stringId": "cMessageCenterAgentTitle",
+                "value": "OXPd2 Example Message Center Agent",
+                "currentValue": "OXPd2 Example Message Center Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Message Center Agent"
+              },
+              {
+                "stringId": "cMessageCenterAgentDescription",
+                "value": "An example OXPd2 Message Center Agent",
+                "currentValue": "An example OXPd2 Message Center Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An example OXPd2 Message Center Agent"
+              },
+              {
+                "stringId": "cMessageTitle",
+                "value": "Example Message",
+                "currentValue": "Example Message",
+                "useDefaultValue": false,
+                "defaultValue": "Example Message"
+              },
+              {
+                "stringId": "cMessage",
+                "value": "This is an example message.",
+                "currentValue": "This is an example message.",
+                "useDefaultValue": false,
+                "defaultValue": "This is an example message."
+              },
+              {
+                "stringId": "cUsbTargetAuthorityDescription",
+                "value": "The authority for the USB Accessories Target",
+                "currentValue": "The authority for the USB Accessories Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the USB Accessories Target"
+              },
+              {
+                "stringId": "cUsbAgentTitle",
+                "value": "OXPd2 USB Accessories Title",
+                "currentValue": "OXPd2 USB Accessories Title",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 USB Accessories Title"
+              },
+              {
+                "stringId": "cUsbAgentDescription",
+                "value": "An example USB Accessories Agent",
+                "currentValue": "An example USB Accessories Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An example USB Accessories Agent"
+              },
+              {
+                "stringId": "cSecurityAgentTitle",
+                "value": "OXPd2 Security Agent",
+                "currentValue": "OXPd2 Security Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Security Agent"
+              },
+              {
+                "stringId": "cSecurityAgentDescription",
+                "value": "An example Security Agent for the OXPd2 SDK",
+                "currentValue": "An example Security Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Security Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cScanJobAgentTitle",
+                "value": "OXPd2 Scan Job Agent",
+                "currentValue": "OXPd2 Scan Job Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Scan Job Agent"
+              },
+              {
+                "stringId": "cScanJobAgentDescription",
+                "value": "An example Scan Job Agent for the OXPd2 SDK",
+                "currentValue": "An example Scan Job Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Scan Job Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cScanJobTargetAuthorityDescription",
+                "value": "The authority for the Scan Job Target",
+                "currentValue": "The authority for the Scan Job Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Scan Job Target"
+              },
+              {
+                "stringId": "cScanJobRegistrationTargetPath",
+                "value": "The path to the Scan Job Registration Target",
+                "currentValue": "The path to the Scan Job Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Scan Job Registration Target"
+              },
+              {
+                "stringId": "cAppTargetAuthorityDescription",
+                "value": "The authority for the Application Target",
+                "currentValue": "The authority for the Application Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Application Target"
+              },
+              {
+                "stringId": "cAppTargetPathDescription",
+                "value": "The path to the Application Target",
+                "currentValue": "The path to the Application Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Application Target"
+              },
+              {
+                "stringId": "cNotificationTargetAuthorityDescription",
+                "value": "The authority for the Notification Target",
+                "currentValue": "The authority for the Notification Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Notification Target"
+              },
+              {
+                "stringId": "cNotificationTargetPathDescription",
+                "value": "The path to the Notification Target",
+                "currentValue": "The path to the Notification Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Notification Target"
+              },
+              {
+                "stringId": "cHeaderForegroundColorDescription",
+                "value": "The foreground color to use in the header",
+                "currentValue": "The foreground color to use in the header",
+                "useDefaultValue": false,
+                "defaultValue": "The foreground color to use in the header"
+              },
+              {
+                "stringId": "cHeaderBackgroundColorDescription",
+                "value": "The background color to use in the header",
+                "currentValue": "The background color to use in the header",
+                "useDefaultValue": false,
+                "defaultValue": "The background color to use in the header"
+              },
+              {
+                "stringId": "cFooterVisibleDescription",
+                "value": "Boolean to designate if the footer is visible",
+                "currentValue": "Boolean to designate if the footer is visible",
+                "useDefaultValue": false,
+                "defaultValue": "Boolean to designate if the footer is visible"
+              },
+              {
+                "stringId": "cAuthenticationTargetAuthorityDescription",
+                "value": "The authority for the Authentication Target",
+                "currentValue": "The authority for the Authentication Target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Authentication Target"
+              },
+              {
+                "stringId": "cAuthenticationTargetPathDescription",
+                "value": "The path to the Authentication Target",
+                "currentValue": "The path to the Authentication Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the Authentication Target"
+              },
+              {
+                "stringId": "cTrustedSitesDescription",
+                "value": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                "currentValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted",
+                "useDefaultValue": false,
+                "defaultValue": "Declares the external IP addresses that when accessed by the device on behalf of the solution that are to be trusted"
+              },
+              {
+                "stringId": "cSolutionDiagnosticsAgentDescription",
+                "value": "Solution Diagnostic Agent example for OXPd2",
+                "currentValue": "Solution Diagnostic Agent example for OXPd2",
+                "useDefaultValue": false,
+                "defaultValue": "Solution Diagnostic Agent example for OXPd2"
+              },
+              {
+                "stringId": "cSolutionDiagnosticsAgentTitle",
+                "value": "Example Solution Diagnostics Agent",
+                "currentValue": "Example Solution Diagnostics Agent",
+                "useDefaultValue": false,
+                "defaultValue": "Example Solution Diagnostics Agent"
+              },
+              {
+                "stringId": "cApplicationEnablement",
+                "value": "Set whether the application is enabled",
+                "currentValue": "Set whether the application is enabled",
+                "useDefaultValue": false,
+                "defaultValue": "Set whether the application is enabled"
+              },
+              {
+                "stringId": "cCopyAgentName",
+                "value": "OXPd2 Example Copy Agent",
+                "currentValue": "OXPd2 Example Copy Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Copy Agent"
+              },
+              {
+                "stringId": "cCopyAgentDescription",
+                "value": "An Example OXPd2 Copy Agent",
+                "currentValue": "An Example OXPd2 Copy Agent",
+                "useDefaultValue": false,
+                "defaultValue": "An Example OXPd2 Copy Agent"
+              },
+              {
+                "stringId": "cCopyTargetAuthority",
+                "value": "The authority for the Copy Notification target",
+                "currentValue": "The authority for the Copy Notification target",
+                "useDefaultValue": false,
+                "defaultValue": "The authority for the Copy Notification target"
+              },
+              {
+                "stringId": "cCopyTargetPath",
+                "value": "The path to the copy notification target",
+                "currentValue": "The path to the copy notification target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the copy notification target"
+              },
+              {
+                "stringId": "cSuppliesAgentName",
+                "value": "OXPd2 Example Supplies Agent Name",
+                "currentValue": "OXPd2 Example Supplies Agent Name",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Supplies Agent Name"
+              },
+              {
+                "stringId": "cSuppliesAgentDescription",
+                "value": "An example Supplies Agent for the OXPd2 SDK",
+                "currentValue": "An example Supplies Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Supplies Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cDeviceUsageAgentName",
+                "value": "OXPd2 Example Device Usage Agent",
+                "currentValue": "OXPd2 Example Device Usage Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Device Usage Agent"
+              },
+              {
+                "stringId": "cDeviceUsageAgentDescription",
+                "value": "An example Device Usage Agent for the OXPd2 SDK ",
+                "currentValue": "An example Device Usage Agent for the OXPd2 SDK ",
+                "useDefaultValue": false,
+                "defaultValue": "An example Device Usage Agent for the OXPd2 SDK "
+              },
+              {
+                "stringId": "cJobStatisticsTargetAuthorityDescription",
+                "value": "The path to the JobStatistics Target",
+                "currentValue": "The path to the JobStatistics Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the JobStatistics Target"
+              },
+              {
+                "stringId": "cJobStatisticsTargetPathDescription",
+                "value": "The path to the JobStatistics Registration Target",
+                "currentValue": "The path to the JobStatistics Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the JobStatistics Registration Target"
+              },
+              {
+                "stringId": "cJobStatisticsAgentName",
+                "value": "OXPd2 Example Job Statistics Agent",
+                "currentValue": "OXPd2 Example Job Statistics Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example Job Statistics Agent"
+              },
+              {
+                "stringId": "cJobStatisticsAgentDescription",
+                "value": "An example Job Statistics Agent for the OXPd2 SDK",
+                "currentValue": "An example Job Statistics Agent for the OXPd2 SDK",
+                "useDefaultValue": false,
+                "defaultValue": "An example Job Statistics Agent for the OXPd2 SDK"
+              },
+              {
+                "stringId": "cRuntimeRegistrationAgentName",
+                "value": "OXPd2 Example RuntimeRegistration Agent",
+                "currentValue": "OXPd2 Example RuntimeRegistration Agent",
+                "useDefaultValue": false,
+                "defaultValue": "OXPd2 Example RuntimeRegistration Agent"
+              },
+              {
+                "stringId": "cRuntimeRegistrationAgentDescription",
+                "value": "Example RuntimeRegistration Agent for OXPd2 ",
+                "currentValue": "Example RuntimeRegistration Agent for OXPd2 ",
+                "useDefaultValue": false,
+                "defaultValue": "Example RuntimeRegistration Agent for OXPd2 "
+              },
+              {
+                "stringId": "cUsbTargetPath",
+                "value": "The path to the USB Registration Target",
+                "currentValue": "The path to the USB Registration Target",
+                "useDefaultValue": false,
+                "defaultValue": "The path to the USB Registration Target"
+              }
+            ],
+            "isDefaultLanguage": true
+          }
+        },
+        "localAsset": {
+          "fileType": "",
+          "fileName": "",
+          "subFolder": "i18n",
+          "bundlePathType": "Automatic",
+          "automaticBundlePath": "/assets/i18n",
+          "selectedAsset": "",
+          "selectedAssetPath": "/assets/i18n",
+          "customBundlePath": "",
+          "currentBundlePath": "/assets/i18n"
+        },
+        "existingIds": []
+      }
+    ],
+    "typeData": {
+      "name": "ApplicationTypes",
+      "versionedGUN": "com.hp.ext.types.application.1",
+      "revisionDetail": " ( )"
+    },
+    "messageCenterAgent": {
+      "includeMessageCenterAgent": true,
+      "agentId": "D443F2B1-FA32-45B7-81DF-C0DC9A30996E",
+      "name": "OXPd2 Example Message Center Agent",
+      "title": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cMessageCenterAgentTitle"
+      },
+      "description": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cMessageCenterAgentDescription"
+      }
+    }
+  },
+  "printJobService": {
+    "typeData": {
+      "name": "printJob",
+      "versionedGUN": "com.hp.ext.service.printJob.1",
+      "revisionDetail": " ( )"
+    },
+    "printJobAgent": {
+      "includePrintJobAgent": true,
+      "agentId": "12A5B0CB-D932-4C81-9370-03A505099B01",
+      "name": "OXPd2 Example Print Job Agent",
+      "title": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cPrintJobAgentName"
+      },
+      "description": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cPrintJobAgentDescription"
+      }
+    }
+  },
+  "authenticationService": {
+    "authenticationAgents": [
+      {
+        "existingIds": [],
+        "agentId": "8D9A591C-E6EA-4A05-ACB8-31081B3A1D26",
+        "name": "OXPd2 Authentication Agent",
+        "title": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAuthAgentTitle"
+        },
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cAuthAgentDescription"
+        },
+        "enablePrePromptCheck": true,
+        "enableSignOutNotification": true,
+        "target": {
+          "endpoint": {
+            "scheme": "http",
+            "authority": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(AUTH_TARGET_AUTHORITY)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "path": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(AUTH_TARGET_PATH)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "authorization": {
+            "authorizationType": "None",
+            "username": {
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "password": {
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "targetHeaders": [
+            {
+              "headerName": "x-oxpd2-authsession_id",
+              "headerValue": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$SOLUTION_SESSION(AUTHENTICATION_CONTEXT_ID)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            },
+            {
+              "headerName": "x-oxpd2-authsession_token",
+              "headerValue": {
+                "isEnabled": true,
+                "bindableType": "Expression",
+                "explicitValue": "",
+                "expression": "$SOLUTION_SESSION(AUTHENTICATION_CONTEXT_TOKEN)$",
+                "explicitValueRegex": "",
+                "explicitValueInvalidMessage": ""
+              }
+            }
+          ],
+          "retryBehavior": {
+            "retryConnectionTimeout": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 10,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "10",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "retryAttempts": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 0,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "0",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          }
+        },
+        "modifiedUserAttributes": []
+      }
+    ],
+    "typeData": {
+      "name": "AuthenticationTypes",
+      "versionedGUN": "com.hp.ext.types.authentication.1",
+      "revisionDetail": " ( )"
+    }
+  },
+  "securityService": {
+    "typeData": {
+      "name": "security",
+      "versionedGUN": "com.hp.ext.service.security.1",
+      "revisionDetail": " ( )"
+    },
+    "securityAgent": {
+      "includeSecurityAgent": true,
+      "customDeclaredExpressionOperators": [],
+      "declaredExpressionOperators": [
+        {
+          "declaredExpressionOperator": "USER_NAME",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "DISPLAY_NAME",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "EMAIL_ADDRESS",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "EXCHANGE_MAILBOX",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "FQ_USER_NAME",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "HOME_FOLDER",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "LDAP_BIND_USER",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "USER_DOMAIN",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "USER_PRINCIPAL",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "AUTH_TYPE",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "AUTH_AGENT_ID",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "SAM_ACCOUNT",
+          "isCustomMacro": false
+        },
+        {
+          "declaredExpressionOperator": "SID",
+          "isCustomMacro": false
+        }
+      ],
+      "agentId": "6163BB1F-01D6-4C97-AE9E-B2828AEF864E",
+      "name": "OXPd2 Example Security Agent",
+      "title": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSecurityAgentTitle"
+      },
+      "description": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSecurityAgentDescription"
+      },
+      "corsEnabled": false
+    },
+    "declaredExpressionOperators": []
+  },
+  "usbAccessoriesService": {
+    "typeData": {
+      "name": "usbAccessories",
+      "versionedGUN": "com.hp.ext.service.usbAccessories.1",
+      "revisionDetail": " ( )"
+    },
+    "usbAccessoriesAgent": {
+      "_enablePostRegistrationPromptCheck": false,
+      "includeUsbAccessoriesAgent": true,
+      "usbAccessoriesAgentDetails": {
+        "agentId": "7A68D9FE-E112-4C68-B905-CD9C85818E87",
+        "name": "OXPd2 USB Acessories Agent",
+        "title": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cUsbAgentTitle"
+        },
+        "description": {
+          "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+          "stringId": "cUsbAgentDescription"
+        }
+      },
+      "includeRegistrationTarget": true,
+      "registrationTarget": {
+        "endpoint": {
+          "scheme": "http",
+          "authority": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(USB_TARGET_AUTHORITY)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "path": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(USB_TARGET_PATH)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "authorization": {
+          "authorizationType": "None",
+          "username": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "password": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "targetHeaders": [],
+        "retryBehavior": {
+          "retryConnectionTimeout": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 10,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "10",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "retryAttempts": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 0,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "0",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        }
+      },
+      "enablePostRegistrationPromptCheck": false,
+      "registrations": [
+        {
+          "omitSerialNumber": false,
+          "productId": {
+            "value": 69
+          },
+          "registrationKind": "rkOwned",
+          "serialNumber": "",
+          "vendorId": {
+            "value": 1008
+          }
+        },
+        {
+          "omitSerialNumber": false,
+          "productId": {
+            "value": 71
+          },
+          "registrationKind": "rkShared",
+          "serialNumber": "578S7V",
+          "vendorId": {
+            "value": 1008
+          }
+        }
+      ]
+    }
+  },
+  "scanJobService": {
+    "typeData": {
+      "name": "scanJob",
+      "versionedGUN": "com.hp.ext.service.scanJob.1",
+      "revisionDetail": " ( )"
+    },
+    "scanJobAgent": {
+      "includeScanJobAgent": true,
+      "isWorkpathAgent": false,
+      "agentId": "91F17F6C-5212-44F7-8150-5CE21155F0C4",
+      "name": "OXPd2 Example ScanJob Agent",
+      "title": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cScanJobAgentTitle"
+      },
+      "description": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cScanJobAgentDescription"
+      },
+      "target": {
+        "endpoint": {
+          "scheme": "http",
+          "authority": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(SCANJOB_TARGET_AUTHORITY)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "path": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(SCANJOB_TARGET_REGISTRATION_PATH)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "authorization": {
+          "authorizationType": "None",
+          "username": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "password": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "targetHeaders": [],
+        "retryBehavior": {
+          "retryConnectionTimeout": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 10,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "10",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "retryAttempts": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 0,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "0",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        }
+      }
+    }
+  },
+  "solutionDiagnosticsService": {
+    "typeData": {
+      "name": "solutionDiagnostics",
+      "versionedGUN": "com.hp.ext.service.solutionDiagnostics.1",
+      "revisionDetail": " ( )"
+    },
+    "solutionDiagnosticsAgent": {
+      "provideSolutionDiagnosticsAgent": true,
+      "agentId": "A42AA344-2C11-4C12-ACE0-18AD3A6D7E78",
+      "name": "Example Solution Diagnostics Agent",
+      "localizedName": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSolutionDiagnosticsAgentTitle"
+      },
+      "localizedDescription": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSolutionDiagnosticsAgentDescription"
+      }
+    }
+  },
+  "copyService": {
+    "typeData": {
+      "name": "copyJob",
+      "versionedGUN": "com.hp.ext.service.copy.1",
+      "revisionDetail": " ( )"
+    },
+    "copyAgent": {
+      "includeCopyAgent": true,
+      "isWorkpathAgent": false,
+      "agentId": "E6E31AA5-D37A-4382-90CC-D861DC4C3696",
+      "name": "OXPd2 Example Copy Agent",
+      "localizedName": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cCopyAgentName"
+      },
+      "localizedDescription": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cCopyAgentDescription"
+      },
+      "notificationTarget": {
+        "endpoint": {
+          "scheme": "http",
+          "authority": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(COPY_TARGET_AUTHORITY)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "path": {
+            "isEnabled": true,
+            "bindableType": "Expression",
+            "explicitValue": "",
+            "expression": "$SOLUTION_CONTEXT(COPY_TARGET_PATH)$",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "authorization": {
+          "authorizationType": "None",
+          "username": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "password": {
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        },
+        "targetHeaders": [],
+        "retryBehavior": {
+          "retryConnectionTimeout": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 10,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "10",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          },
+          "retryAttempts": {
+            "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "explicitValueAsType": 0,
+            "isEnabled": true,
+            "bindableType": "Explicit",
+            "explicitValue": "0",
+            "expression": "",
+            "explicitValueRegex": "",
+            "explicitValueInvalidMessage": ""
+          }
+        }
+      }
+    }
+  },
+  "deviceUsageService": {
+    "typeData": {
+      "name": "deviceUsage",
+      "versionedGUN": "com.hp.ext.service.deviceUsage.1",
+      "revisionDetail": " ( )"
+    },
+    "deviceUsageAgent": {
+      "includeDeviceUsageAgent": true,
+      "agentId": "0E09BFCA-D782-4D09-822D-245F87018D3D",
+      "name": "OXPd2 Example Device Usage Agent",
+      "localizedName": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cDeviceUsageAgentName"
+      },
+      "localizedDescription": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cDeviceUsageAgentDescription"
+      }
+    }
+  },
+  "suppliesService": {
+    "typeData": {
+      "name": "supplies",
+      "versionedGUN": "com.hp.ext.service.supplies.1",
+      "revisionDetail": " ( )"
+    },
+    "suppliesAgent": {
+      "includeSuppliesAgent": true,
+      "agentId": "3747667E-FC46-42E5-8887-59F81429BE2C",
+      "name": "OXPd2 Example Supplies Agent",
+      "localizedName": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSuppliesAgentName"
+      },
+      "localizedDescription": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cSuppliesAgentDescription"
+      }
+    }
+  },
+  "jobStatisticsService": {
+    "typeData": {
+      "name": "jobStatistics",
+      "versionedGUN": "com.hp.ext.service.jobStatistics.1",
+      "revisionDetail": " ( )"
+    },
+    "jobStatisticsAgent": {
+      "includeJobStatisticsAgent": true,
+      "agentId": "E8AA3823-73D8-4E6E-A3AE-54B9DD8EB49A",
+      "name": "OXPd2 Example JobStatistics Agent",
+      "localizedName": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cJobStatisticsAgentName"
+      },
+      "localizedDescription": {
+        "i18nAssetId": "A53D8EF2-84F4-4E9D-B980-18C23F212D64",
+        "stringId": "cJobStatisticsAgentDescription"
+      },
+      "criticalSolution": false,
+      "defaultNotificationFilter": {
+        "selectedFilterOption": {
+          "optionType": "All",
+          "optionString": "Receive All Notification Data"
+        },
+        "contentFilterStrings": []
+      },
+      "jobFilters": [],
+      "notificationTarget": {
+        "http": {
+          "endpoint": {
+            "scheme": "http",
+            "authority": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(JOB_STATISTICS_TARGET_AUTHORITY)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "path": {
+              "isEnabled": true,
+              "bindableType": "Expression",
+              "explicitValue": "",
+              "expression": "$SOLUTION_CONTEXT(JOB_STATISTICS_TARGET_REGISTRATION_PATH)$",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "authorization": {
+            "authorizationType": "None",
+            "username": {
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "password": {
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          },
+          "targetHeaders": [],
+          "retryBehavior": {
+            "retryConnectionTimeout": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 10,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "10",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            },
+            "retryAttempts": {
+              "explicitValueType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+              "explicitValueAsType": 0,
+              "isEnabled": true,
+              "bindableType": "Explicit",
+              "explicitValue": "0",
+              "expression": "",
+              "explicitValueRegex": "",
+              "explicitValueInvalidMessage": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

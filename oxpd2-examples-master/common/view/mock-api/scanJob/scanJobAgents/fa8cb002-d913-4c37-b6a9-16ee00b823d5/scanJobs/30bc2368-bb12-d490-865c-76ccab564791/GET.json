@@ -1,0 +1,181 @@
+{
+    "$opMeta": {},
+    "links": [
+        {
+            "href": "/ext/scanJob/v1/scanJobAgents/fa8cb002-d913-4c37-b6a9-16ee00b823d5/scanJobs/30bc2368-bb12-d490-865c-76ccab564791",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/scanJob/v1/scanJobAgents/fa8cb002-d913-4c37-b6a9-16ee00b823d5/scanJobs/30bc2368-bb12-d490-865c-76ccab564791/cancel",
+            "rel": "cancel"
+        }
+    ],
+    "resourceId": "30bc2368-bb12-d490-865c-76ccab564791",
+    "scanJobId": "30bc2368-bb12-d490-865c-76ccab564791",
+    "scanJobStatus": {
+        "cancelingState": [
+            {
+                "activity": "jasNotStarted",
+                "timestamp": "2018-04-25T16:20:42.044Z"
+            }
+        ],
+        "isCancelable": true,
+        "jobActivity": [
+            {
+                "activity": "jasNotStarted",
+                "timestamp": "2018-04-25T16:20:42.044Z"
+            }
+        ],
+        "jobDoneStatus": "jdsActive",
+        "jobDoneStatusDetail": "The scan job is complete",
+        "processingActivity": [
+            {
+                "activity": "jasNotStarted",
+                "timestamp": "2018-04-25T16:20:42.044Z"
+            }
+        ],
+        "processingRestartCount": 0,
+        "scanningActivity": [
+            {
+                "activity": "jasNotStarted",
+                "timestamp": "2018-04-25T16:20:42.044Z"
+            }
+        ],
+        "totalImagesProcessed": 0,
+        "totalImagesScanned": 0,
+        "totalImagesTransmitted": 0,
+        "transmissionConsecutiveRetryCount": 0,
+        "transmissionRetryCount": 0,
+        "transmittingActivity": [
+            {
+                "activity": "jasNotStarted",
+                "timestamp": "2018-04-25T16:20:42.044Z"
+            }
+        ]
+    },
+    "scanTicket": {
+        "destinationOptions": {
+            "http": {
+                "destination": {
+                    "authorization": {
+                        "basic": {
+                            "password": "$SOLUTION_CONTEXT(PASSWD)$",
+                            "username": "$SOLUTION_CONTEXT(USER)$"
+                        },
+                        "bearer": {
+                            "token": "$SOLUTION_CONTEXT(SCAN_RECEIVER_TOKEN)$"
+                        }
+                    },
+                    "headers": [
+                        {
+                            "headerName": "X-ACME-SerialNumber",
+                            "headerValue": "$DEVICE_ID$"
+                        }
+                    ],
+                    "host": {
+                        "expression": {
+                            "expressedValue": "www.acme.com",
+                            "expressionPattern": "$SOLUTION_CONTEXT(SCAN_HOST)$"
+                        }
+                    },
+                    "path": {},
+                    "retry": {},
+                    "scheme": "https"
+                }
+            },
+            "networkFolder": {},
+            "ftp": {},
+            "localFolder": {},
+            "email": {}
+        },
+        "metadataOptions": {
+            "fileContent": {
+                "explicit": {
+                    "explicitValue": "{fooFileData: 123}"
+                }
+            },
+            "fileContentType": {
+                "explicit": {
+                    "explicitValue": "application/json"
+                }
+            },
+            "fileName": {
+                "explicit": {
+                    "explicitValue": "FooFileName"
+                }
+            }
+        },
+        "scanOptions": {
+            "autoColorDetect": "acdmDetectOnly",
+            "autoCropMode": "acmtOff",
+            "autoDeskew": false,
+            "autoExposure": false,
+            "backgroundCleanup": 2,
+            "backgroundColorRemoval": false,
+            "backgroundColorRemovalLevel": 0,
+            "backgroundNoiseRemoval": false,
+            "binaryRendering": "brHalftone",
+            "blackBackground": false,
+            "blackEnhancementLevel": 0,
+            "blankPageSuppression": "bpdDisabled",
+            "ccdChannel": "cctNtsc",
+            "colorAndGrayCompression": "ctJpeg",
+            "colorMode": "cmMonochrome",
+            "colorRange": 0,
+            "colorSensitivity": 0,
+            "compressionFactor": 0,
+            "contentOrientation": "coPortrait",
+            "contentType": "dctText",
+            "contrast": 1,
+            "descreen": false,
+            "edgeToEdgeScan": false,
+            "encryptionPassword": "myEncryptionPassword",
+            "exposureLevel": 5,
+            "fileName": {
+                "explicit": {
+                    "explicitValue": "scan"
+                }
+            },
+            "fileTransmissionMode": "tmJob",
+            "gamma": 100,
+            "highlightLevel": 1,
+            "imagePreviewMode": "ipmNone",
+            "invertColors": false,
+            "longPlotScan": false,
+            "mediaBindingFormat": "bfFlipLeft",
+            "mediaSize": "msANSI_A_8point5x11in",
+            "mediaSource": "miAdf",
+            "mediaType": "mtPlain",
+            "misfeedDetection": false,
+            "misfeedDetectionAutoRetry": false,
+            "monoCompression": "ctG4",
+            "outputCanvasAnchor": "ocaTopLeft",
+            "outputCanvasMediaSize": "msANSI_A_8point5x11in",
+            "outputCanvasMediaSource": "miAdf",
+            "outputCanvasOrientation": "coPortrait",
+            "outputCanvasXExtent": 0,
+            "outputCanvasYExtent": 0,
+            "outputFileCompression": false,
+            "outputFileEncryption": false,
+            "outputFileFormat": "ffJpeg",
+            "outputQualityVsSize": "qvsHigh",
+            "pagesPerSheet": "ppsOneUp",
+            "plexMode": "pmDuplex",
+            "resolution": "dpi300",
+            "scanCaptureMode": "scmStandard",
+            "scanProgressMode": "spmNone",
+            "scanningSpeed": "ssAuto",
+            "shadowLevel": 0,
+            "sharpness": 1,
+            "threshold": 0,
+            "xOffset": 0,
+            "yOffset": 0
+        }
+    },
+    "solutionContext": {
+      "expression":{
+        "expressedValue": "DeviceId Solution Cookie",
+        "expressionPattern": "$DEVICE(ID)$ $SOLUTION_CONTEXT(SOLUTION_COOKIE)$"
+      }
+    }
+}

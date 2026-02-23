@@ -1,0 +1,29 @@
+{
+  "$opMeta": {
+      "contentFilter": [
+          "*"
+      ]
+  },
+  "antiTheftEnabled": "unknown",
+  "antiTheftFleetId": 0,
+  "antiTheftMode": "atmDevice",
+  "blackVeryLowAction": "vlaPrompt",
+  "colorVeryLowAction": "vlaPrompt",
+  "links": [
+      {
+          "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9/suppliesConfiguration",
+          "rel": "self"
+      }
+  ],
+  "lowMessagingEnabled": "lmetEnabled",
+  "supplyLowThresholds": [
+      {
+          "slotId": 1,
+          "threshold": 15
+      },
+      {
+          "slotId": 0,
+          "threshold": 0
+      }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/resetInactivityTimer",
+      "rel": "resetInactivityTimer"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/exit",
+      "rel": "exit"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/runtimeChrome",
+      "rel": "runtimeChrome"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/startIntent",
+      "rel": "startIntent"
+    }
+  ],
+  "activeApplication": {
+    "applicationId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "name": "string",
+    "solutionId": "e3736199-5163-4c47-88d3-572e4e06dd6a"
+  },
+  "nonce": "IlRoZXJlIGFyZSBvbmx5IHR3byB0aGluZ3Mgd3Jvbmcgd2l0aCBDKys6ICBUaGUgaW5pdGlhbCBjb25jZXB0IGFuZCB0aGUgaW1wbGVtZW50YXRpb24uIiDigJQgQmVydHI="
+}

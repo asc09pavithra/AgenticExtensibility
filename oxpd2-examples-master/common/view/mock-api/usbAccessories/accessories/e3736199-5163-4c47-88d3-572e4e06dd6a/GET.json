@@ -1,0 +1,31 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "accessoryID": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "activeConfiguration": 111,
+  "deviceClass": 222,
+  "deviceProtocol": 333,
+  "deviceSubclass": 444,
+  "deviceVersion": 555,
+  "languagesSupported": [
+    5569,
+    54681
+  ],
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a",
+      "rel": "self"
+    }
+  ],
+  "manufacturerName": "HP Inc",
+  "productId": 456,
+  "productName": "Speedy USB",
+  "registration": "rkOwned",
+  "resourceId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "serialNumber": "7Jkds9",
+  "usbVersion": 1,
+  "vendorId": 123
+}

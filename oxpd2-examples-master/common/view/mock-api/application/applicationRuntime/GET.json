@@ -1,0 +1,32 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationRuntime",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/reserveContext",
+      "rel": "reserveContext"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/releaseContext",
+      "rel": "releaseContext"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/reset",
+      "rel": "reset"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext",
+      "rel": "currentContext"
+    }
+  ],
+  "activityState": "asAsleep",
+  "currentLanguage": "en-US"
+}

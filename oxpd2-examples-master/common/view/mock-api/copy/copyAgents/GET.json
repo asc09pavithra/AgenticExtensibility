@@ -1,0 +1,24 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/copy/v1/copyAgents",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/copy/v1/copyAgents/{agentId}",
+      "rel": "copyAgent"
+    }
+  ],
+  "memberIds": [
+    "14944470-9edd-430b-b109-c5469f07aa05",
+    "d56990d9-7652-43a7-867f-0781258aba47"
+  ],
+  "offset": 0,
+  "selectedCount": 2,
+  "totalCount": 2
+}

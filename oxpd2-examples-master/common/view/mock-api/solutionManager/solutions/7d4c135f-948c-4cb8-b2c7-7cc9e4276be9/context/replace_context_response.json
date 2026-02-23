@@ -1,0 +1,30 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "data": [
+        {
+            "key": "ACME_HOST",
+            "value": "https://solution.acme.com"
+        },
+        {
+            "key": "ACME_DEVICE_USERNAME",
+            "value": "deviceuser"
+        }
+    ],
+    "sensitiveData": [
+        {
+            "key": "ACME_DEVICE_PASSWORD",
+            "isSet": true          
+        }
+    ],
+    "links": [
+        {
+            "rel": "self",
+            "method": "GET",
+            "href": "/solutionManager/v1/solutions/D549BDAB-22E9-41D8-AA2B-4564FF2202E7/context"
+        }
+    ]
+}

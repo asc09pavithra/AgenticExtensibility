@@ -1,0 +1,14 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "method": "GET",
+            "href": "/solutionManager/v1/solutions/D549BDAB-22E9-41D8-AA2B-4564FF2202E7/certificateAuthorties/import"
+        }
+    ]
+}

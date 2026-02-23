@@ -1,0 +1,63 @@
+{
+    "$opMeta": {
+        "contentFilter": [],
+        "warnings": []
+    },
+    "links": [
+        {
+          "href": "/ext/application/v1/messageCenterAgents/05c65537-0f96-4a34-afc0-8125b7e55594/messages",
+          "rel": "self"
+        },
+        {
+          "hrefTemplate": "/ext/application/v1/messageCenterAgents/05c65537-0f96-4a34-afc0-8125b7e55594/messages/{messageId}",
+          "rel": "message"
+        }
+    ],
+    "memberIds": [
+        "e1fdc608-d592-4979-866f-315b770a4abf",
+        "e29338c1-0cac-402d-a87a-83e5ff7080bd"
+    ],
+    "members": [
+        {
+            "resourceId": "e1fdc608-d592-4979-866f-315b770a4abf",
+            "localizedMessage": 
+            {
+                "reference": {
+                    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+                    "stringId": "message"
+                }
+            },
+            "localizedTitle": 
+            {
+                "reference": {
+                    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+                    "stringId": "title"
+                }
+            },
+            "messageId": "e1fdc608-d592-4979-866f-315b770a4abf",
+            "messageType": "mtInfo"
+        },
+        {
+            "resourceId": "e29338c1-0cac-402d-a87a-83e5ff7080bd",
+            "localizedMessage": 
+            {
+                "reference": {
+                    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+                    "stringId": "message"
+                }
+            },
+            "localizedTitle": 
+            {
+                "reference": {
+                    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+                    "stringId": "title"
+                }
+            },
+            "messageId": "e29338c1-0cac-402d-a87a-83e5ff7080bd",
+            "messageType": "mtInfo"
+        }
+    ],
+    "offset": 0,
+    "selectedCount": 0,
+    "totalCount": 0
+}

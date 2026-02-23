@@ -1,0 +1,61 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/supplies/v1/suppliesAgents/c7784f69-1ccd-4982-8df5-e9692f4de0c9/suppliesInfo",
+            "rel": "self"
+        }
+    ],
+    "suppliesList": [
+        {
+            "approximatePagesRemaining": 1023,
+            "approximatePagesRemainingSymbol": "ardsGreaterThan",
+            "batchId": "batchIdentifier123",
+            "brand": "Indigo",
+            "capacity": {
+                "count": 1145,
+                "unit": "cuCycles"
+            },
+            "cartridgeApplication": "cartridgeApplicationQualifier",
+            "colors": [
+                "sccB",
+                "sccOC"
+            ],
+            "firstInstallDate": "2018-04-25T16:20:42.044Z",
+            "group": 1,
+            "healthGaugeLevel": 45,
+            "installDate": "2018-04-25T16:20:42.044Z",
+            "lastErrorCode": "A45E1F51",
+            "lastErrorTimestamp": "2018-04-25T16:20:42.044Z",
+            "lastRecoveryDate": "2018-04-25T16:20:42.044Z",
+            "lastUsedDate": "2018-04-25T16:20:42.044Z",
+            "levelState": "slsOk",
+            "manufactureDate": "2018-04-25T16:20:42.044Z",
+            "percentLifeRemaining": 82,
+            "percentLifeRemainingSymbol": "ardsLessThan",
+            "productNumber": "GA235E",
+            "serialNumber": "SERIALNUMBER",
+            "slotId": 1,
+            "slotRole": "ssRoleMain",
+            "slotsInGroup": [
+                1,
+                16
+            ],
+            "state": "ssWarning",
+            "stateReasons": [
+                "ssrAlmostEndOfLifeWarning",
+                "ssrWornOutError"
+            ],
+            "supplyAgentType": "satMarking",
+            "supplyColor": "sccB",
+            "supplyDescription": "ACME Marking Supply",
+            "supplyType": "stAdfPickupRoller",
+            "supplyUniqueId": "a1b2c3ff",
+            "usageTimeHours": 4
+        }
+    ]
+}

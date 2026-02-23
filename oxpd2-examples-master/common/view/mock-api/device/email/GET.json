@@ -1,0 +1,14 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ]
+    },
+    "isOnline": true,
+    "links": [
+      {
+        "href": "/ext/device/v1/email",
+        "rel": "self"
+      }
+    ]
+  }

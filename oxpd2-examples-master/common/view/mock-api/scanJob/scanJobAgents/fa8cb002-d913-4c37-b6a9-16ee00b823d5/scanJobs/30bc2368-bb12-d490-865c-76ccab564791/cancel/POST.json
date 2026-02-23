@@ -1,0 +1,17 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/scanJob/scanJobAgents/fa8cb002-d913-4c37-b6a9-16ee00b823d5/scanJobs/30bc2368-bb12-d490-865c-76ccab564791/cancel",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/scanJob/scanJobAgents/fa8cb002-d913-4c37-b6a9-16ee00b823d5/scanJobs/30bc2368-bb12-d490-865c-76ccab564791",
+      "rel": "resource"
+    }
+  ]
+}

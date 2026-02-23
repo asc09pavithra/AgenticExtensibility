@@ -1,0 +1,30 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "config/*"
+        ],
+        "warnings": [
+        {
+            "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+            "value": { }
+        }
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/application/v1/i18nAssets",
+            "rel": "self"
+        },
+        {
+          "hrefTemplate": "/ext/application/v1/i18nAssets/{assetId}",
+          "rel": "i18nAsset"
+        }
+    ],
+    "memberIds": [
+        "e3736199-5163-4c47-88d3-572e4e06dd6a",
+        "e2736199-5163-4c47-88d3-572e4e06dd6a"
+    ],
+    "offset": 0,
+    "selectedCount": 0,
+    "totalCount": 2
+}

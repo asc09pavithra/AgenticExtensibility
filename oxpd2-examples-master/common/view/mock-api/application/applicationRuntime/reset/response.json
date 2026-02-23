@@ -1,0 +1,18 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationRuntime/reset",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/application/v1/applicationRuntime",
+      "rel": "resource"
+    }
+  ]
+}

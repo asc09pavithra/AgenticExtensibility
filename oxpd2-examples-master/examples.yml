@@ -1,0 +1,102 @@
+parameters:
+  - name: config
+    displayName: Configuration
+    type: string
+    default: Release
+    values:
+      - Release
+      - Debug
+  - name: specVersion
+    displayName: Specifications Version
+    type: string
+    default: e2-beta-10-update-2.1
+    values:
+      - e2-beta-10-update-2.1
+      - e2-beta-10-update-2
+      - e2-beta-10-update-1
+      - e2-beta-9-update-2
+      - e2-beta-9-update-1
+      - e2-beta-8-update-3
+      - e2-beta-8-update-2
+      - e2-beta-8-update-1
+      - e2-beta-8-update-0
+  - name: Library_Branch
+    displayName: Library Branch
+    type: string
+    default: master
+  - name: Build_Branch
+    displayName: Build Branch
+    type: string
+    default: master
+  - name: Utilities_Branch
+    displayName: Utilities Branch
+    type: string
+    default: master
+  - name: Devops_Branch
+    displayName: DEVOPS Branch
+    type: string
+    default: master
+
+# HP CodeWay fixed header to load the pipeline templates
+resources:
+  repositories:
+    - repository: templates
+      type: githubenterprise
+      name: codeway/templates
+      endpoint: ghe
+    - repository: specifications
+      type: githubenterprise
+      name: extensibility-2-0/e2-service-specifications
+      endpoint: ghe
+      ref: refs/tags/${{ parameters.specVersion}}
+    - repository: oxpd2-examples
+      type: githubenterprise
+      name: extensibility-2-0/oxpd2-examples
+      ref: $(Build.SourceBranch)
+      endpoint: ghe
+    - repository: devops
+      type: githubenterprise
+      name: extensibility-2-0/devops
+      endpoint: ghe
+      ref: ${{ parameters.Devops_Branch }}
+    - repository: build
+      type: githubenterprise
+      name: extensibility-2-0/build
+      endpoint: ghe
+      ref: ${{ parameters.Build_Branch }}
+    - repository: utilities
+      type: githubenterprise
+      name: extensibility-2-0/utilities
+      endpoint: ghe
+      ref: ${{ parameters.Utilities_Branch }}
+    - repository: oxpd2-libraries
+      type: githubenterprise
+      name: extensibility-2-0/oxpd2-libraries
+      endpoint: ghe
+      ref: ${{ parameters.Library_Branch }}
+
+trigger:
+  - master
+  - beta*
+  - feature/*
+
+pr:
+  - master
+  - beta*
+  - feature/*
+
+variables:
+  - group: Pools
+  - group: Versioning
+  - group: Paths
+  - group: Packaging
+  - group: SecureFiles
+
+pool: $(WINDOWS_POOL)
+
+stages:
+  - template: stages/build_examples.yml@devops
+    parameters:
+      runTests: true
+      config: ${{ parameters.config }}
+      buildDependencies: true

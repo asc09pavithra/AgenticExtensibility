@@ -1,0 +1,608 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ],
+      "warnings": null
+    },
+    "links": [
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9",
+        "hrefTemplate": null,
+        "rel": "self"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/certificateAuthorities",
+        "hrefTemplate": null,
+        "rel": "certificateAuthorities"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/certificates",
+        "hrefTemplate": null,
+        "rel": "certificates"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/configurations",
+        "hrefTemplate": null,
+        "rel": "configurations"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/context",
+        "hrefTemplate": null,
+        "rel": "context"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/modifications",
+        "hrefTemplate": null,
+        "rel": "modifications"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/trustedSites",
+        "hrefTemplate": null,
+        "rel": "trustedSites"
+      },
+      {
+        "href": "/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/reissueInstallCode",
+        "hrefTemplate": null,
+        "rel": "reissueInstallCode"
+      }
+    ],
+    "resourceId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9",
+    "contextProfile": {
+      "contextDefinitions": [
+        {
+          "defaultValue": "",
+          "description": null,
+          "isSensitive": true,
+          "key": "$MACRO6$",
+          "typeInformation": null
+        },
+        {
+          "defaultValue": "",
+          "description": null,
+          "isSensitive": false,
+          "key": "TIMEOUT",
+          "typeInformation": null
+        },
+        {
+          "defaultValue": "",
+          "description": null,
+          "isSensitive": false,
+          "key": "HOST",
+          "typeInformation": null
+        },
+        {
+          "defaultValue": "",
+          "description": null,
+          "isSensitive": false,
+          "key": "NOTIFICATIONS",
+          "typeInformation": null
+        }
+      ]
+    },
+    "dependencies": null,
+    "description": {
+      "description": "Provides application, authentication, i18nAssests and PrintJob to device users. Update the SolutionAgentNotifications via context.",
+      "name": "Application Authentication i18nAssests PrintJob Solution",
+      "supportEmail": "help@solutions.aaip.com",
+      "supportPhone": "",
+      "supportUrl": "https://solutions.aaip.com/appAuthAssetPrintContext/help",
+      "vendor": "AA Inc.",
+      "version": "1.0.1",
+      "versionNumber": 1
+    },
+    "hostSets": null,
+    "installActions": null,
+    "installCodeState": null,
+    "installationDetails": {
+      "installationDate": "2021-05-10T23:54:34Z",
+      "packageName": "appAuthi18Print1Target.bdl"
+    },
+    "packages": null,
+    "registrations": [
+      {
+        "record": {
+          "typeGUN": "com.hp.ext.types.solutionManager.version.1.type.solutionNotificationAgentRegistrationRecord",
+          "value": {
+            "agentId": "5cfbf1b9-7219-45cd-8802-5994996ba09d",
+            "localizedDescription": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cSolutionNotificationRecordDescription"
+            },
+            "localizedName": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cSolutionNotificationRecordName"
+            },
+            "name": "AA Solution Notification Agent",
+            "notificationTarget": {
+              "http": {
+                "authorization": {
+                  "basic": {
+                    "password": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(PASSWORD)$"
+                      }
+                    },
+                    "username": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(USERNAME)$"
+                      }
+                    }
+                  }
+                },
+                "headers": [
+                  {
+                    "headerName": "x-custom-header",
+                    "headerValue": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(CUSTOM_HEADER)$"
+                      }
+                    }
+                  }
+                ],
+                "host": {
+                  "expression": {
+                    "expressionPattern": "$SOLUTION_CONTEXT(HOST)$"
+                  }
+                },
+                "path": {
+                  "explicit": {
+                    "explicitValue": "/solutionNotificationAgent"
+                  }
+                },
+                "retry": {
+                  "basic": {
+                    "maxRetries": {
+                      "explicit": {
+                        "explicitValue": 0
+                      }
+                    },
+                    "timeoutSeconds": {
+                      "explicit": {
+                        "explicitValue": 10
+                      }
+                    }
+                  }
+                },
+                "scheme": "http"
+              }
+            },
+            "notificationsToReceive": {
+              "expression": {
+                "expressionPattern": "$SOLUTION_CONTEXT(NOTIFICATIONS)$"
+              }
+            }
+          }
+        }
+      },
+      {
+        "record": {
+          "typeGUN": "com.hp.ext.types.application.version.1.type.applicationAgentRegistrationRecord",
+          "value": {
+            "applicationId": "ec37a0f2-1680-40f1-a5fc-bdcfa6bdf977",
+            "category": "acStandardWalkup",
+            "chrome": {
+              "webApplicationChrome": {
+                "footerIsCollapsed": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "helpButtonIsAvailable": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "homeButtonIsAvailable": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "infoButtonIsAvailable": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "mastheadBackgroundColor": {
+                  "explicit": {
+                    "explicitValue": "#FF0000"
+                  }
+                },
+                "mastheadForegroundColor": {
+                  "explicit": {
+                    "explicitValue": "#FF0000"
+                  }
+                },
+                "mastheadIcon": {
+                  "explicit": {
+                    "explicitValue": {
+                      "inlineImage": {
+                        "mimeType": "image/png",
+                        "value": "aWNvbiBpbWFnZSBkYXRhLi4u..."
+                      }
+                    }
+                  }
+                },
+                "signInButtonIsAvailable": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "softKeyboardIsAvailable": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "startButtonIsEnabled": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                },
+                "userInfoIsDisplayed": {
+                  "explicit": {
+                    "explicitValue": true
+                  }
+                }
+              },
+              "workpathApplicationChrome": {}
+            },
+            "failureBehavior": {
+              "isDismissible": true,
+              "localizedMessage": {
+                "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+                "stringId": "cFailureBehaviorMessage"
+              },
+              "localizedTitle": {
+                "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+                "stringId": "cFailureBehaviorTitle"
+              },
+              "titleBackgroundColor": "#bec2f3",
+              "titleForegroundColor": "#000000"
+            },
+            "icon": {
+              "localImage": {
+                "fileType": "image/png",
+                "path": "/assets/images/app-icon.png"
+              }
+            },
+            "intentProfile": {
+              "webIntentDefinition": {
+                "resultSchema": {
+                  "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+                  "value": {
+                    "key": "value"
+                  }
+                },
+                "startIntentSchema": {
+                  "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+                  "value": {
+                    "key": "value"
+                  }
+                }
+              }
+            },
+            "localizedDescription": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cAppDescription"
+            },
+            "localizedTitle": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cAppTitle"
+            },
+            "name": "AA Holiday Card Maker",
+            "platform": "apOXPd2",
+            "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9",
+            "target": {
+              "webApplicationTarget": {
+                "applicationIntent": {
+                  "resultDefault": {
+                    "expression": {
+                      "expressionPattern": "$SOLUTION_CONTEXT(RESULT_DEFAULT)"
+                    }
+                  },
+                  "startDefault": {
+                    "expression": {
+                      "expressionPattern": "$SOLUTION_CONTEXT(START_DEFAULT)"
+                    }
+                  }
+                },
+                "authorization": {
+                  "basic": {
+                    "password": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(PASSWORD)$"
+                      }
+                    },
+                    "username": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(USERNAME)$"
+                      }
+                    }
+                  }
+                },
+                "headers": [
+                  {
+                    "headerName": "x-custom-header",
+                    "headerValue": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(CUSTOM_HEADER)$"
+                      }
+                    }
+                  }
+                ],
+                "host": {
+                  "expression": {
+                    "expressionPattern": "$SOLUTION_CONTEXT(HOST)$"
+                  }
+                },
+                "path": {
+                  "explicit": {
+                    "explicitValue": "/helloWorld.html"
+                  }
+                },
+                "retry": {
+                  "basic": {
+                    "maxRetries": {
+                      "explicit": {
+                        "explicitValue": 0
+                      }
+                    },
+                    "timeoutSeconds": {
+                      "explicit": {
+                        "explicitValue": 10
+                      }
+                    }
+                  }
+                },
+                "scheme": "http"
+              }
+            }
+          }
+        }
+      },
+      {
+        "record": {
+          "typeGUN": "com.hp.ext.types.authentication.version.1.type.registration",
+          "value": {
+            "agentId": "c8d1c480-b3b8-44ad-8dfc-b03ced923a17",
+            "comSpec": {
+              "linkForDevice": {
+                "packageTarget": "linkPackageTarget"
+              },
+              "webServer": {
+                "enableSignoutNotification": true,
+                "promptTarget": {
+                  "http": {
+                    "authorization": {
+                      "basic": {
+                        "password": {
+                          "explicit": {
+                            "explicitValue": "password"
+                          }
+                        },
+                        "username": {
+                          "explicit": {
+                            "explicitValue": "username"
+                          }
+                        }
+                      }
+                    },
+                    "headers": [
+                      {
+                        "headerName": "x-custom-header",
+                        "headerValue": {
+                          "explicit": {
+                            "explicitValue": "customHeader"
+                          }
+                        }
+                      }
+                    ],
+                    "host": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(HOST)$"
+                      }
+                    },
+                    "paths": [
+                      "/promptTarget"
+                    ],
+                    "retry": {
+                      "basic": {
+                        "maxRetries": {
+                          "explicit": {
+                            "explicitValue": 2
+                          }
+                        },
+                        "timeoutSeconds": {
+                          "expression": {
+                            "expressedValue": 10,
+                            "expressionPattern": "$SOLUTION_CONTEXT(TIMEOUT)$"
+                          }
+                        }
+                      }
+                    },
+                    "scheme": "https"
+                  }
+                },
+                "serviceTarget": {
+                  "http": {
+                    "authorization": {
+                      "basic": {
+                        "password": {
+                          "explicit": {
+                            "explicitValue": "passwordService"
+                          }
+                        },
+                        "username": {
+                          "explicit": {
+                            "explicitValue": "usernameService"
+                          }
+                        }
+                      }
+                    },
+                    "headers": [
+                      {
+                        "headerName": "x-custom-header",
+                        "headerValue": {
+                          "explicit": {
+                            "explicitValue": "customHeader"
+                          }
+                        }
+                      }
+                    ],
+                    "host": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(HOST)$"
+                      }
+                    },
+                    "path": {
+                      "expression": {
+                        "expressionPattern": "$SOLUTION_CONTEXT(HOST)$"
+                      }
+                    },
+                    "retry": {
+                      "basic": {
+                        "maxRetries": {
+                          "explicit": {
+                            "explicitValue": 0
+                          }
+                        },
+                        "timeoutSeconds": {
+                          "explicit": {
+                            "explicitValue": 10
+                          }
+                        }
+                      }
+                    },
+                    "scheme": "https"
+                  }
+                }
+              }
+            },
+            "details": {
+              "oxpd": {
+                "enableSignoutNotification": true,
+                "serviceTarget": {
+                  "http": {
+                    "headers": [
+                      {
+                        "AA-Foo": "myLiteralContentForAuthentication"
+                      },
+                      {
+                        "AA-DeviceId": "$DEVICE(ID)$"
+                      }
+                    ],
+                    "host": "solutions.AA.com",
+                    "path": "/hpauth",
+                    "scheme": "https"
+                  }
+                }
+              }
+            },
+            "enablePrePromptCheck": true,
+            "localizedDescription": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cAuthNAgentDescription"
+            },
+            "localizedName": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cAuthNAgentName"
+            },
+            "name": "AA Authentication Agent"
+          }
+        }
+      },
+      {
+        "record": {
+          "typeGUN": "com.hp.ext.service.printJob.version.1.type.printJobAgentRegistrationRecord",
+          "value": {
+            "agentId": "927c3c3f-f781-4dde-b915-f0e69827dae0",
+            "localizedDescription": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cPrintRecordDescription"
+            },
+            "localizedName": {
+              "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+              "stringId": "cPrintRecordName"
+            },
+            "name": "ACME Print Job Agent"
+          }
+        }
+      },
+      {
+        "record": {
+          "typeGUN": "com.hp.ext.types.application.version.1.type.i18nAssetRegistrationRecord",
+          "value": {
+            "assetContent": {
+              "i18nAssetInlineContent": {
+                "languages": [
+                  {
+                    "languageTag": "en-US",
+                    "strings": [
+                      {
+                        "stringId": "cAppTitle",
+                        "value": "AAIP Card Maker"
+                      },
+                      {
+                        "stringId": "cAppDescription",
+                        "value": "The best application ever"
+                      },
+                      {
+                        "stringId": "cDeviceTitle",
+                        "value": "Card Reader Device"
+                      },
+                      {
+                        "stringId": "cFailureBehaviorTitle",
+                        "value": "App Failure Behavior Title"
+                      },
+                      {
+                        "stringId": "cFailureBehaviorMessage",
+                        "value": "App Failure Behavior Message"
+                      },
+                      {
+                        "stringId": "cAuthNAgentName",
+                        "value": "AuthN Agent Name"
+                      },
+                      {
+                        "stringId": "cAuthNAgentDescription",
+                        "value": "AAIP AuthN Agent Description"
+                      },
+                      {
+                        "stringId": "cPrintJobAgentName",
+                        "value": "PrintJob Agent Name"
+                      },
+                      {
+                        "stringId": "cPrintJobAgentDescription",
+                        "value": "AAIP PrintJob Description"
+                      },
+                      {
+                        "stringId": "cSolutionNotificationRecordName",
+                        "value": "AAIP solution notification agent name"
+                      }
+                    ]
+                  },
+                  {
+                    "languageTag": "es-ES",
+                    "strings": [
+                      {
+                        "stringId": "cAppTitle",
+                        "value": "Fabricante de tarjetas AA"
+                      },
+                      {
+                        "stringId": "cDeviceTitle",
+                        "value": "Card Reader device"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "i18nAssetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0",
+            "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+          }
+        }
+      }
+    ],
+    "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9",
+    "state": "ssInstalled",
+    "uninstallActions": null
+  }

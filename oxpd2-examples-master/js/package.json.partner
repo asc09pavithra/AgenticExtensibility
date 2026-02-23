@@ -1,0 +1,18 @@
+{
+  "name": "oxpd2-examples",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "3",
+    "oxpd2": "file:../../libraries/js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node ./src/app.js"
+  }
+}

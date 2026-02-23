@@ -1,0 +1,26 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "intent": {
+      "somethingImportant": "Something Important Value",
+      "somethingElseImportant": "Something Else's Important Value",
+      "somethingBigger":[
+          {
+              "somthingbiggerish": "biggerish",
+              "blah":{
+                  "prop1": "p1"
+              }
+          }
+      ]
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationRuntime/currentContext/startIntent",
+      "rel": "self"
+    }
+  ]
+}

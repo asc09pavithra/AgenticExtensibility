@@ -1,0 +1,29 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/deviceUsage/v1/deviceUsageAgents/064687af-7120-4d53-a887-042d9708d73b",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/deviceUsage/v1/deviceUsageAgents/064687af-7120-4d53-a887-042d9708d73b/lifetimeCounters",
+            "rel": "lifetimeCounters"
+        }
+    ],
+    "resourceId": "064687af-7120-4d53-a887-042d9708d73b",
+    "solutionId": "86dd4dd1-ae11-4572-9800-a9d301f55d17",
+    "agentId": "064687af-7120-4d53-a887-042d9708d73b",
+    "localizedDescription": {
+        "i18nAssetId": "5cb33ff0-b1ce-4c69-b811-46dfb710e930",
+        "stringId": "cDeviceUsageAgentDescription"
+    },
+    "localizedName": {
+        "i18nAssetId": "5cb33ff0-b1ce-4c69-b811-46dfb710e930",
+        "stringId": "cDeviceUsageAgentName"
+    },
+    "name": "HP Device Usage Agent"
+}

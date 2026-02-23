@@ -1,0 +1,81 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "config/*"
+      ],
+      "warnings": [
+        {
+          "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+          "value": {}
+        }
+      ]
+    },
+    "apiVersion": "1.4",
+    "description": "The ping service, providing the ability to ping the device.",
+    "implInfo": [
+      {
+        "typeGUN": "com.hp.cdm.service.echo.version.1.types.exampleType",
+        "value": {}
+      }
+    ],
+    "implVersion": "4.3.2.v20200105.33",
+    "links": [
+      {
+          "href": "/ext/application/v1/capabilities",
+          "rel": "self"
+      },
+      {
+          "href": "/ext/application/v1/applicationAccessPoints",
+          "rel": "applicationAccessPoints"
+      },
+      {
+          "href": "/ext/application/v1/applicationAgents",
+          "rel": "applicationAgents"
+      },
+      {
+          "href": "/ext/application/v1/applicationRuntime",
+          "rel": "applicationRuntime"
+      },
+      {
+          "href": "/ext/application/v1/capabilities",
+          "rel": "capabilities"
+      },
+      {
+          "href": "/ext/application/v1/homescreen",
+          "rel": "homescreen"
+      },
+      {
+          "href": "/ext/application/v1/i18nAssets",
+          "rel": "i18nAssets"
+      },
+      {
+          "href": "/ext/application/v1/messageCenterAgents",
+          "rel": "messageCenterAgents"
+      }
+    ],
+    "serviceGun": "/ext/application/v1/applicationAgents",
+    "userInterfaceAttributes": {
+      "applicationIconFormats": [
+        "image/gif",
+        "image/bmp",
+        "image/jpeg",
+        "image/png"
+      ],
+      "applicationIconHeight": 179,
+      "applicationIconWidth": 179,
+      "displayResolutionX": 1024,
+      "displayResolutionY": 768,
+      "displaySize": "10.1",
+      "footerHeight": 0,
+      "hardKeyboardType": "hktNone",
+      "hasHardBackKey": true,
+      "hasHardHomeKey": true,
+      "headerHeight": 59,
+      "nativeTheme": "Opus",
+      "softKeyboardTypes": [
+        "sktStandard",
+        "sktFax",
+        "sktHex"
+      ]
+    }
+  }

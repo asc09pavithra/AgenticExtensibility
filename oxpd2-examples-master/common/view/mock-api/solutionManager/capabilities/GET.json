@@ -1,0 +1,50 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "apiVersion": "1.0",
+    "description": "The E2 Solution Manager service, providing facilities for installing solutions and maintaining their configuration",
+    "implInfo": [
+        {
+            "typeGUN": "com.hp.ext.service.extensibility.version.1.impl.futuresmart.type.apiInformation",
+            "value": {
+                "apiMajorVersion": 1,
+                "apiMinorVersion": 0,
+                "releaseLevel": "Alpha",
+                "releaseSequence": 16,
+                "toolVersions": [
+                    "dsl 2.7.12.202101211527",
+                    "umsgen 0.2.1"
+                ]
+            }
+        }
+    ],
+    "implVersion": "v=6.1.0.354+336ff0fd-202103260745;r=6.1.0.354+336ff0fd;d=202103260745;s=6.1;p=000000-0000",
+    "links": [
+        {
+            "href": "/ext/solutionManager/v1/capabilities",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/solutionManager/v1/capabilities",
+            "rel": "capabilities"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer",
+            "rel": "installer"
+        },
+        {
+            "href": "/ext/solutionManager/v1/solutions",
+            "rel": "solutions"
+        }
+    ],
+    "serviceGun": "com.hp.ext.service.solutionManager.version.1",
+    "solutionPlatforms": [
+        {
+            "platformStatus": "spsAvailable",
+            "platformType": "sptOXPd2"
+        }
+    ]
+}

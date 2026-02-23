@@ -1,0 +1,17 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": null
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/i18nAssets/e2736199-5163-4c47-88d3-572e4e06dd6a",
+      "rel": "self"
+    }
+  ],
+  "resourceId": "e2736199-5163-4c47-88d3-572e4e06dd6a",
+  "assetId": "e2736199-5163-4c47-88d3-572e4e06dd6a",
+  "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+}

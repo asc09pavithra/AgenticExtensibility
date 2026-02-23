@@ -1,0 +1,25 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ],
+      "warnings": null
+    },
+    "apiVersion": "1.0",
+    "links": [
+      {
+        "href": "ext/authentication/v1/authenticationAgents",
+        "rel": "authenticationAgents"
+      },
+      {
+        "href": "ext/application/v1/authenticationAgents/{agentId}",
+        "rel": "authenticationAgent"
+      }
+    ],
+    "memberIds": [
+      "ab116a51-681b-4cd1-9c43-a717f85f1d60"
+    ],
+    "offset": 0,
+    "selectedCount": 1,
+    "totalCount": 1
+  }

@@ -1,0 +1,15 @@
+{
+    "item1":{
+        "$opMeta":{
+            "contentFilter":["*"],
+            "warnings":null
+        },
+        "links":[
+            {
+                "href":"/ext/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/configurations/myKey/data",
+                "rel":"self"
+            }
+        ]
+    },
+    "item2":"Q29uZmlndXJhdGlvbiBkYXRhIGV4YW1wbGU="
+}

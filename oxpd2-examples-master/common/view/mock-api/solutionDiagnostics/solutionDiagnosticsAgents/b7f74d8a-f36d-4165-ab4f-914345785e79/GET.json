@@ -1,0 +1,29 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents/b7f74d8a-f36d-4165-ab4f-914345785e79",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/solutionDiagnostics/v1/solutionDiagnosticsAgents/b7f74d8a-f36d-4165-ab4f-914345785e79/log",
+      "rel": "log"
+    }
+  ],
+  "resourceId": "b7f74d8a-f36d-4165-ab4f-914345785e79",
+  "solutionId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "agentId": "b7f74d8a-f36d-4165-ab4f-914345785e79",
+  "localizedDescription": {
+    "i18nAssetId": "e2755ea1-1cf5-4e96-8ab9-c2c875e63e87",
+    "stringId": "cSolutionDiagnosticsAgentDescription"
+  },
+  "localizedName": {
+    "i18nAssetId": "e2755ea1-1cf5-4e96-8ab9-c2c875e63e87",
+    "stringId": "cSolutionDiagnosticsAgentName"
+  },
+  "name": "Acme Agent"
+}

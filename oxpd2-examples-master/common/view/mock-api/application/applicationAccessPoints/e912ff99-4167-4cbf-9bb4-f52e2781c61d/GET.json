@@ -1,0 +1,31 @@
+{
+    "$opMeta":{
+       "contentFilter":[
+          "*"
+       ],
+       "warnings":null
+    },
+    "links":[
+      {
+        "href": "ext/application/v1/applicationAccessPoints/e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+        "rel": "self"
+      }
+    ],
+    "resourceId":"e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+    "accessPointId":"e912ff99-4167-4cbf-9bb4-f52e2781c61d",
+    "icon":{
+       "mimeType":"image/png",
+       "value":"ABC123"
+    },
+    "intentProfile":{
+      "webIntentDefinition":{
+         "resultSchema":[
+            "result schema for e912ff99-4167-4cbf-9bb4-f52e2781c61d"
+         ],
+         "startIntentSchema":[
+            "start intent schema for e912ff99-4167-4cbf-9bb4-f52e2781c61d"
+         ]
+      }
+   },
+    "title":"Global Application"
+ }

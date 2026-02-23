@@ -1,0 +1,27 @@
+{
+    "$opMeta": {
+        "contentFilter": [],
+        "warnings": []
+    },
+    "links": [
+        {
+          "href": "/ext/application/v1/messageCenterAgents/05c65537-0f96-4a34-afc0-8125b7e55594/messages/e29338c1-0cac-402d-a87a-83e5ff7080bd",
+          "rel": "self"
+        }
+    ],
+    "resourceId": "e29338c1-0cac-402d-a87a-83e5ff7080bd",
+    "localizedMessage": {
+        "reference": {
+            "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+            "stringId": "message"
+        }
+    },
+    "localizedTitle": {
+        "reference": {
+            "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+            "stringId": "title"
+        }
+    },
+    "messageId": "e29338c1-0cac-402d-a87a-83e5ff7080bd",
+    "messageType": "mtInfo"
+}

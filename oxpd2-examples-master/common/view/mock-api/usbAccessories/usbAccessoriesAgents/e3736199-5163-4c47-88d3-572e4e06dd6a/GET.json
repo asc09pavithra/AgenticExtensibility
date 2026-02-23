@@ -1,0 +1,39 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/usbAccessoriesAgents/e3736199-5163-4c47-88d3-572e4e06dd6a",
+      "rel": "self"
+    }
+  ],
+  "registrations": [
+    {
+      "productId": 12345,
+      "registrationKind": "rkShared",
+      "serialNumber": "SN02848893984",
+      "vendorId": 4562
+    },
+    {
+      "productId": 23456,
+      "registrationKind": "rkShared",
+      "serialNumber": "SN028465153984",
+      "vendorId": 515
+    }
+  ],
+  "resourceId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "solutionId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "agentId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+  "localizedDescription": {
+    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "stringId": "cUsbAccessoryDescription"
+  },
+  "localizedName": {
+    "i18nAssetId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "stringId": "cUsbAccessoryName"
+  },
+  "name": "Acme Agent"
+}

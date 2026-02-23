@@ -1,0 +1,20 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "featureReportLength": 654,
+  "hardwareCountryCode": 45,
+  "inputReportLength": 552,
+  "links": [
+    {
+      "href": "/ext/usbAccessories/v1/accessories/e3736199-5163-4c47-88d3-572e4e06dd6a/hid/f9b364a0-db73-44b5-a7f6-5de88e956d21",
+      "rel": "self"
+    }
+  ],
+  "openHIDAccessoryID": "f9b364a0-db73-44b5-a7f6-5de88e956d21",
+  "outputReportLength": 775,
+  "reportReadingActive": "true",
+  "resourceId": "f9b364a0-db73-44b5-a7f6-5de88e956d21"
+}

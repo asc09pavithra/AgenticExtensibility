@@ -1,0 +1,30 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "availableJobEntries": 0,
+  "highestSequenceNumberCompleted": 0,
+  "jobSubmissionLocked": true,
+  "lastSequenceNumberNotified": 0,
+  "lastSequenceNumberProcessed": 0,
+  "links": [
+    {
+      "href": "/ext/jobStatistics/v1/jobStatisticsAgents/60EDE400-FBBD-41BC-A88E-78E7AC124683/jobs",
+      "rel": "self"
+    },
+    {
+      "hrefTemplate": "/ext/jobStatistics/v1/jobStatisticsAgents/60EDE400-FBBD-41BC-A88E-78E7AC124683/jobs/{sequenceNumber}",
+      "rel": "job"
+    }
+  ],
+  "memberIds": [
+    "A8550D67-8347-4F9A-8097-B60A6D362B4E",
+    "23FADB68-DD72-4952-9655-50068FA95F13"
+  ],
+  "offset": 0,
+  "selectedCount": 0,
+  "totalCount": 0,
+  "totalJobEntries": 0
+}

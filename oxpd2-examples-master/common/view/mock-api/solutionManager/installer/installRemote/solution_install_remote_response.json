@@ -1,0 +1,36 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "installerOperation": {
+        "archiveType": "atSolutionArchive",
+        "completedTimestamp": "",
+        "createdTimestamp": "2025-11-07T23:48:25Z",
+        "links": [
+            {
+                "href": "/ext/solutionManager/v1/installer/installerOperations/9fde1fd3-5748-4a0b-bcc2-5ad62e56cfb5",
+                "rel": "self"
+            }
+        ],
+        "operationState": "iosInProgress",
+        "operationType": "iotInstall",
+        "resourceId": "9fde1fd3-5748-4a0b-bcc2-5ad62e56cfb5",
+        "solutionId": "7d4c135f-948c-4cb8-b2c7-7cc9e4276be9"
+    },
+    "links": [
+        {
+            "href": "/ext/solutionManager/v1/installer/installerOperations/9fde1fd3-5748-4a0b-bcc2-5ad62e56cfb5",
+            "rel": "installerOperation"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer/installRemote",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/solutionManager/v1/installer",
+            "rel": "resource"
+        }
+    ]
+}

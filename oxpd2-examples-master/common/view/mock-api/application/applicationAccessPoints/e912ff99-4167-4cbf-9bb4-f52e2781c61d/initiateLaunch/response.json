@@ -1,0 +1,18 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/v1/applicationAccessPoints/e912ff99-4167-4cbf-9bb4-f52e2781c61d/initiateLaunch",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/application/v1/v1/applicationAccessPoints/ce912ff99-4167-4cbf-9bb4-f52e2781c61d",
+      "rel": "resource"
+    }
+  ]
+}

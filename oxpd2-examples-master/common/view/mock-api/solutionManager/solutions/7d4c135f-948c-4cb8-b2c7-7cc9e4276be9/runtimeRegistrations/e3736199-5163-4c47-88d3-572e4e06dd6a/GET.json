@@ -1,0 +1,40 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "/solutionManager/v1/solutions/7d4c135f-948c-4cb8-b2c7-7cc9e4276be9/runtimeRegistrations/e3736199-5163-4c47-88d3-572e4e06dd6a"
+        }
+    ],
+    "resourceId": "e3736199-5163-4c47-88d3-572e4e06dd6a",
+    "record": {
+        "typeGUN": "com.hp.ext.service.application.version.1.type.i18nAssetRegistrationRecord",
+        "value": {
+            "assetContent": {
+                "i18nAssetInlineContent": {
+                    "languages": [
+                        {
+                            "languageTag": "en-US",
+                            "strings": [
+                                {
+                                    "stringId": "cMaintenanceNotificationTitle",
+                                    "value": "Maintenance Notification"
+                                },
+                                {
+                                    "stringId": "cMaintenanceNotificationMessage",
+                                    "value": "This printer requires unscheduled maintenance, please use alternate printer."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "assetId": "d9f30ad4-d817-46e7-981c-649c2c1403b0"
+        }        
+    },
+    "recordId": "e3736199-5163-4c47-88d3-572e4e06dd6a"
+}

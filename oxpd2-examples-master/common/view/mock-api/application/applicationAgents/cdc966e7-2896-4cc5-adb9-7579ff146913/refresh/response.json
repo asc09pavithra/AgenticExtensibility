@@ -1,0 +1,18 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ],
+    "warnings": []
+  },
+  "links": [
+    {
+      "href": "/ext/application/v1/applicationAgents/cdc966e7-2896-4cc5-adb9-7579ff146913/refresh",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/application/v1/applicationAgents/cdc966e7-2896-4cc5-adb9-7579ff146913",
+      "rel": "resource"
+    }
+  ]
+}

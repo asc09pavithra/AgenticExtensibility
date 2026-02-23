@@ -1,0 +1,24 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/scanJob/v1/scanJobAgents",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/scanJob/v1/scanJobAgents/{agentId}",
+      "rel": "scanJobAgent"
+    }
+  ],
+  "memberIds": [
+    "fa8cb002-d913-4c37-b6a9-16ee00b823d5",
+    "86a9c471-c2e5-42a2-81c3-08e7f54e6412"
+  ],
+  "offset": 0,
+  "selectedCount": 2,
+  "totalCount": 2
+}

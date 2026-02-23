@@ -1,0 +1,29 @@
+{
+    "$opMeta": {
+        "contentFilter": [
+            "*"
+        ]
+    },
+    "links": [
+        {
+            "href": "/ext/deviceUsage/v1/deviceUsageAgents/fa4fa912-2389-4881-a304-e9e41c5c0f49",
+            "rel": "self"
+        },
+        {
+            "href": "/ext/deviceUsage/v1/deviceUsageAgents/fa4fa912-2389-4881-a304-e9e41c5c0f49/lifetimeCounters",
+            "rel": "lifetimeCounters"
+        }
+    ],
+    "resourceId": "fa4fa912-2389-4881-a304-e9e41c5c0f49",
+    "solutionId": "675dbb20-0f2d-42d5-b595-d3a441915b64",
+    "agentId": "fa4fa912-2389-4881-a304-e9e41c5c0f49",
+    "localizedDescription": {
+        "i18nAssetId": "5cb33ff0-b1ce-4c69-b811-46dfb710e930",
+        "stringId": "cDeviceUsageAgentDescription"
+    },
+    "localizedName": {
+        "i18nAssetId": "5cb33ff0-b1ce-4c69-b811-46dfb710e930",
+        "stringId": "cDeviceUsageAgentName"
+    },
+    "name": "Indigo Device Usage Agent"
+}

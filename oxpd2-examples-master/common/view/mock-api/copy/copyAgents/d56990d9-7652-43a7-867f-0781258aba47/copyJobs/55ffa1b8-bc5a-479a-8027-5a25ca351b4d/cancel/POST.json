@@ -1,0 +1,17 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/copy/copyAgents/d56990d9-7652-43a7-867f-0781258aba47/copyJobs/55ffa1b8-bc5a-479a-8027-5a25ca351b4d/cancel",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/copy/copyAgents/d56990d9-7652-43a7-867f-0781258aba47/copyJobs/55ffa1b8-bc5a-479a-8027-5a25ca351b4d",
+      "rel": "resource"
+    }
+  ]
+}

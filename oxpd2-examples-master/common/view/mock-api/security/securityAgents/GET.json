@@ -1,0 +1,23 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/security/v1/securityAgents",
+      "rel": "self"
+    },
+    {
+      "href": "/ext/security/v1/securityAgents/{agentId}",
+      "rel": "securityAgent"
+    }
+  ],
+  "memberIds": [
+    "ad431139-6b64-4851-8c66-099766ae3fa1"
+  ],
+  "offset": 0,
+  "selectedCount": 1,
+  "totalCount": 1
+}

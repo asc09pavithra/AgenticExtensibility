@@ -1,0 +1,14 @@
+{
+  "$opMeta": {
+    "contentFilter": [
+      "*"
+    ]
+  },
+  "links": [
+    {
+      "href": "/ext/device/v1/status",
+      "rel": "self"
+    }
+  ],
+  "status": "dsInitializing"
+}

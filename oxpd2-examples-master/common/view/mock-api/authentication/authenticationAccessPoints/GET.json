@@ -1,0 +1,40 @@
+{
+    "$opMeta": {
+      "contentFilter": [
+        "*"
+      ],
+      "warnings": null
+    },
+    "apiVersion": "1.0",
+    "links": [
+      {
+        "href": "ext/authentication/v1/authenticationAccessPoints",
+        "rel": "authenticationAccessPoints"
+      },
+      {
+        "href": "ext/authentication/v1/authenticationAccessPoints/{authenticationId}",
+        "rel": "authenticationAccessPoint"
+      }
+    ],
+    "memberIds": [
+      "c4836eee-a9d3-4872-8784-23ed53441df2",
+      "13b56347-9f94-403f-8d60-552f75ee3d99"
+    ],
+    "members": [
+      {
+        "accessPointId": "c4836eee-a9d3-4872-8784-23ed53441df2",
+        "kind": "akWindows",
+        "resourceId": "c4836eee-a9d3-4872-8784-23ed53441df2"
+      },
+      {
+        "accessPointId": "13b56347-9f94-403f-8d60-552f75ee3d99",
+        "customName": "Electric Fence Authentication",
+        "kind": "akCustom",
+        "resourceId": "13b56347-9f94-403f-8d60-552f75ee3d99"
+      }
+    ],
+    "offset": 0,
+    "selectedCount": 2,
+    "serviceGun": "/ext/authentication/v1/authenticationAccessPoints",
+    "totalCount": 2
+  }
