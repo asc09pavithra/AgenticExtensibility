@@ -23,8 +23,34 @@ class CopyService {
         // @EndCodeExample
         return capabilities;
     }
+     async getCapabilities1() {
+        // @StartCodeExample:GetCapabilities
+        if (deviceManagementService.currentDevice == null) {
+            throw new Error(errors.NO_BOUND_DEVICE);
+        }
+        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
+        let dt = await dsc.servicesDiscoveryGetAsync();
+
+        let cc = new CopyServiceClient.CopyServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
+        let capabilities = await cc.capabilitiesGetAsync();
+        // @EndCodeExample
+        return capabilities;
+    }
 
     async enumerateCopyAgents() {
+        // @StartCodeExample:EnumerateCopyAgents
+        if (deviceManagementService.currentDevice == null) {
+            throw new Error(errors.NO_BOUND_DEVICE);
+        }
+        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
+        let dt = await dsc.servicesDiscoveryGetAsync();
+
+        let cc = new CopyServiceClient.CopyServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
+        let accessToken = await deviceManagementService.currentDevice.getToken([AccessTokenType.Admin, AccessTokenType.Solution]);
+        let copyAgents = await cc.copyAgentsGetAsync(accessToken);
+        // @EndCodeExample
+        return copyAgents;
+    } async enumerateCopyAgents1() {
         // @StartCodeExample:EnumerateCopyAgents
         if (deviceManagementService.currentDevice == null) {
             throw new Error(errors.NO_BOUND_DEVICE);
