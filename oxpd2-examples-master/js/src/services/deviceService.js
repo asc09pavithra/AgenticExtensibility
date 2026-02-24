@@ -25,8 +25,8 @@ class DeviceService {
         return capabilities;
     }
 
-    async getIdentity() {
-        // @StartCodeExample:GetIdentity
+    
+        
         if (deviceManagementService.currentDevice == null) {
             throw new Error(errors.NO_BOUND_DEVICE);
         }
@@ -35,13 +35,13 @@ class DeviceService {
         let dt = await dsc.servicesDiscoveryGetAsync();
 
         let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let identity = await dc.identityGetAsync();
+        
         // @EndCodeExample
-        return identity;
+        
     }
 
-    async getStatus() {
-        // @StartCodeExample:GetStatus
+    
+        
         if (deviceManagementService.currentDevice == null) {
             throw new Error(errors.NO_BOUND_DEVICE);
         }
@@ -50,12 +50,12 @@ class DeviceService {
         let dt = await dsc.servicesDiscoveryGetAsync();
 
         let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let status = await dc.statusGetAsync();
+        
         // @EndCodeExample
-        return status;
+        
     }
 
-    async getEmail() {
+    
         // @StartCodeExample:GetEmail
         if (deviceManagementService.currentDevice == null) {
             throw new Error(errors.NO_BOUND_DEVICE);
@@ -104,3 +104,14 @@ class DeviceService {
 const deviceService = new DeviceService();
 
 export default deviceService;
+
+
+
+async getStatus() {
+// @StartCodeExample:GetStatus
+let status = await dc.statusGetAsync();
+return status;
+async getEmail() {
+// @StartCodeExample:GetEmail
+let email = await dc.emailGetAsync();
+return email;

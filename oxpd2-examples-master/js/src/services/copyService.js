@@ -424,3 +424,14 @@ class CopyService {
 const copyService = new CopyService();
 
 export default copyService;
+
+async getCapabilities1() {
+// @StartCodeExample:GetCapabilities
+if (deviceManagementService.currentDevice == null) {
+throw new Error(errors.NO_BOUND_DEVICE);
+}
+let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
+let dt = await dsc.servicesDiscoveryGetAsync();
+
+let cc = new CopyServiceClient.CopyServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
+let capabilities = await cc.capabilitiesGetAsync();
