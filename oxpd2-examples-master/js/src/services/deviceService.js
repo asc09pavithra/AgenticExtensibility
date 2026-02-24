@@ -25,20 +25,7 @@ class DeviceService {
         return capabilities;
     }
 
-    async getIdentity() {
-        // @StartCodeExample:GetIdentity
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
-
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let identity = await dc.identityGetAsync();
-        // @EndCodeExample
-        return identity;
-    }
+   
 
     async getStatus() {
         // @StartCodeExample:GetStatus
@@ -56,6 +43,20 @@ class DeviceService {
     }
 
     async getEmail() {
+        // @StartCodeExample:GetEmail
+        if (deviceManagementService.currentDevice == null) {
+            throw new Error(errors.NO_BOUND_DEVICE);
+        }
+
+        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
+        let dt = await dsc.servicesDiscoveryGetAsync();
+
+        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
+        let email = await dc.emailGetAsync();
+        // @EndCodeExample
+        return email;
+    }
+     async getEmail2() {
         // @StartCodeExample:GetEmail
         if (deviceManagementService.currentDevice == null) {
             throw new Error(errors.NO_BOUND_DEVICE);
