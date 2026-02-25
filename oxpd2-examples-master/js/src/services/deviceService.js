@@ -1,117 +1,624 @@
-import deviceManagementService from "./deviceManagementService.js";
-import oxpd2 from 'oxpd2';
+""''''TT"TT"bbbbb
+`
+`
+`
+j
+a
+v
+a
+s
+c
+r
+i
+p
+t
 
-const DeviceServiceClient = oxpd2.DeviceServiceClient;
-import errors from './errors.js';
-import { AccessTokenType } from "../models/accessTokenType.js";
 
-class DeviceService {
+ 
+ 
+ 
 
-    constructor(props) {
 
-    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/
+/
+ 
+@
+S
+t
+a
+r
+t
+C
+o
+d
+e
+E
+x
+a
+m
+p
+l
+e
+:
+G
+e
+t
+E
+m
+a
+i
+l
 
-    async getCapabilities() {
-        // @StartCodeExample:GetCapabilities
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
 
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let capabilities = await dc.capabilitiesGetAsync();
-        // @EndCodeExample
-        return capabilities;
-    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+i
+f
+ 
+(
+d
+e
+v
+i
+c
+e
+M
+a
+n
+a
+g
+e
+m
+e
+n
+t
+S
+e
+r
+v
+i
+c
+e
+.
+c
+u
+r
+r
+e
+n
+t
+D
+e
+v
+i
+c
+e
+ 
+=
+=
+ 
+n
+u
+l
+l
+)
+ 
+{
 
-    
-        
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
 
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+t
+h
+r
+o
+w
+ 
+n
+e
+w
+ 
+E
+r
+r
+o
+r
+(
+e
+r
+r
+o
+r
+s
+.
+N
+O
+_
+B
+O
+U
+N
+D
+_
+D
+E
+V
+I
+C
+E
+)
+;
 
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        
-        // @EndCodeExample
-        
-    }
 
-    
-        
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
-
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        
-        // @EndCodeExample
-        
-    }
-
-    
-        // @StartCodeExample:GetEmail
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
-
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let email = await dc.emailGetAsync();
-        // @EndCodeExample
-        return email;
-    }
-
-    async getScanner() {
-        // @StartCodeExample:GetScanner
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
-
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let scanner = await dc.scannerGetAsync();
-        // @EndCodeExample
-        return scanner;
-    }
-
-    async getDeploymentInformation() {
-        // @StartCodeExample:GetDeploymentInformation
-        if (deviceManagementService.currentDevice == null) {
-            throw new Error(errors.NO_BOUND_DEVICE);
-        }
-
-        let dsc = new oxpd2.DiscoveryServiceClient(deviceManagementService.currentDevice.networkAddress, fetch);
-        let dt = await dsc.servicesDiscoveryGetAsync();
-
-        let dc = new DeviceServiceClient.DeviceServiceClient(deviceManagementService.currentDevice.networkAddress, dt, fetch);
-        let deploymentInformation = await dc.deploymentInformationGetAsync();
-        // @EndCodeExample
-        return deploymentInformation;
-    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 }
 
-const deviceService = new DeviceService();
-
-export default deviceService;
 
 
 
-async getStatus() {
-// @StartCodeExample:GetStatus
-let status = await dc.statusGetAsync();
-return status;
-async getEmail() {
-// @StartCodeExample:GetEmail
-let email = await dc.emailGetAsync();
-return email;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+e
+t
+ 
+d
+s
+c
+ 
+=
+ 
+n
+e
+w
+ 
+o
+x
+p
+d
+2
+.
+D
+i
+s
+c
+o
+v
+e
+r
+y
+S
+e
+r
+v
+i
+c
+e
+C
+l
+i
+e
+n
+t
+(
+d
+e
+v
+i
+c
+e
+M
+a
+n
+a
+g
+e
+m
+e
+n
+t
+S
+e
+r
+v
+i
+c
+e
+.
+c
+u
+r
+r
+e
+n
+t
+D
+e
+v
+i
+c
+e
+.
+n
+e
+t
+w
+o
+r
+k
+A
+d
+d
+r
+e
+s
+s
+,
+ 
+f
+e
+t
+c
+h
+)
+;
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+e
+t
+ 
+d
+t
+ 
+=
+ 
+a
+w
+a
+i
+t
+ 
+d
+s
+c
+.
+s
+e
+r
+v
+i
+c
+e
+s
+D
+i
+s
+c
+o
+v
+e
+r
+y
+G
+e
+t
+A
+s
+y
+n
+c
+(
+)
+;
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+e
+t
+ 
+d
+c
+ 
+=
+ 
+n
+e
+w
+ 
+D
+e
+v
+i
+c
+e
+S
+e
+r
+v
+i
+c
+e
+C
+l
+i
+e
+n
+t
+.
+D
+e
+v
+i
+c
+e
+S
+e
+r
+v
+i
+c
+e
+C
+l
+i
+e
+n
+t
+(
+d
+e
+v
+i
+c
+e
+M
+a
+n
+a
+g
+e
+m
+e
+n
+t
+S
+e
+r
+v
+i
+c
+e
+.
+c
+u
+r
+r
+e
+n
+t
+D
+e
+v
+i
+c
+e
+.
+n
+e
+t
+w
+o
+r
+k
+A
+d
+d
+r
+e
+s
+s
+,
+ 
+d
+t
+,
+ 
+f
+e
+t
+c
+h
+)
+;
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+e
+t
+ 
+e
+m
+a
+i
+l
+ 
+=
+ 
+a
+w
+a
+i
+t
+ 
+d
+c
+.
+e
+m
+a
+i
+l
+G
+e
+t
+A
+s
+y
+n
+c
+(
+)
+;
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/
+/
+ 
+@
+E
+n
+d
+C
+o
+d
+e
+E
+x
+a
+m
+p
+l
+e
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+r
+e
+t
+u
+r
+n
+ 
+e
+m
+a
+i
+l
+;
+
+
+ 
+ 
+ 
+ 
+}
+
+
+ 
+ 
+ 
+ 
+ 
+a
+s
+y
+n
+c
+ 
+g
+e
+t
+E
+m
+a
+i
+l
+2
+(
+)
+ 
+{
+
+
+`
+`
+`
