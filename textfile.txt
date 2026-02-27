@@ -1,1 +1,4 @@
-notepad
+https://api.open-meteo.com/v1/forecast?latitude=19.0760&longitude=72.8777&current_weather=true,
+https://api.open-meteo.com/v1/forecast?latitude=28.6139&longitude=77.2090&current_weather=true,
+https://api.open-meteo.com/v1/forecast?latitude=12.9716&longitude=77.5946&current_weather=true,
+https://api.open-meteo.com/v1/forecast?latitude=22.5726&longitude=88.3639&current_weather=true
