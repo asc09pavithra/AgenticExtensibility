@@ -1,1 +1,1 @@
-NOTEPAD
+https://api.open-meteo.com/v1/forecast?latitude=19.0760&longitude=72.8777&current_weather=true
